@@ -1,9 +1,12 @@
-// src/components/Team.tsx
 import React from 'react';
+
+interface TeamProps {
+  className?: string;
+}
 
 const team = [
   {
-    name: 'Max Rohde',
+    name: 'Max',
     role: 'chief chill officer',
     description:
       'Passionate coder, former lecturer, and corporate veteran now full-time wanna-be chill dude.',
@@ -18,27 +21,33 @@ const team = [
   },
 ];
 
-const Team: React.FC = () => {
+const Team: React.FC<TeamProps> = ({ className = '' }) => {
   return (
-    <section className="py-16 bg-white">
-      <h2 className="text-2xl font-semibold text-center mb-8">Who we are</h2>
-      <div className="flex flex-wrap justify-center gap-8">
+    <section
+      className={`flex flex-col items-center justify-center bg-gray-50 pt-32 ${className}`}
+    >
+      <h2 className="text-3xl text-center mb-24 font-serif">Who we are</h2>
+      <div className="flex flex-wrap justify-center gap-12 mx-auto px-4">
         {team.map((member, index) => (
           <div key={index} className="max-w-sm text-center">
-            <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"></div>
-            <h3 className="text-xl font-medium">{member.name}</h3>
+            <div className="w-64 h-64 bg-gray-300 rounded-full mb-4 mx-auto"></div>
+            <h3 className="text-2xl font-medium font-sans mb-6 mt-12">
+              {member.name}
+            </h3>
             <p className="text-gray-500 italic mb-4">{member.role}</p>
-            <p className="text-gray-600">{member.description}</p>
-            <div className="flex justify-center gap-4 mt-4">
+            <p className="text-gray-800 text-xl font-sans">
+              {member.description}
+            </p>
+            <div className="flex justify-center gap-4 mt-8">
               <a
                 href={member.links.linkedin}
-                className="text-blue-500 hover:underline"
+                className="text-blue-500 hover:underline text-xl"
               >
                 LinkedIn
               </a>
               <a
                 href={member.links.x}
-                className="text-blue-500 hover:underline"
+                className="text-blue-500 hover:underline text-xl"
               >
                 X.com
               </a>

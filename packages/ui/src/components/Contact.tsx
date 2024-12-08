@@ -1,20 +1,38 @@
-// src/components/Contact.tsx
 import React from 'react';
 
-const Contact: React.FC = () => {
+interface ContactProps {
+  className?: string;
+}
+
+const contactInfo = [
+  'Pureleap Pty. Ltd.',
+  '12 Glenmaggie Chase',
+  '3023 VIC Caroline Springs',
+  'Australia',
+];
+
+const Contact: React.FC<ContactProps> = ({ className = '' }) => {
   return (
-    <footer className="py-16 bg-gray-50 text-center">
-      <h2 className="text-2xl font-semibold mb-4">How to get in touch</h2>
-      <p className="text-gray-600 mb-2">Pureleap Pty. Ltd.</p>
-      <p className="text-gray-600 mb-2">12 Glenmaggie Chase</p>
-      <p className="text-gray-600 mb-2">3023 VIC Caroline Springs, Australia</p>
-      <a
-        href="mailto:public@pureleap.com"
-        className="text-blue-500 hover:underline"
-      >
-        public@pureleap.com
-      </a>
-    </footer>
+    <section
+      className={`flex flex-col items-center justify-center bg-gray-50 pt-32 ${className}`}
+    >
+      <h2 className="text-3xl text-center mb-24 font-serif">
+        How to get in touch
+      </h2>
+      <div className="flex flex-col items-center">
+        {contactInfo.map((line, index) => (
+          <p key={index} className="text-gray-800 text-xl font-sans mb-2">
+            {line}
+          </p>
+        ))}
+        <a
+          href="mailto:public@pureleap.com"
+          className="text-blue-500 hover:underline text-xl font-sans mt-4"
+        >
+          public@pureleap.com
+        </a>
+      </div>
+    </section>
   );
 };
 
