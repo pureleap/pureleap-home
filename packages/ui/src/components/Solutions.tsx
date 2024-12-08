@@ -6,7 +6,7 @@ interface SolutionsProps {
 
 const solutions = [
   {
-    image: '/_goldstack/static/img/202412/flat_screen.png',
+    image: '/_goldstack/static/img/202412/magic_tablet_reposition_fixed.png',
     title: 'Coding You’ll Love',
     description:
       'Building software should be a joy, not a chore. Our tools turn complex challenges into seamless fun.',

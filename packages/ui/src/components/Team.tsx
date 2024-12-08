@@ -11,6 +11,7 @@ const team = [
     description:
       'Passionate coder, former lecturer, and corporate veteran now full-time wanna-be chill dude.',
     links: { linkedin: '#', x: '#' },
+    imagePath: '/_goldstack/static/img/202412/max.png',
   },
   {
     name: 'Shally',
@@ -18,6 +19,7 @@ const team = [
     description:
       'Ex-lawyer turned software engineer, making sure no corners are cut.',
     links: { linkedin: '#', x: '#' },
+    imagePath: '/_goldstack/static/img/202412/shally2.jpg',
   },
 ];
 
@@ -30,7 +32,13 @@ const Team: React.FC<TeamProps> = ({ className = '' }) => {
       <div className="flex flex-wrap justify-center gap-12 mx-auto px-4">
         {team.map((member, index) => (
           <div key={index} className="max-w-sm text-center">
-            <div className="w-64 h-64 bg-gray-300 rounded-full mb-4 mx-auto"></div>
+            <div className="w-64 h-64 rounded-full mb-4 mx-auto overflow-hidden">
+              <img
+                src={member.imagePath}
+                alt={`${member.name}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
             <h3 className="text-2xl font-medium font-sans mb-6 mt-12">
               {member.name}
             </h3>
