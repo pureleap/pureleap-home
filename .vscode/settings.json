@@ -33,6 +33,7 @@
     "hetzner",
     "Jwks",
     "pino",
+    "Pureleap",
     "runcmd",
     "testcontainers"
   ]
