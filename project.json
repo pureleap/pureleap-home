@@ -1,0 +1,15 @@
+{
+  "packages": [
+    {
+      "packageName": "server-side-rendering",
+      "templateReference": {
+        "templateName": "server-side-rendering"
+      }
+    }
+  ],
+  "rootTemplateReference": {
+    "templateName": "yarn-pnp-monorepo"
+  },
+  "createdAt": "2024-12-08T02:00:11.403Z",
+  "projectName": "pureleap-homepage"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "server-side-rendering",
+  "template": "server-side-rendering",
+  "templateVersion": "0.1.31",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "prod",
+      "configuration": {
+        "lambdas": {},
+        "lambdaNamePrefix": "pl-home",
+        "domain": "pureleap.com",
+        "hostedZoneDomain": "pureleap.com"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}
