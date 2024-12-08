@@ -1,5 +1,8 @@
-// src/components/Solutions.tsx
 import React from 'react';
+
+interface SolutionsProps {
+  className?: string;
+}
 
 const solutions = [
   {
@@ -22,13 +25,15 @@ const solutions = [
   },
 ];
 
-const Solutions: React.FC = () => {
+const Solutions: React.FC<SolutionsProps> = ({ className = '' }) => {
   return (
-    <section className="py-16 bg-gray-50">
-      <h2 className="text-2xl font-semibold text-center mb-8">
+    <section
+      className={`flex flex-col items-center justify-center bg-gray-50 py-12 ${className}`}
+    >
+      <h2 className="text-2xl font-semibold text-center mb-12">
         What we make solutions for
       </h2>
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto px-4">
         {solutions.map((solution, index) => (
           <div key={index} className="max-w-sm text-center">
             <img

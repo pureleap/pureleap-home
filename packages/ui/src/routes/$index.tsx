@@ -4,7 +4,7 @@ import { SSRHandler } from '@goldstack/template-ssr';
 import { renderPage, hydrate } from './../render';
 import Panel from './../components/Panel';
 import styles from './$index.module.css';
-import { NewIndex } from '../components/NewIndex';
+import { NewIndex } from '../pages/Index';
 
 const Index = (): JSX.Element => {
   return (
