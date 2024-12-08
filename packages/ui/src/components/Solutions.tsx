@@ -18,7 +18,7 @@ const solutions = [
       'Life’s too short not to enjoy it. We help you find health, joy, and peace.',
   },
   {
-    image: '/_goldstack/static/img/202412/notebook.jpg',
+    image: '/_goldstack/static/img/202412/notebook_mirror.jpg',
     title: 'Chill Productivity',
     description:
       'Forget burnout. Work smarter, deliver better, and feel good doing it.',
@@ -28,21 +28,25 @@ const solutions = [
 const Solutions: React.FC<SolutionsProps> = ({ className = '' }) => {
   return (
     <section
-      className={`flex flex-col items-center justify-center bg-gray-50 py-12 ${className}`}
+      className={`flex flex-col items-center justify-center bg-gray-50 pb-12 ${className}`}
     >
-      <h2 className="text-2xl font-semibold text-center mb-12">
+      <h2 className="text-3xl text-center mb-24 font-serif">
         What we make solutions for
       </h2>
-      <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto px-4">
+      <div className="flex flex-wrap justify-center gap-12 mx-auto px-4">
         {solutions.map((solution, index) => (
           <div key={index} className="max-w-sm text-center">
             <img
               src={solution.image}
               alt={solution.title}
-              className="w-full h-48 object-contain mb-4"
+              className="w-full h-64 object-contain mb-4"
             />
-            <h3 className="text-xl font-medium mb-2">{solution.title}</h3>
-            <p className="text-gray-600">{solution.description}</p>
+            <h3 className="text-2xl font-medium font-sans mb-6 mt-12">
+              {solution.title}
+            </h3>
+            <p className="text-gray-800 text-xl font-sans">
+              {solution.description}
+            </p>
           </div>
         ))}
       </div>

@@ -7,7 +7,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   return (
     <header
-      className={`flex flex-col items-center justify-center gap-12 bg-white ${className}`}
+      className={`flex flex-col items-center justify-center bg-white ${className}`}
       style={{ backgroundColor: '#fbfbff' }}
     >
       <div className="flex-1" />
@@ -17,9 +17,9 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         className="mx-auto"
         style={{ width: '675px' }}
       />
-      <div className="text-center">
-        <h1 className="text-xl font-bold">Big dreams? Busy days?</h1>
-        <h1 className="text-xl font-bold mt-4">
+      <div className="text-center font-serif">
+        <h1 className="text-2xl">Big dreams? Busy days?</h1>
+        <h1 className="text-2xl mt-4">
           Let&#x2019;s help you chill while you conquer.
         </h1>
       </div>

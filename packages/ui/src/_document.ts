@@ -48,6 +48,9 @@ const renderDocument = async (
     src: url('/_goldstack/static/img/202304/Virgil.woff2') format('woff2');
 }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto%20Slab&display=swap" rel="stylesheet">
     <link
     href="https://fonts.googleapis.com/css?family=Hind%20Vadodara&display=swap"

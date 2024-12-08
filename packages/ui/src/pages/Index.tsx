@@ -11,8 +11,8 @@ export const NewIndex: React.FC = () => {
       <div className="h-screen">
         <Header className="h-full" />
       </div>
-      <div className="h-screen">
-        <Solutions className="h-full" />
+      <div className="">
+        <Solutions className="" />
       </div>
       <ScrollIndicator />
       <Team />
