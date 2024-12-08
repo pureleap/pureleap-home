@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "names": [
+      "tailwind.css"
+    ],
+    "generatedName": "tailwind.9aa8abf03a8b4325dbf8fd55ca17b0b3.css"
+  },
+  {
+    "names": [
+      "pl-home--__index.map"
+    ],
+    "generatedName": "-__index.889af0fdf407688220a07b6363b6600e.map.json"
+  },
+  {
+    "names": [
+      "pl-home--__index-bundle.js"
+    ],
+    "generatedName": "-__index-bundle.0ae97df88ed97ec83e7ed5a99d2ef72e.js"
+  },
+  {
+    "names": [
+      "pl-home-posts.map"
+    ],
+    "generatedName": "posts.09fc1c7c77fd4905cb5fe0ed9608c23c.map.json"
+  },
+  {
+    "names": [
+      "pl-home-posts-bundle.js"
+    ],
+    "generatedName": "posts-bundle.c759f8da9797ecbcbe1f12478442967f.js"
+  }
+]
