@@ -16,18 +16,26 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
       style={{ backgroundColor: '#fbfbff' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col sm:flex-row justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between items-start">
           <div className="text-gray-800 mb-4 sm:mb-0 font-sans">
             © 2024 Pureleap Pty. Ltd.
           </div>
-          <div className="text-gray-800">
-            <span className="font-sans">Legal: </span>
-            <a
-              href="/privacy-policy"
-              className="text-black-500 hover:text-orange-500 font-sans"
-            >
-              Privacy Policy
-            </a>
+          <div className="text-gray-800 flex flex-col">
+            <h3 className="font-sans font-bold mb-2">Legal</h3>
+            <div className="flex flex-col space-y-2">
+              <a
+                href="/privacy-policy"
+                className="text-black-500 hover:text-orange-500 font-sans"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="/anti-spam-policy"
+                className="text-black-500 hover:text-orange-500 font-sans"
+              >
+                Anti-Spam Policy
+              </a>
+            </div>
           </div>
         </div>
       </div>
