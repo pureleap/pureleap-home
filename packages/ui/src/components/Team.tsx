@@ -15,17 +15,17 @@ const team = [
     socialIcons: [
       {
         icon: 'linkedin',
-        label: 'LinkedIn',
+        label: 'maxrohde',
         url: 'https://www.linkedin.com/in/maxrohde/',
       },
       {
         icon: 'youtube',
-        label: 'YouTube',
+        label: '@mxro',
         url: 'https://www.youtube.com/@mxro',
       },
       {
         icon: 'twitter',
-        label: 'Twitter',
+        label: '@mxro',
         url: 'https://x.com/mxro',
       },
     ],
@@ -39,12 +39,17 @@ const team = [
     socialIcons: [
       {
         icon: 'linkedin',
-        label: 'LinkedIn',
+        label: 'shalveena-rohde',
         url: 'https://www.linkedin.com/in/shalveena-rohde',
       },
       {
+        icon: 'instagram',
+        label: 'shalveena_rohde',
+        url: 'https://www.instagram.com/shalveena_rohde/',
+      },
+      {
         icon: 'twitter',
-        label: 'Twitter',
+        label: '@shalveena_rohde',
         url: 'https://x.com/shalveena_rohde',
       },
     ],
@@ -63,7 +68,7 @@ const Team: React.FC<TeamProps> = ({ className = '' }) => {
             key={index}
             className="max-w-sm text-center flex flex-col min-h-[600px]"
           >
-            <div>
+            <div className="flex flex-col grow">
               <div className="w-64 h-64 rounded-full mb-4 mx-auto overflow-hidden">
                 <img
                   src={member.imagePath}
@@ -75,7 +80,7 @@ const Team: React.FC<TeamProps> = ({ className = '' }) => {
                 {member.name}
               </h3>
               <p className="text-gray-500 italic mb-4">{member.role}</p>
-              <p className="text-gray-800 text-xl font-sans">
+              <p className="text-gray-800 text-xl font-sans min-h-[80px]">
                 {member.description}
               </p>
             </div>
