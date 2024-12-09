@@ -18,7 +18,7 @@ const solutions = [
       'Life’s too short not to enjoy it. We help you find health, joy, and peace.',
   },
   {
-    image: '/_goldstack/static/img/202412/notebook_mirror.jpg',
+    image: '/_goldstack/static/img/202412/notebook.jpg',
     title: 'Chill Productivity',
     description:
       'Forget burnout. Work smarter, deliver better, and feel good doing it.',

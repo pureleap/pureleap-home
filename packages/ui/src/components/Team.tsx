@@ -1,4 +1,5 @@
 import React from 'react';
+import SocialIcons, { ICON_CONFIG } from './SocialIcons';
 
 interface TeamProps {
   className?: string;
@@ -47,18 +48,7 @@ const Team: React.FC<TeamProps> = ({ className = '' }) => {
               {member.description}
             </p>
             <div className="flex justify-center gap-4 mt-8">
-              <a
-                href={member.links.linkedin}
-                className="text-blue-500 hover:underline text-xl"
-              >
-                LinkedIn
-              </a>
-              <a
-                href={member.links.x}
-                className="text-blue-500 hover:underline text-xl"
-              >
-                X.com
-              </a>
+              <SocialIcons icons={ICON_CONFIG}></SocialIcons>
             </div>
           </div>
         ))}
