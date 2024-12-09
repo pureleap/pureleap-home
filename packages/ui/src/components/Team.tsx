@@ -11,18 +11,22 @@ const team = [
     role: 'chief chill officer',
     description:
       'Passionate coder, former lecturer, and corporate veteran now full-time wanna-be chill dude.',
-    links: { linkedin: '#', x: '#' },
     imagePath: '/_goldstack/static/img/202412/max.png',
     socialIcons: [
       {
         icon: 'linkedin',
         label: 'LinkedIn',
-        url: '#',
+        url: 'https://www.linkedin.com/in/maxrohde/',
+      },
+      {
+        icon: 'youtube',
+        label: 'YouTube',
+        url: 'https://www.youtube.com/@mxro',
       },
       {
         icon: 'twitter',
         label: 'Twitter',
-        url: '#',
+        url: 'https://x.com/mxro',
       },
     ],
   },
@@ -31,18 +35,17 @@ const team = [
     role: 'the boss',
     description:
       'Ex-lawyer turned software engineer, making sure no corners are cut.',
-    links: { linkedin: '#', x: '#' },
     imagePath: '/_goldstack/static/img/202412/shally2.jpg',
     socialIcons: [
       {
         icon: 'linkedin',
         label: 'LinkedIn',
-        url: '#',
+        url: 'https://www.linkedin.com/in/shalveena-rohde',
       },
       {
         icon: 'twitter',
         label: 'Twitter',
-        url: '#',
+        url: 'https://x.com/shalveena_rohde',
       },
     ],
   },
