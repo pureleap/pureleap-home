@@ -60,6 +60,7 @@ const Team: React.FC<TeamProps> = ({ className = '' }) => {
   return (
     <section
       className={`flex flex-col items-center justify-center bg-gray-50 pt-32 ${className}`}
+      style={{ backgroundColor: '#fbfbff' }}
     >
       <h2 className="text-3xl text-center mb-24 font-serif">Who we are</h2>
       <div className="flex flex-wrap justify-center gap-12 mx-auto px-4">

@@ -6,7 +6,8 @@
     "build": "yarn clean && yarn compile",
     "clean": "rimraf ./dist",
     "compile": "tsc --build tsconfig.json",
-    "depcheck": "depcheck ."
+    "depcheck": "depcheck .",
+    "test": "echo 'no tests yet'"
   },
   "dependencies": {
     "autoprefixer": "^10.4.11",

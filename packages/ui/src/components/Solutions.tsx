@@ -28,7 +28,8 @@ const solutions = [
 const Solutions: React.FC<SolutionsProps> = ({ className = '' }) => {
   return (
     <section
-      className={`flex flex-col items-center justify-center bg-gray-50 pb-12 ${className}`}
+      className={`flex flex-col items-center justify-center pb-12 ${className}`}
+      style={{ backgroundColor: '#fbfbff' }}
     >
       <h2 className="text-3xl text-center mb-24 font-serif">
         What we make solutions for

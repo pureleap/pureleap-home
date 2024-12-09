@@ -14,7 +14,8 @@ const contactInfo = [
 const Contact: React.FC<ContactProps> = ({ className = '' }) => {
   return (
     <section
-      className={`flex flex-col items-center justify-center bg-gray-50 pt-32 ${className}`}
+      className={`flex flex-col items-center justify-center pt-32 ${className}`}
+      style={{ backgroundColor: '#fbfbff' }}
     >
       <h2 className="text-3xl text-center mb-24 font-serif">
         How to get in touch
