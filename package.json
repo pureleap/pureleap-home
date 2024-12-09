@@ -33,6 +33,7 @@
     "minimatch": "^5.1.0",
     "moment": "2.29.4",
     "prismjs": "1.27.0",
+    "rimraf": "3.0.2",
     "scss-tokenizer": "0.4.3",
     "terser": "4.8.1",
     "trim": "0.0.3",

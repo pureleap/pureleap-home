@@ -8772,7 +8772,7 @@ const RAW_RUNTIME_STATE =
           ["esbuild", "npm:0.17.18"],\
           ["jest", "virtual:818122d9fc6446df8b88a4e58e7698943dd1905bee7ac86d9352ca6b524ab4813e9e1b3859d836e804d0270a233e55ccf53d9cc6fbf74ce959c0c0d14ed0a79a#npm:29.7.0"],\
           ["postcss", "npm:8.4.49"],\
-          ["rimraf", "npm:5.0.10"],\
+          ["rimraf", "npm:3.0.2"],\
           ["static-file-mapper-build", "npm:0.3.21"],\
           ["tailwindcss", "npm:3.4.16"],\
           ["typescript", "patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"]\
@@ -14941,26 +14941,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["rimraf", [\
-      ["npm:2.7.1", {\
-        "packageLocation": "./.yarn/cache/rimraf-npm-2.7.1-9a71f3cc37-4586c296c7.zip/node_modules/rimraf/",\
-        "packageDependencies": [\
-          ["rimraf", "npm:2.7.1"],\
-          ["glob", "npm:7.1.6"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.0.2", {\
         "packageLocation": "./.yarn/cache/rimraf-npm-3.0.2-2cb7dac69a-063ffaccaa.zip/node_modules/rimraf/",\
         "packageDependencies": [\
           ["rimraf", "npm:3.0.2"],\
-          ["glob", "npm:7.1.6"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:5.0.10", {\
-        "packageLocation": "./.yarn/cache/rimraf-npm-5.0.10-d0c6647697-f3b8ce81ee.zip/node_modules/rimraf/",\
-        "packageDependencies": [\
-          ["rimraf", "npm:5.0.10"],\
           ["glob", "npm:7.1.6"]\
         ],\
         "linkType": "HARD"\
@@ -16179,7 +16163,7 @@ const RAW_RUNTIME_STATE =
           ["mkdirp", "npm:1.0.4"],\
           ["node-notifier", null],\
           ["resolve", "patch:resolve@npm%3A1.20.0#optional!builtin<compat/resolve>::version=1.20.0&hash=c3c19d"],\
-          ["rimraf", "npm:2.7.1"],\
+          ["rimraf", "npm:3.0.2"],\
           ["source-map-support", "npm:0.5.20"],\
           ["tree-kill", "npm:1.2.2"],\
           ["ts-node", "virtual:f20b6ca9a70305b6c173689d4349de4ca0f7d0b815a6228fe504a37481af1777baf435c1a1fcf1b7d158cce953fae0dd875d23872cbbef6894b34cc5c38a5311#npm:10.9.1"],\
