@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialIcons, { ICON_CONFIG } from './SocialIcons';
+import SocialIcons, { SOCIAL_LINKS } from './SocialIcons';
 
 interface TeamProps {
   className?: string;
@@ -13,6 +13,18 @@ const team = [
       'Passionate coder, former lecturer, and corporate veteran now full-time wanna-be chill dude.',
     links: { linkedin: '#', x: '#' },
     imagePath: '/_goldstack/static/img/202412/max.png',
+    socialIcons: [
+      {
+        icon: 'linkedin',
+        label: 'LinkedIn',
+        url: '#',
+      },
+      {
+        icon: 'twitter',
+        label: 'Twitter',
+        url: '#',
+      },
+    ],
   },
   {
     name: 'Shally',
@@ -21,6 +33,18 @@ const team = [
       'Ex-lawyer turned software engineer, making sure no corners are cut.',
     links: { linkedin: '#', x: '#' },
     imagePath: '/_goldstack/static/img/202412/shally2.jpg',
+    socialIcons: [
+      {
+        icon: 'linkedin',
+        label: 'LinkedIn',
+        url: '#',
+      },
+      {
+        icon: 'twitter',
+        label: 'Twitter',
+        url: '#',
+      },
+    ],
   },
 ];
 
@@ -53,7 +77,7 @@ const Team: React.FC<TeamProps> = ({ className = '' }) => {
               </p>
             </div>
             <div className="flex justify-center gap-4 mt-auto pt-8">
-              <SocialIcons icons={ICON_CONFIG}></SocialIcons>
+              <SocialIcons links={member.socialIcons}></SocialIcons>
             </div>
           </div>
         ))}

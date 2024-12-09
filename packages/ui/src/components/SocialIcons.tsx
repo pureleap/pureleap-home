@@ -1,98 +1,140 @@
 import React from 'react';
 
+/**
+ * Configuration for a known social media icon
+ */
 interface IconConfig {
   name: string;
   src: string;
   alt: string;
+  width: number;
+  height: number;
+}
+
+/**
+ * Properties for a social media link
+ */
+interface SocialLinkProps {
+  /** Display label for the social link */
   label: string;
-  width: number; // width of the icon
-  height: number; // height of the icon
-  url: string; // URL for the social link
+  /** URL the social link points to */
+  url: string;
+  /** Name of the icon to use (must match a known icon name) */
+  icon: string;
 }
 
+/**
+ * Properties for the SocialIcons component
+ */
 interface SocialIconsProps {
-  icons: IconConfig[];
+  /** Array of social media links to display */
+  links: SocialLinkProps[];
 }
 
-const SocialIcons: React.FC<SocialIconsProps> = ({ icons }) => {
+// Internal mapping of known icons and their configurations
+const KNOWN_ICONS: Record<string, IconConfig> = {
+  linkedin: {
+    name: 'linkedin',
+    src: '/_goldstack/static/img/202412/icons/linkedin.png',
+    alt: 'LinkedIn',
+    width: 48,
+    height: 48,
+  },
+  youtube: {
+    name: 'youtube',
+    src: '/_goldstack/static/img/202412/icons/youtube.png',
+    alt: 'YouTube',
+    width: 56,
+    height: 48,
+  },
+  instagram: {
+    name: 'instagram',
+    src: '/_goldstack/static/img/202412/icons/instagram.png',
+    alt: 'Instagram',
+    width: 48,
+    height: 48,
+  },
+  twitter: {
+    name: 'twitter',
+    src: '/_goldstack/static/img/202412/icons/twitter.png',
+    alt: 'Twitter',
+    width: 48,
+    height: 48,
+  },
+  heart: {
+    name: 'heart',
+    src: '/_goldstack/static/img/202412/icons/heart.png',
+    alt: 'Website',
+    width: 44,
+    height: 48,
+  },
+};
+
+/**
+ * Component that displays a list of social media icons with links
+ */
+const SocialIcons: React.FC<SocialIconsProps> = ({ links }) => {
   return (
     <div className="flex flex-col items-start space-y-4">
-      {icons.map((icon, index) => (
-        <a
-          key={index}
-          href={icon.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center space-x-4 hover:cursor-pointer group w-full"
-        >
-          <div
-            style={{ width: '56px', height: '48px' }}
-            className="flex items-center justify-center"
+      {links.map((link, index) => {
+        const iconConfig = KNOWN_ICONS[link.icon];
+        return (
+          <a
+            key={index}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-4 hover:cursor-pointer group w-full"
           >
-            <img
-              src={icon.src}
-              alt={icon.alt}
-              width={icon.width}
-              height={icon.height}
-              className="object-contain"
-            />
-          </div>
-          <span className="text-lg font-medium group-hover:underline">
-            {icon.label}
-          </span>
-        </a>
-      ))}
+            <div
+              style={{ width: '56px', height: '48px' }}
+              className="flex items-center justify-center"
+            >
+              <img
+                src={iconConfig.src}
+                alt={iconConfig.alt}
+                width={iconConfig.width}
+                height={iconConfig.height}
+                className="object-contain"
+              />
+            </div>
+            <span className="text-lg font-medium group-hover:underline">
+              {link.label}
+            </span>
+          </a>
+        );
+      })}
     </div>
   );
 };
 
 export default SocialIcons;
 
-// Example JSON configuration and usage
-export const ICON_CONFIG: IconConfig[] = [
+// Example configuration for social links
+export const SOCIAL_LINKS: SocialLinkProps[] = [
   {
-    name: 'linkedin',
-    src: '/_goldstack/static/img/202412/icons/linkedin.png',
-    alt: 'LinkedIn',
+    icon: 'linkedin',
     label: 'LinkedIn',
-    width: 48,
-    height: 48,
     url: 'https://www.linkedin.com',
   },
   {
-    name: 'youtube',
-    src: '/_goldstack/static/img/202412/icons/youtube.png',
-    alt: 'YouTube',
+    icon: 'youtube',
     label: 'YouTube',
-    width: 56,
-    height: 48,
     url: 'https://www.youtube.com',
   },
   {
-    name: 'instagram',
-    src: '/_goldstack/static/img/202412/icons/instagram.png',
-    alt: 'Instagram',
+    icon: 'instagram',
     label: 'Instagram',
-    width: 48,
-    height: 48,
     url: 'https://www.instagram.com',
   },
   {
-    name: 'twitter',
-    src: '/_goldstack/static/img/202412/icons/twitter.png',
-    alt: 'Twitter',
+    icon: 'twitter',
     label: 'Twitter',
-    width: 48,
-    height: 48,
     url: 'https://www.twitter.com',
   },
   {
-    name: 'heart',
-    src: '/_goldstack/static/img/202412/icons/heart.png',
-    alt: 'Website',
+    icon: 'heart',
     label: 'Website',
-    width: 44,
-    height: 48,
     url: 'https://www.pureleap.com',
   },
 ];

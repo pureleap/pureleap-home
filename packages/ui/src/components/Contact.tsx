@@ -25,12 +25,9 @@ const Contact: React.FC<ContactProps> = ({ className = '' }) => {
             {line}
           </p>
         ))}
-        <a
-          href="mailto:public@pureleap.com"
-          className="text-blue-500 hover:underline text-xl font-sans mt-4"
-        >
-          public@pureleap.com
-        </a>
+        <span className="text-xl font-sans mt-4">
+          Please contact us through the social channels above.
+        </span>
       </div>
     </section>
   );
