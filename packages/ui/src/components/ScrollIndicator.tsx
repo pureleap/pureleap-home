@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
 
 const ScrollIndicator: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const checkScrollPosition = () => {
       const scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
       const isAtTop = scrollTop < 100;
       setIsVisible(isAtTop);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Check initial position
+    checkScrollPosition();
+
+    // Add scroll listener
+    window.addEventListener('scroll', checkScrollPosition);
+    return () => window.removeEventListener('scroll', checkScrollPosition);
   }, []);
 
   if (!isVisible) return null;
