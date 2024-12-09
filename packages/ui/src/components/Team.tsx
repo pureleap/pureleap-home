@@ -79,7 +79,7 @@ const Team: React.FC<TeamProps> = ({ className = '' }) => {
                 {member.description}
               </p>
             </div>
-            <div className="flex justify-center gap-4 mt-auto pt-8">
+            <div className="flex justify-center gap-4 pt-8">
               <SocialIcons links={member.socialIcons}></SocialIcons>
             </div>
           </div>
