@@ -1,5 +1,6 @@
 {
   "name": "esbuild-tailwind-ssr-plugin",
+  "sideEffects": false,
   "main": "./src/tailwindPlugin.ts",
   "scripts": {
     "build": "yarn clean && yarn compile",

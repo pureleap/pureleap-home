@@ -25,6 +25,7 @@
     "test-watch": "nodemonx --watch . --exec 'yarn test'"
   },
   "resolutions": {
+    "glob": "7.1.6",
     "glob-parent": "5.1.2",
     "json-schema": "0.4.0",
     "json5": "2.2.2",
