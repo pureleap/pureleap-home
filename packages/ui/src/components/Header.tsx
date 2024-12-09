@@ -22,7 +22,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           {/* Desktop Navigation */}
           <nav className="hidden sm:block">
             <a
-              href="#about"
+              href="/"
               className="text-black-500 hover:text-orange-500 px-3 py-2 rounded-md font-xl font-serif"
             >
               Home
@@ -65,10 +65,10 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           <div className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 text-right">
               <a
-                href="#about"
+                href="/"
                 className="block px-3 py-2 rounded-md text-base font-medium text-black-500 hover:text-orange-500 font-serif"
               >
-                About
+                Home
               </a>
             </div>
           </div>

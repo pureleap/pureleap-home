@@ -5,6 +5,7 @@ import Solutions from '../components/Solutions';
 import Team from '../components/Team';
 import Contact from '../components/Contact';
 import ScrollIndicator from '../components/ScrollIndicator';
+import Footer from '../components/Footer';
 
 export const NewIndex: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ export const NewIndex: React.FC = () => {
       <ScrollIndicator />
       <Team />
       <Contact />
+      <Footer />
     </div>
   );
 };
