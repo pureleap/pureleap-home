@@ -7,6 +7,7 @@ interface IconConfig {
   label: string;
   width: number; // width of the icon
   height: number; // height of the icon
+  url: string; // URL for the social link
 }
 
 interface SocialIconsProps {
@@ -17,16 +18,24 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ icons }) => {
   return (
     <div className="flex flex-col items-start space-y-4">
       {icons.map((icon, index) => (
-        <div key={index} className="flex items-center space-x-4">
-          <img
-            src={icon.src}
-            alt={icon.alt}
-            width={icon.width}
-            height={icon.height}
-            className="object-contain"
-          />
-          <span className="text-lg font-medium">{icon.label}</span>
-        </div>
+        <a
+          key={index}
+          href={icon.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center space-x-4 hover:cursor-pointer group w-full"
+        >
+          <div style={{ width: '56px', height: '48px' }} className="flex items-center justify-center">
+            <img
+              src={icon.src}
+              alt={icon.alt}
+              width={icon.width}
+              height={icon.height}
+              className="object-contain"
+            />
+          </div>
+          <span className="text-lg font-medium group-hover:underline">{icon.label}</span>
+        </a>
       ))}
     </div>
   );
@@ -43,6 +52,7 @@ export const ICON_CONFIG: IconConfig[] = [
     label: 'LinkedIn',
     width: 48,
     height: 48,
+    url: 'https://www.linkedin.com',
   },
   {
     name: 'youtube',
@@ -51,6 +61,7 @@ export const ICON_CONFIG: IconConfig[] = [
     label: 'YouTube',
     width: 56,
     height: 48,
+    url: 'https://www.youtube.com',
   },
   {
     name: 'instagram',
@@ -59,6 +70,7 @@ export const ICON_CONFIG: IconConfig[] = [
     label: 'Instagram',
     width: 48,
     height: 48,
+    url: 'https://www.instagram.com',
   },
   {
     name: 'twitter',
@@ -67,6 +79,7 @@ export const ICON_CONFIG: IconConfig[] = [
     label: 'Twitter',
     width: 48,
     height: 48,
+    url: 'https://www.twitter.com',
   },
   {
     name: 'heart',
@@ -75,5 +88,6 @@ export const ICON_CONFIG: IconConfig[] = [
     label: 'Website',
     width: 44,
     height: 48,
+    url: 'https://www.pureleap.com',
   },
 ];
