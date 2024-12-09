@@ -25,7 +25,10 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ icons }) => {
           rel="noopener noreferrer"
           className="flex items-center space-x-4 hover:cursor-pointer group w-full"
         >
-          <div style={{ width: '56px', height: '48px' }} className="flex items-center justify-center">
+          <div
+            style={{ width: '56px', height: '48px' }}
+            className="flex items-center justify-center"
+          >
             <img
               src={icon.src}
               alt={icon.alt}
@@ -34,7 +37,9 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ icons }) => {
               className="object-contain"
             />
           </div>
-          <span className="text-lg font-medium group-hover:underline">{icon.label}</span>
+          <span className="text-lg font-medium group-hover:underline">
+            {icon.label}
+          </span>
         </a>
       ))}
     </div>
