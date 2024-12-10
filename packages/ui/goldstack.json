@@ -24,6 +24,14 @@
           "ANY /privacy-policy": {
             "function_name": "pureleap-web-privacy-policy",
             "route": "ANY /privacy-policy"
+          },
+          "ANY /robots.txt": {
+            "function_name": "pureleap-web-robots_txt",
+            "route": "ANY /robots.txt"
+          },
+          "ANY /sitemap.xml": {
+            "function_name": "pureleap-web-sitemap_xml",
+            "route": "ANY /sitemap.xml"
           }
         },
         "domain": "dev-pureleap.home.mxro.de",
@@ -32,7 +40,7 @@
       },
       "awsUser": "awsUser",
       "awsRegion": "ap-southeast-2",
-      "tfVersion": "1.6"
+      "tfVersion": "1.7"
     },
     {
       "name": "prod",
@@ -53,6 +61,14 @@
           "ANY /privacy-policy": {
             "function_name": "pl-home-privacy-policy",
             "route": "ANY /privacy-policy"
+          },
+          "ANY /robots.txt": {
+            "function_name": "pl-home-robots_txt",
+            "route": "ANY /robots.txt"
+          },
+          "ANY /sitemap.xml": {
+            "function_name": "pl-home-sitemap_xml",
+            "route": "ANY /sitemap.xml"
           }
         },
         "lambdaNamePrefix": "pl-home",

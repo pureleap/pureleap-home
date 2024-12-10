@@ -9,48 +9,72 @@
     "names": [
       "pl-home--__index.map"
     ],
-    "generatedName": "-__index.ce6c9f8819d4629d07bc8d062499b9b6.map.json"
+    "generatedName": "-__index.405c6fca8f44b6e5404c7e0a7b4ced55.map.json"
   },
   {
     "names": [
       "pl-home--__index-bundle.js"
     ],
-    "generatedName": "-__index-bundle.b565ec6e3587dec454d69c9ef9f73501.js"
+    "generatedName": "-__index-bundle.9153b083a479b21b8dc44da9e4c373d3.js"
   },
   {
     "names": [
       "pl-home-posts.map"
     ],
-    "generatedName": "posts.7e48de6d4e27e60dc34d88d82569af49.map.json"
+    "generatedName": "posts.9e53842aa07625d7ad4495b4cdc5238c.map.json"
   },
   {
     "names": [
       "pl-home-posts-bundle.js"
     ],
-    "generatedName": "posts-bundle.410e109f4e62bf22b944371873ceeb22.js"
+    "generatedName": "posts-bundle.25cdd6d8203b365cf8d0c4ae3cf0a48e.js"
   },
   {
     "names": [
       "pl-home-anti-spam-policy.map"
     ],
-    "generatedName": "anti-spam-policy.bd196846338c2227b929c4aab372e8ce.map.json"
+    "generatedName": "anti-spam-policy.b84e68e6e6ed935cdc13763806f22600.map.json"
   },
   {
     "names": [
       "pl-home-anti-spam-policy-bundle.js"
     ],
-    "generatedName": "anti-spam-policy-bundle.3ffeff5698c91c439d94b1c3ca0d81a6.js"
+    "generatedName": "anti-spam-policy-bundle.52ce1b411a9b2ac28a0ee2d86a37487f.js"
   },
   {
     "names": [
       "pl-home-privacy-policy.map"
     ],
-    "generatedName": "privacy-policy.b8589dd4384bd1c29d7456159d946732.map.json"
+    "generatedName": "privacy-policy.6c77b91591ef97a673b914079f0f20fa.map.json"
   },
   {
     "names": [
       "pl-home-privacy-policy-bundle.js"
     ],
-    "generatedName": "privacy-policy-bundle.53d61e1545690a15471a8798d6593bd6.js"
+    "generatedName": "privacy-policy-bundle.454d546f4631d6e931f1399cf15ff0ca.js"
+  },
+  {
+    "names": [
+      "pl-home-robots_txt.map"
+    ],
+    "generatedName": "robots_txt.af684ecf134984ef6e6eb78abd871057.map.json"
+  },
+  {
+    "names": [
+      "pl-home-robots_txt-bundle.js"
+    ],
+    "generatedName": "robots_txt-bundle.b8a23e1a1ab601b810341c9a9b9a2d89.js"
+  },
+  {
+    "names": [
+      "pl-home-sitemap_xml.map"
+    ],
+    "generatedName": "sitemap_xml.5cc64c3e1d6777ecbea818b5c3ce4c6d.map.json"
+  },
+  {
+    "names": [
+      "pl-home-sitemap_xml-bundle.js"
+    ],
+    "generatedName": "sitemap_xml-bundle.59c193e01514b69d5582216e193ff7de.js"
   }
 ]
