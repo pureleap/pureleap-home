@@ -2,23 +2,38 @@ import React, { useState } from 'react';
 
 interface HeaderProps {
   className?: string;
+  visible?: boolean;
 }
 
 /**
  * Header component that provides navigation functionality
- * @param props - Component properties
+ * @param props - Component properties including visibility control
  * @returns Header component with responsive navigation
  */
-export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
+export const Header: React.FC<HeaderProps> = ({
+  className = '',
+  visible = true,
+}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 bg-gray-50 z-50 ${className}`}
+      className={`fixed top-0 left-0 right-0 bg-gray-50 z-50 transition-opacity duration-300 ${className} ${
+        visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+      }`}
       style={{ backgroundColor: '#fbfbff' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-end items-center h-16">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <a href="/" className="flex-shrink-0 h-full flex items-center">
+            <img
+              src="/_goldstack/static/img/202412/pureleap_logo_optimised.png"
+              alt="Pureleap Logo"
+              className="h-full"
+            />
+          </a>
+
           {/* Desktop Navigation */}
           <nav className="hidden sm:block">
             <a
