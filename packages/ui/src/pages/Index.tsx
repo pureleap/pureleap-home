@@ -7,7 +7,7 @@ import Contact from '../components/Contact';
 import ScrollIndicator from '../components/ScrollIndicator';
 import Footer from '../components/Footer';
 
-export const NewIndex: React.FC = () => {
+export const Index: React.FC = () => {
   return (
     <div className="font-sans">
       {/* <Header /> */}
