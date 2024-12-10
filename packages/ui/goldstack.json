@@ -17,10 +17,6 @@
             "function_name": "pureleap-web-anti-spam-policy",
             "route": "ANY /anti-spam-policy"
           },
-          "ANY /posts": {
-            "function_name": "pureleap-web-posts",
-            "route": "ANY /posts"
-          },
           "ANY /privacy-policy": {
             "function_name": "pureleap-web-privacy-policy",
             "route": "ANY /privacy-policy"
@@ -53,10 +49,6 @@
           "ANY /anti-spam-policy": {
             "function_name": "pl-home-anti-spam-policy",
             "route": "ANY /anti-spam-policy"
-          },
-          "ANY /posts": {
-            "function_name": "pl-home-posts",
-            "route": "ANY /posts"
           },
           "ANY /privacy-policy": {
             "function_name": "pl-home-privacy-policy",
