@@ -36,7 +36,7 @@ const Solutions: React.FC<SolutionsProps> = ({ className = '' }) => {
       </h2>
       <div className="flex flex-wrap justify-center gap-12 mx-auto px-4">
         {solutions.map((solution, index) => (
-          <div key={index} className="max-w-sm text-center">
+          <div key={index} className="max-w-sm text-center mb-12">
             <img
               src={solution.image}
               alt={solution.title}

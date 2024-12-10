@@ -47,7 +47,10 @@ export const Index: React.FC = () => {
   return (
     <div className="font-sans">
       <Header visible={showHeader} />
-      <div className="h-screen">
+      <div
+        className="min-h-screen pb-32"
+        style={{ backgroundColor: '#fbfbff' }}
+      >
         <Hero className="h-full" />
       </div>
       <div className="">

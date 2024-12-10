@@ -26,7 +26,7 @@ const Contact: React.FC<ContactProps> = ({ className = '' }) => {
             {line}
           </p>
         ))}
-        <span className="text-xl font-sans mt-4">
+        <span className="text-xl font-sans mt-4 text-center">
           Please contact us through the social channels above.
         </span>
       </div>
