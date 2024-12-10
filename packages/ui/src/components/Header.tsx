@@ -18,8 +18,10 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 bg-gray-50 z-50 transition-opacity duration-300 ${className} ${
-        visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+      className={`fixed top-0 left-0 right-0 bg-gray-50 z-50 transition-all ease-in-out duration-500 ${className} ${
+        visible
+          ? 'opacity-100 translate-y-0'
+          : 'opacity-0 -translate-y-2 pointer-events-none'
       }`}
       style={{ backgroundColor: '#fbfbff' }}
     >
