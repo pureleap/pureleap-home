@@ -28,6 +28,7 @@ const solutions = [
 const Solutions: React.FC<SolutionsProps> = ({ className = '' }) => {
   return (
     <section
+      id="solutions"
       className={`flex flex-col items-center justify-center pb-12 ${className}`}
       style={{ backgroundColor: '#fbfbff' }}
     >

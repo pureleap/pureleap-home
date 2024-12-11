@@ -29,7 +29,7 @@ export const Index: React.FC = () => {
       );
       const scrollPosition =
         window.pageYOffset || document.documentElement.scrollTop;
-      setShowHeader(scrollPosition >= viewportHeight);
+      setShowHeader(scrollPosition >= viewportHeight + 120);
     }, 100),
     []
   );
