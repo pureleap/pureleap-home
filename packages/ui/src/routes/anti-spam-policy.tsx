@@ -15,10 +15,11 @@ const SpamPolicyPage = (props: { posts: string[] }): JSX.Element => {
 export const handler: SSRHandler = async (event, context) => {
   return renderPage({
     component: SpamPolicyPage,
-    appendToHead: '<title>Posts</title>',
-    properties: {
-      posts: ['post1', 'post2', 'post3', 'posts4'],
-    },
+    appendToHead: `<title>Anti-Spam Policy - Pureleap</title>
+        <meta name="description" content="Describes the Anti-Spam Policy for Pureleap Pty. Ltd.">
+        <meta name="revisit-after" content="31 days">
+    `,
+    properties: {},
     entryPoint: __filename,
     event: event,
   });

@@ -18,7 +18,12 @@ const Index = (): JSX.Element => {
 export const handler: SSRHandler = async (event, context) => {
   return renderPage({
     component: Index,
-    appendToHead: '<title>Pureleap - Be chill. Create from Love.</title>',
+    appendToHead: `<title>Pureleap: Be chill and create from love ❤</title>
+    <meta name="title" content="Pureleap: Be chill and create from love ❤">
+    <meta name="description" content="Crafting small, thoughtful products helping busy professionals and entrepreneurs work and live with peace and purpose.">
+    <meta name="keywords" content="productivity, software development, entrepreneurship, peace, self improvement, life">
+    <meta name="revisit-after" content="7 days">
+    `,
     properties: {},
     entryPoint: __filename,
     event,

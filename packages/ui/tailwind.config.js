@@ -8,7 +8,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        virgil: ['Virgil', 'sans-serif'],
         robotoslab: ['Roboto Slab', 'serif'],
         hindvadodara: ['Hind Vadodara', 'sans-serif'],
         serif: ['Roboto Slab', 'serif'],

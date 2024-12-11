@@ -36,18 +36,16 @@ const renderDocument = async (
     </script>
 
     <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     ${props.injectIntoHead}
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-    <style>
-@font-face {
-    font-family: 'Virgil';
-    src: url('/_goldstack/static/img/202304/Virgil.woff2') format('woff2');
-}
-    </style>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
