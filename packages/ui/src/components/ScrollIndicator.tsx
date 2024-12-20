@@ -22,8 +22,17 @@ const ScrollIndicator: React.FC = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <a href="#solutions">
+    <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-50">
+      <a
+        href="#solutions"
+        onClick={(e) => {
+          e.preventDefault();
+          const element = document.getElementById('solutions');
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }}
+      >
         <svg
           className="w-8 h-8 text-gray-400"
           fill="none"

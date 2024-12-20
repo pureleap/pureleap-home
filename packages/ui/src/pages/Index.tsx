@@ -23,13 +23,9 @@ export const Index: React.FC = () => {
 
   const handleScroll = useCallback(
     throttle(() => {
-      const viewportHeight = Math.max(
-        document.documentElement.clientHeight,
-        window.innerHeight || 0
-      );
       const scrollPosition =
         window.pageYOffset || document.documentElement.scrollTop;
-      setShowHeader(scrollPosition >= viewportHeight + 120);
+      setShowHeader(scrollPosition >= 200);
     }, 100),
     []
   );
@@ -47,14 +43,11 @@ export const Index: React.FC = () => {
   return (
     <div className="font-sans">
       <Header visible={showHeader} />
-      <div
-        className="min-h-screen pb-32"
-        style={{ backgroundColor: '#fbfbff' }}
-      >
-        <Hero className="h-full" />
+      <div className="min-h-screen" style={{ backgroundColor: '#fbfbff' }}>
+        <Hero />
       </div>
-      <div className="">
-        <Solutions className="" />
+      <div className="pt-16" style={{ backgroundColor: '#fbfbff' }}>
+        <Solutions />
       </div>
       <ScrollIndicator />
       <Team />
