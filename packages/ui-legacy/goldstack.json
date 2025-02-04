@@ -1,0 +1,75 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "server-side-rendering",
+  "template": "server-side-rendering",
+  "templateVersion": "0.1.31",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "dev",
+      "configuration": {
+        "lambdas": {
+          "ANY /": {
+            "function_name": "pureleap-web--__index",
+            "route": "ANY /"
+          },
+          "ANY /anti-spam-policy": {
+            "function_name": "pureleap-web-anti-spam-policy",
+            "route": "ANY /anti-spam-policy"
+          },
+          "ANY /privacy-policy": {
+            "function_name": "pureleap-web-privacy-policy",
+            "route": "ANY /privacy-policy"
+          },
+          "ANY /robots.txt": {
+            "function_name": "pureleap-web-robots_txt",
+            "route": "ANY /robots.txt"
+          },
+          "ANY /sitemap.xml": {
+            "function_name": "pureleap-web-sitemap_xml",
+            "route": "ANY /sitemap.xml"
+          }
+        },
+        "domain": "dev-pureleap.home.mxro.de",
+        "lambdaNamePrefix": "pureleap-web",
+        "hostedZoneDomain": "mxro.de"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "ap-southeast-2",
+      "tfVersion": "1.7"
+    },
+    {
+      "name": "prod",
+      "configuration": {
+        "lambdas": {
+          "ANY /": {
+            "function_name": "pl-home--__index",
+            "route": "ANY /"
+          },
+          "ANY /anti-spam-policy": {
+            "function_name": "pl-home-anti-spam-policy",
+            "route": "ANY /anti-spam-policy"
+          },
+          "ANY /privacy-policy": {
+            "function_name": "pl-home-privacy-policy",
+            "route": "ANY /privacy-policy"
+          },
+          "ANY /robots.txt": {
+            "function_name": "pl-home-robots_txt",
+            "route": "ANY /robots.txt"
+          },
+          "ANY /sitemap.xml": {
+            "function_name": "pl-home-sitemap_xml",
+            "route": "ANY /sitemap.xml"
+          }
+        },
+        "lambdaNamePrefix": "pl-home",
+        "domain": "pureleap.com",
+        "hostedZoneDomain": "pureleap.com"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2",
+      "tfStateKey": "server-side-rendering-prod-b4bce157dc39154792e9.tfstate"
+    }
+  ]
+}

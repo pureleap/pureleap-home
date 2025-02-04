@@ -1,3 +1,13 @@
-distLambda/
-static/generated
-*.zip
+.next/
+webDist/
+out/
+dist/
+cache/
+.env.production
+node_modules
+lambda.zip
+yarn-error.log
+tsconfig.tsbuildinfo
+coverage/
+goldstackLocal/
+.localInstances.json
