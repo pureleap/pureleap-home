@@ -19,8 +19,16 @@
       "regex": "^\\/404$"
     },
     {
+      "page": "/anti-spam-policy",
+      "regex": "^\\/anti-spam-policy$"
+    },
+    {
       "page": "/index",
       "regex": "^\\/index$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^\\/privacy-policy$"
     }
   ],
   "staticRoutes": [
@@ -29,6 +37,18 @@
       "regex": "^/(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/anti-spam-policy",
+      "regex": "^/anti\\-spam\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/anti\\-spam\\-policy(?:/)?$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^/privacy\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy\\-policy(?:/)?$"
     }
   ],
   "dataRoutes": [],
