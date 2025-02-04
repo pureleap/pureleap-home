@@ -3,8 +3,8 @@ import Script from 'next/script';
 import Footer from '../src/components/Footer';
 import Header from '../src/components/Header';
 import Head from 'next/head';
-
-
+import type { EmailRequest } from 'api';
+import { getEndpoint } from 'api';
 
 const siteKey = '6LcCKs0qAAAAAPgqF5WMUCZKXHhPURI9188wK24W'; // process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
@@ -65,8 +65,7 @@ const ContactForm: React.FC = () => {
         action: 'submit',
       });
 
-      // Placeholder API call
-      const response = await fetch('/api/contact', {
+      const response = await fetch(`${getEndpoint()}/email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

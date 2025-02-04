@@ -6404,6 +6404,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api@workspace:packages/api"
   dependencies:
+    "@aws-sdk/client-ses": "npm:^3.645.0"
     "@goldstack/template-lambda-api-cli": "npm:^0.6.56"
     "@goldstack/utils-aws-http-api-local": "npm:^0.3.51"
     "@goldstack/utils-esbuild": "npm:^0.5.12"
@@ -6418,6 +6419,7 @@ __metadata:
     "@yarnpkg/esbuild-plugin-pnp": "npm:^3.0.0-rc.15"
     date-fns: "npm:^2.28.0"
     dotenv: "npm:^16.4.7"
+    email-send: "workspace:^"
     esbuild: "npm:^0.24.2"
     find-free-port: "npm:^2.0.0"
     jest: "npm:^29.7.0"
@@ -8507,7 +8509,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"email-send@workspace:packages/email-send":
+"email-send@workspace:^, email-send@workspace:packages/email-send":
   version: 0.0.0-use.local
   resolution: "email-send@workspace:packages/email-send"
   dependencies:
