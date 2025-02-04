@@ -24,6 +24,9 @@
     "test": "yarn workspaces foreach -Wv run test",
     "test-watch": "nodemonx --watch . --exec 'yarn test'"
   },
+  "resolutions": {
+    "generic-names": "4.0.0"
+  },
   "devDependencies": {
     "@goldstack/nodemonx": "^0.4.23",
     "@goldstack/utils-typescript-references": "^0.3.13",

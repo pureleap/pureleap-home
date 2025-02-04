@@ -1,5 +1,24 @@
 {
+  "name": "email-send",
+  "version": "0.1.0",
+  "license": "",
   "author": "",
+  "sideEffects": false,
+  "main": "src/ses.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "clean": "rimraf dist/",
+    "compile": "tsc -p tsconfig.json",
+    "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js --runInBand",
+    "infra": "yarn template-ts infra",
+    "prepublishOnly": "yarn run build",
+    "template": "yarn template-ts",
+    "template-ts": "ts-node --swc scripts/template.ts",
+    "test": "GOLDSTACK_DEPLOYMENT=local jest --passWithNoTests --config=./jest.config.js --runInBand"
+  },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.645.0",
     "@goldstack/template-email-send": "^0.4.52",
@@ -16,24 +35,5 @@
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
-  },
-  "files": [
-    "dist"
-  ],
-  "license": "",
-  "main": "src/ses.ts",
-  "name": "email-send",
-  "scripts": {
-    "build": "yarn clean && yarn compile",
-    "clean": "rimraf dist/",
-    "compile": "tsc -p tsconfig.json",
-    "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js --runInBand",
-    "infra": "yarn template-ts infra",
-    "prepublishOnly": "yarn run build",
-    "template": "yarn template-ts",
-    "template-ts": "ts-node --swc scripts/template.ts",
-    "test": "GOLDSTACK_DEPLOYMENT=local jest --passWithNoTests --config=./jest.config.js --runInBand"
-  },
-  "sideEffects": false,
-  "version": "0.1.0"
+  }
 }
