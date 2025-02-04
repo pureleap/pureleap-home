@@ -8603,6 +8603,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.3.18"],\
           ["@types/testing-library__jest-dom", "npm:5.14.9"],\
           ["@types/testing-library__react", "npm:10.2.0"],\
+          ["autoprefixer", "virtual:79b246051fb32bd091613499376a49e06b5256bf715884963884c0cb3f22d4ea1cd2cc7c814d1f858d8f5d0a66f32347a03a76772d8b9b636d0d3abc9d98719f#npm:10.4.20"],\
           ["concurrently", "npm:7.3.0"],\
           ["eslint-config-next", "virtual:79b246051fb32bd091613499376a49e06b5256bf715884963884c0cb3f22d4ea1cd2cc7c814d1f858d8f5d0a66f32347a03a76772d8b9b636d0d3abc9d98719f#npm:15.1.6"],\
           ["file-loader", "virtual:79b246051fb32bd091613499376a49e06b5256bf715884963884c0cb3f22d4ea1cd2cc7c814d1f858d8f5d0a66f32347a03a76772d8b9b636d0d3abc9d98719f#npm:6.2.0"],\
@@ -8610,6 +8611,7 @@ const RAW_RUNTIME_STATE =
           ["jest-environment-jsdom", "virtual:79b246051fb32bd091613499376a49e06b5256bf715884963884c0cb3f22d4ea1cd2cc7c814d1f858d8f5d0a66f32347a03a76772d8b9b636d0d3abc9d98719f#npm:29.7.0"],\
           ["jest-transform-stub", "npm:2.0.0"],\
           ["next", "virtual:79b246051fb32bd091613499376a49e06b5256bf715884963884c0cb3f22d4ea1cd2cc7c814d1f858d8f5d0a66f32347a03a76772d8b9b636d0d3abc9d98719f#npm:15.1.6"],\
+          ["postcss", "npm:8.5.1"],\
           ["react", "npm:19.0.0"],\
           ["react-dom", "virtual:79b246051fb32bd091613499376a49e06b5256bf715884963884c0cb3f22d4ea1cd2cc7c814d1f858d8f5d0a66f32347a03a76772d8b9b636d0d3abc9d98719f#npm:19.0.0"],\
           ["react-is", "npm:18.3.1"],\
@@ -8617,6 +8619,7 @@ const RAW_RUNTIME_STATE =
           ["rimraf", "npm:3.0.2"],\
           ["svg-url-loader", "virtual:79b246051fb32bd091613499376a49e06b5256bf715884963884c0cb3f22d4ea1cd2cc7c814d1f858d8f5d0a66f32347a03a76772d8b9b636d0d3abc9d98719f#npm:8.0.0"],\
           ["swr", "virtual:79b246051fb32bd091613499376a49e06b5256bf715884963884c0cb3f22d4ea1cd2cc7c814d1f858d8f5d0a66f32347a03a76772d8b9b636d0d3abc9d98719f#npm:0.4.2"],\
+          ["tailwindcss", "npm:3.4.17"],\
           ["ts-node", "virtual:08380f595b78318dbae4d56418ecf44623719062271b397a6efbf3860dcd55e1123a29047ad3f01b8afe7818b65ea13626c6de25e517c674db3082b24e3f7b3f#npm:10.9.2"],\
           ["typescript", "patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"]\
         ],\
@@ -9009,6 +9012,25 @@ const RAW_RUNTIME_STATE =
           ["autoprefixer", "npm:10.4.20"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["virtual:79b246051fb32bd091613499376a49e06b5256bf715884963884c0cb3f22d4ea1cd2cc7c814d1f858d8f5d0a66f32347a03a76772d8b9b636d0d3abc9d98719f#npm:10.4.20", {\
+        "packageLocation": "./.yarn/__virtual__/autoprefixer-virtual-bd0768471a/0/cache/autoprefixer-npm-10.4.20-dd5fd05d27-d3c4b562fc.zip/node_modules/autoprefixer/",\
+        "packageDependencies": [\
+          ["autoprefixer", "virtual:79b246051fb32bd091613499376a49e06b5256bf715884963884c0cb3f22d4ea1cd2cc7c814d1f858d8f5d0a66f32347a03a76772d8b9b636d0d3abc9d98719f#npm:10.4.20"],\
+          ["@types/postcss", null],\
+          ["browserslist", "npm:4.24.2"],\
+          ["caniuse-lite", "npm:1.0.30001687"],\
+          ["fraction.js", "npm:4.3.7"],\
+          ["normalize-range", "npm:0.1.2"],\
+          ["picocolors", "npm:1.1.1"],\
+          ["postcss", "npm:8.5.1"],\
+          ["postcss-value-parser", "npm:4.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/postcss",\
+          "postcss"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:818122d9fc6446df8b88a4e58e7698943dd1905bee7ac86d9352ca6b524ab4813e9e1b3859d836e804d0270a233e55ccf53d9cc6fbf74ce959c0c0d14ed0a79a#npm:10.4.20", {\
         "packageLocation": "./.yarn/__virtual__/autoprefixer-virtual-d55deaf972/0/cache/autoprefixer-npm-10.4.20-dd5fd05d27-d3c4b562fc.zip/node_modules/autoprefixer/",\
@@ -18626,6 +18648,16 @@ const RAW_RUNTIME_STATE =
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:8.5.1", {\
+        "packageLocation": "./.yarn/cache/postcss-npm-8.5.1-90fd898a99-1fbd287531.zip/node_modules/postcss/",\
+        "packageDependencies": [\
+          ["postcss", "npm:8.5.1"],\
+          ["nanoid", "npm:3.3.8"],\
+          ["picocolors", "npm:1.1.1"],\
+          ["source-map-js", "npm:1.2.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["postcss-filter-plugins", [\
@@ -21456,6 +21488,35 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/tailwindcss-npm-3.4.16-ed67e6b6cd-d84b3d9bd8.zip/node_modules/tailwindcss/",\
         "packageDependencies": [\
           ["tailwindcss", "npm:3.4.16"],\
+          ["@alloc/quick-lru", "npm:5.2.0"],\
+          ["arg", "npm:5.0.2"],\
+          ["chokidar", "npm:3.6.0"],\
+          ["didyoumean", "npm:1.2.2"],\
+          ["dlv", "npm:1.1.3"],\
+          ["fast-glob", "npm:3.3.2"],\
+          ["glob-parent", "npm:5.1.2"],\
+          ["is-glob", "npm:4.0.3"],\
+          ["jiti", "npm:1.21.6"],\
+          ["lilconfig", "npm:3.1.3"],\
+          ["micromatch", "npm:4.0.8"],\
+          ["normalize-path", "npm:3.0.0"],\
+          ["object-hash", "npm:3.0.0"],\
+          ["picocolors", "npm:1.1.1"],\
+          ["postcss", "npm:8.4.49"],\
+          ["postcss-import", "virtual:ed67e6b6cd5d4a3e5ba0ec71a0b92c7a8c6c6af016ef7ce4e86e44bec93f3b6ce76b321528451e9d56657c891a44bd2b855fd324261e1774a3629513a0c9a259#npm:15.1.0"],\
+          ["postcss-js", "virtual:ed67e6b6cd5d4a3e5ba0ec71a0b92c7a8c6c6af016ef7ce4e86e44bec93f3b6ce76b321528451e9d56657c891a44bd2b855fd324261e1774a3629513a0c9a259#npm:4.0.1"],\
+          ["postcss-load-config", "virtual:ed67e6b6cd5d4a3e5ba0ec71a0b92c7a8c6c6af016ef7ce4e86e44bec93f3b6ce76b321528451e9d56657c891a44bd2b855fd324261e1774a3629513a0c9a259#npm:4.0.2"],\
+          ["postcss-nested", "virtual:ed67e6b6cd5d4a3e5ba0ec71a0b92c7a8c6c6af016ef7ce4e86e44bec93f3b6ce76b321528451e9d56657c891a44bd2b855fd324261e1774a3629513a0c9a259#npm:6.2.0"],\
+          ["postcss-selector-parser", "npm:6.1.2"],\
+          ["resolve", "patch:resolve@npm%3A1.22.8#optional!builtin<compat/resolve>::version=1.22.8&hash=c3c19d"],\
+          ["sucrase", "npm:3.35.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.4.17", {\
+        "packageLocation": "./.yarn/cache/tailwindcss-npm-3.4.17-403059edc1-b0e00533ae.zip/node_modules/tailwindcss/",\
+        "packageDependencies": [\
+          ["tailwindcss", "npm:3.4.17"],\
           ["@alloc/quick-lru", "npm:5.2.0"],\
           ["arg", "npm:5.0.2"],\
           ["chokidar", "npm:3.6.0"],\

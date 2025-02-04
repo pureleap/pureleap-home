@@ -6,6 +6,17 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-SRW19ZZQLW"
+          ></script>
+          <script
+            content={`window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SRW19ZZQLW');`}
+          ></script>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -23,6 +34,23 @@ class MyDocument extends Document {
             sizes="16x16"
             href="/favicon-16x16.png"
           />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
+
+          <link
+            href="https://fonts.googleapis.com/css?family=Roboto%20Slab&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Hind%20Vadodara&display=swap"
+            rel="stylesheet"
+          />
+
           <link rel="manifest" href="/site.webmanifest" />
         </Head>
         <body>

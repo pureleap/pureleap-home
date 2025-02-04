@@ -1,52 +1,86 @@
-import React, { useState } from 'react';
-import useSWR from 'swr';
+import React, { useState, useEffect, useCallback } from 'react';
+import Header from '../src/components/Header';
+import Hero from '../src/components/Hero';
+import Solutions from '../src/components/Solutions';
+import Team from '../src/components/Team';
+import Contact from '../src/components/Contact';
+import ScrollIndicator from '../src/components/ScrollIndicator';
+import Footer from '../src/components/Footer';
+import Head from 'next/head';
 
-import styles from './index.module.css';
+export const Index: React.FC = () => {
+  const [showHeader, setShowHeader] = useState(false);
 
-import ReactIcon from './../src/icons/react.svg';
-import RocketLaunchImg from './../src/img/rocket-launch.jpg';
+  const throttle = (func: Function, limit: number) => {
+    let inThrottle: boolean;
+    return function (this: any, ...args: any[]) {
+      if (!inThrottle) {
+        func.apply(this, args);
+        inThrottle = true;
+        setTimeout(() => (inThrottle = false), limit);
+      }
+    };
+  };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const fetcher = (url: string): any => fetch(url).then((r) => r.json());
-
-const FetchedContent = (): JSX.Element => {
-  const { data, error } = useSWR(
-    'https://jsonplaceholder.typicode.com/todos/1',
-    fetcher
+  const handleScroll = useCallback(
+    throttle(() => {
+      const viewportHeight = Math.max(
+        document.documentElement.clientHeight,
+        window.innerHeight || 0
+      );
+      const scrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+      setShowHeader(scrollPosition >= viewportHeight + 120);
+    }, 100),
+    []
   );
 
-  if (error) {
-    return <div>Cannot load data</div>;
-  }
-
-  if (!data) {
-    return <div>Loading ...</div>;
-  }
-
-  return <div>{data && <div>Data: {'' + data.title}</div>}</div>;
-};
-
-const HomePage = (): JSX.Element => {
-  const [displayData, setDisplayData] = useState(false);
-
-  const toggleData = (): void => {
-    setDisplayData(!displayData);
-  };
+  useEffect(() => {
+    handleScroll(); // Check initial scroll position
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
+  }, [handleScroll]);
 
   return (
     <>
-      <h1 className={styles.title}>Welcome to Next.js</h1>
-      <p>
-        <img src={ReactIcon || 'dummy'} width="60"></img>
-      </p>
-      <p>Goldstack deployment: {process.env.GOLDSTACK_DEPLOYMENT}</p>
-      <button onClick={toggleData}>Toggle Data Display</button>
-      {displayData && <FetchedContent />}
-      <p>
-        <img src={RocketLaunchImg || 'dummy'} width="800"></img>
-      </p>
+      <Head>
+        <title>Pureleap: Be chill and create from love ❤</title>
+        <meta
+          name="title"
+          content="Pureleap: Be chill and create from love ❤"
+        />
+        <meta
+          name="description"
+          content="Crafting small, thoughtful products helping busy professionals and entrepreneurs work and live with peace and purpose."
+        />
+        <meta
+          name="keywords"
+          content="productivity, software development, entrepreneurship, peace, self improvement, life"
+        />
+        <meta name="revisit-after" content="7 days"></meta>
+      </Head>
+      <div className="font-sans">
+        <Header visible={showHeader} />
+        <div
+          className="min-h-screen pb-32"
+          style={{ backgroundColor: '#fbfbff' }}
+        >
+          <Hero className="h-full" />
+        </div>
+        <div className="">
+          <Solutions className="" />
+        </div>
+        <ScrollIndicator />
+        <Team />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 };
 
-export default HomePage;
+export default Index;
