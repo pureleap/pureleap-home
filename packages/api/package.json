@@ -1,11 +1,33 @@
 {
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API build from multiple Lambdas behind an API gateway",
+  "license": "",
   "author": "",
+  "sideEffects": false,
+  "main": "src/module.ts",
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "build-lambda": "yarn template build",
+    "build-lambda-ts": "yarn template-ts build",
+    "clean": "rimraf ./dist && rimraf ./distLambda",
+    "compile": "tsc --build",
+    "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js --runInBand",
+    "deploy": "yarn build-lambda \"$@\" && yarn template deploy \"$@\"",
+    "deploy-ts": "yarn build-lambda-ts \"$@\" && yarn template-ts deploy \"$@\"",
+    "infra": "yarn template infra \"$@\"",
+    "start": "PORT=5054 CORS=http://localhost:3000 GOLDSTACK_DEPLOYMENT=local ts-node scripts/start.ts",
+    "template": "yarn template-ts",
+    "template-ts": "ts-node --swc scripts/template.ts",
+    "test": "TEST_SERVER_PORT=50321 CORS=http://localhost:3000 GOLDSTACK_DEPLOYMENT=local jest --passWithNoTests --config=jest.config.js --runInBand",
+    "test-watch": "yarn test --watch",
+    "watch": "PORT=5054 CORS=http://localhost:3000 GOLDSTACK_DEPLOYMENT=local ts-node-dev --respawn ./scripts/start.ts"
+  },
   "dependencies": {
     "@goldstack/utils-esbuild": "^0.5.12",
     "date-fns": "^2.28.0",
     "source-map-support": "^0.5.21"
   },
-  "description": "API build from multiple Lambdas behind an API gateway",
   "devDependencies": {
     "@goldstack/template-lambda-api-cli": "^0.6.56",
     "@goldstack/utils-aws-http-api-local": "^0.3.51",
@@ -28,27 +50,5 @@
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.2"
-  },
-  "license": "",
-  "main": "src/module.ts",
-  "name": "serverless-api",
-  "scripts": {
-    "build": "yarn clean && yarn compile",
-    "build-lambda": "yarn template build",
-    "build-lambda-ts": "yarn template-ts build",
-    "clean": "rimraf ./dist && rimraf ./distLambda",
-    "compile": "tsc --build",
-    "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js --runInBand",
-    "deploy": "yarn build-lambda \"$@\" && yarn template deploy \"$@\"",
-    "deploy-ts": "yarn build-lambda-ts \"$@\" && yarn template-ts deploy \"$@\"",
-    "infra": "yarn template infra \"$@\"",
-    "start": "PORT=5054 CORS=http://localhost:3000 GOLDSTACK_DEPLOYMENT=local ts-node scripts/start.ts",
-    "template": "yarn template-ts",
-    "template-ts": "ts-node --swc scripts/template.ts",
-    "test": "TEST_SERVER_PORT=50321 CORS=http://localhost:3000 GOLDSTACK_DEPLOYMENT=local jest --passWithNoTests --config=jest.config.js --runInBand",
-    "test-watch": "yarn test --watch",
-    "watch": "PORT=5054 CORS=http://localhost:3000 GOLDSTACK_DEPLOYMENT=local ts-node-dev --respawn ./scripts/start.ts"
-  },
-  "sideEffects": false,
-  "version": "1.0.0"
+  }
 }

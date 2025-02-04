@@ -1,6 +1,6 @@
 {
   "$schema": "./schemas/package.schema.json",
-  "name": "server-side-rendering",
+  "name": "ui-legacy",
   "template": "server-side-rendering",
   "templateVersion": "0.1.31",
   "configuration": {},
@@ -36,7 +36,8 @@
       },
       "awsUser": "awsUser",
       "awsRegion": "ap-southeast-2",
-      "tfVersion": "1.7"
+      "tfVersion": "1.7",
+      "tfStateKey": "server-side-rendering-dev-d7c0218744f6ce74674c.tfstate"
     },
     {
       "name": "prod",

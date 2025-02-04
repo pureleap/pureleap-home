@@ -1,6 +1,6 @@
 {
   "$schema": "./schemas/package.schema.json",
-  "name": "app-nextjs",
+  "name": "ui",
   "template": "app-nextjs",
   "templateVersion": "0.1.102",
   "configuration": {},

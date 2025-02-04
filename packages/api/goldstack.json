@@ -1,6 +1,6 @@
 {
   "$schema": "./schemas/package.schema.json",
-  "name": "serverless-api",
+  "name": "api",
   "template": "serverless-api",
   "templateVersion": "0.1.60",
   "configuration": {},
