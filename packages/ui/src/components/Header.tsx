@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import PureleapLogo from './../img/pureleap_logo_optimised.png';
+
 interface HeaderProps {
   className?: string;
   visible?: boolean;
@@ -29,11 +31,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <a href="/" className="flex-shrink-0 h-full flex items-center">
-            <img
-              src="/_goldstack/static/img/202412/pureleap_logo_optimised.png"
-              alt="Pureleap Logo"
-              className="h-full"
-            />
+            <img src={PureleapLogo} alt="Pureleap Logo" className="h-full" />
           </a>
 
           {/* Desktop Navigation */}
