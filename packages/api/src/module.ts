@@ -8,6 +8,8 @@ let testServerPort: null | number = null;
 
 let testServer: any = null;
 
+export type { EmailRequest } from './routes/email';
+
 if (process.env.TEST_SERVER_PORT) {
   testServerPort = parseInt(process.env.TEST_SERVER_PORT);
 }

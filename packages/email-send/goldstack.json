@@ -12,7 +12,8 @@
         "hostedZoneDomain": "pureleap.com"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "email-send-prod-074f6a651abdb2c89a5e.tfstate"
     }
   ]
 }

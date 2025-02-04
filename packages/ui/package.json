@@ -27,6 +27,7 @@
     "web:watch": "yarn web:build $@ && concurrently \"reload --dir ./webDist --watch-dir ./webDist --port 8071 --browser\" "
   },
   "dependencies": {
+    "api": "workspace:^",
     "next": "^15",
     "react": "^19",
     "react-dom": "^19",
