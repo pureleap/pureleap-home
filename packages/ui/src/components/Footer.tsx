@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col sm:flex-row justify-between items-start">
           <div className="text-gray-800 mb-4 sm:mb-0 font-sans">
-            © 2024 Pureleap Pty. Ltd.
+            © 2025 Pureleap Pty. Ltd.
           </div>
           <div className="text-gray-800 flex flex-col">
             <h3 className="font-sans font-bold mb-2">Legal</h3>

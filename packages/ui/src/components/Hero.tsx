@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PureleapLogo from './../img/pureleap_logo_optimised.png';
+
 interface HeaderProps {
   className?: string;
 }
@@ -12,7 +14,7 @@ const Hero: React.FC<HeaderProps> = ({ className = '' }) => {
     >
       <div className="flex-1" />
       <img
-        src="/_goldstack/static/img/202412/pureleap_logo_optimised.png"
+        src={PureleapLogo}
         alt="Pureleap Logo"
         className="mx-auto"
         style={{ width: '675px' }}

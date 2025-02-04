@@ -2,20 +2,15 @@
   {
     "name": "prod",
     "terraform": {
-      "gateway_url": {
+      "edge_function_name": {
         "sensitive": false,
         "type": "string",
-        "value": "https://l8hv7b8mh7.execute-api.us-west-2.amazonaws.com"
+        "value": "pureleap-com-edge"
       },
-      "public_files_bucket": {
+      "website_cdn_root_id": {
         "sensitive": false,
         "type": "string",
-        "value": "pureleap.com-public-files-3eaf686f"
-      },
-      "static_files_bucket": {
-        "sensitive": false,
-        "type": "string",
-        "value": "pureleap.com-static-files-3eaf686f"
+        "value": "E290BMVDF8DQ2D"
       }
     }
   }

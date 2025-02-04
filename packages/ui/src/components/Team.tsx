@@ -1,5 +1,8 @@
 import React from 'react';
-import SocialIcons, { SOCIAL_LINKS } from './SocialIcons';
+import SocialIcons from './SocialIcons';
+
+import Max from './../img/max.png';
+import Shally from './../img/shally2.jpg';
 
 interface TeamProps {
   className?: string;
@@ -11,7 +14,7 @@ const team = [
     role: 'chief chill officer',
     description:
       'Passionate coder, former lecturer, and corporate veteran now full-time wanna-be chill dude.',
-    imagePath: '/_goldstack/static/img/202412/max.png',
+    imagePath: Max,
     socialIcons: [
       {
         icon: 'linkedin',
@@ -35,7 +38,7 @@ const team = [
     role: 'the boss',
     description:
       'Ex-lawyer turned software engineer, making sure no corners are cut.',
-    imagePath: '/_goldstack/static/img/202412/shally2.jpg',
+    imagePath: Shally,
     socialIcons: [
       {
         icon: 'linkedin',

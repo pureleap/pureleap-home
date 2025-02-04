@@ -1,0 +1,21 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "api",
+  "template": "serverless-api",
+  "templateVersion": "0.1.60",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "prod",
+      "configuration": {
+        "lambdas": {},
+        "lambdaNamePrefix": "plapi-",
+        "apiDomain": "api.pureleap.com",
+        "hostedZoneDomain": "pureleap.com",
+        "cors": "https://pureleap.com"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}

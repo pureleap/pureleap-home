@@ -1,33 +1,25 @@
 variable "aws_region" {
-  description = "Region where the Lambda is deployed."
-  type = string
-}
-
-
-variable "domain" {
-  description = "Domain under which the application should be deployed."
+  description = "Region where S3 buckets are deployed."
   type = string
 }
 
 variable "hosted_zone_domain" {
-  description = "Domain for a hosted zone in AWS Route 53 that domain will be configured in."
+  description = "Domain of the Route 53 hosted zone this website domain should be added to"
   type = string
 }
 
-variable "name" {
-  description = "Goldstack deployment name."
+variable "website_domain" {
+  description = "Main website domain, e.g. cloudmaniac.net"
   type = string
 }
 
-variable "cors" {
-  description = "Domain for an UI that should be allowed to access this server."
+variable "website_domain_redirect" {
+  description = "Secondary domain that will redirect to the main domain"
+  default = null
   type = string
-  default = ""
 }
 
-# Add routes https://github.com/terraform-aws-modules/terraform-aws-apigateway-v2/blob/master/variables.tf#L191
-# see here for different variable types https://www.terraform.io/language/values/variables
-variable "lambdas" {
-  description = "Map of endpoint and lambdas for API"
-  type        = map
+variable "default_cache_duration" {
+  description = "Default duration for which resources will be cached"
+  type = number
 }

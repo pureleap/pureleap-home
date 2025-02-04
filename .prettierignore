@@ -15,4 +15,5 @@ node_modules/
 .pnp.loader.mjs
 .yarnrc.yml
 .yarn/
+packages/ui-legacy/static/
 README.md

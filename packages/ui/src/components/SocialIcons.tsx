@@ -1,5 +1,11 @@
 import React from 'react';
 
+import LinkedIn from './../icons/linkedin.png';
+import YouTube from './../icons/youtube.png';
+import Instagram from './../icons/instagram.png';
+import Twitter from './../icons/twitter.png';
+import Heart from './../icons/heart.png';
+
 /**
  * Configuration for a known social media icon
  */
@@ -35,35 +41,35 @@ interface SocialIconsProps {
 const KNOWN_ICONS: Record<string, IconConfig> = {
   linkedin: {
     name: 'linkedin',
-    src: '/_goldstack/static/img/202412/icons/linkedin.png',
+    src: LinkedIn,
     alt: 'LinkedIn',
     width: 48,
     height: 48,
   },
   youtube: {
     name: 'youtube',
-    src: '/_goldstack/static/img/202412/icons/youtube.png',
+    src: YouTube,
     alt: 'YouTube',
     width: 56,
     height: 48,
   },
   instagram: {
     name: 'instagram',
-    src: '/_goldstack/static/img/202412/icons/instagram.png',
+    src: Instagram,
     alt: 'Instagram',
     width: 48,
     height: 48,
   },
   twitter: {
     name: 'twitter',
-    src: '/_goldstack/static/img/202412/icons/twitter.png',
+    src: Twitter,
     alt: 'Twitter',
     width: 48,
     height: 48,
   },
   heart: {
     name: 'heart',
-    src: '/_goldstack/static/img/202412/icons/heart.png',
+    src: Heart,
     alt: 'Website',
     width: 44,
     height: 48,

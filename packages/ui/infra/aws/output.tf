@@ -1,12 +1,9 @@
-
-output "gateway_url" {
-  value = aws_apigatewayv2_api.api.api_endpoint
+output "website_cdn_root_id" {
+  description = "Main CloudFront Distribution ID"
+  value       = aws_cloudfront_distribution.website_cdn_root.id
 }
 
-output "static_files_bucket" {
-  value = aws_s3_bucket.static_files.bucket
-}
-
-output "public_files_bucket" {
-  value = aws_s3_bucket.public_files.bucket
+output "edge_function_name" {
+  description = "Lambda@Edge name for routing"
+  value       = aws_lambda_function.edge.function_name 
 }

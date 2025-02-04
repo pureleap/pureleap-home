@@ -4,21 +4,25 @@ interface SolutionsProps {
   className?: string;
 }
 
+import MagicTablet from './../img/magic_tablet_reposition_fixed.png';
+import TeaCup from './../img/tea_cup.png';
+import Notebook from './../img/notebook.jpg';
+
 const solutions = [
   {
-    image: '/_goldstack/static/img/202412/magic_tablet_reposition_fixed.png',
+    image: MagicTablet,
     title: 'Coding You’ll Love',
     description:
       'Building software should be a joy, not a chore. Our tools turn complex challenges into seamless fun.',
   },
   {
-    image: '/_goldstack/static/img/202412/tea_cup.png',
+    image: TeaCup,
     title: 'Life, Simplified',
     description:
       'Life’s too short not to enjoy it. We help you find health, joy, and peace.',
   },
   {
-    image: '/_goldstack/static/img/202412/notebook.jpg',
+    image: Notebook,
     title: 'Chill Productivity',
     description:
       'Forget burnout. Work smarter, deliver better, and feel good doing it.',
