@@ -37,6 +37,23 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
               </a>
             </div>
           </div>
+          <div className="text-gray-800 flex flex-col ml-8">
+            <h3 className="font-sans font-bold mb-2">Contact</h3>
+            <div className="flex flex-col space-y-2">
+              <a
+                href="/#contact"
+                className="text-black-500 hover:text-orange-500 font-sans"
+              >
+                Contact Us
+              </a>
+              <a
+                href="/contact-form"
+                className="text-black-500 hover:text-orange-500 font-sans"
+              >
+                Contact Form
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
