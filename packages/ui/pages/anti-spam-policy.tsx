@@ -140,9 +140,14 @@ const SpamPolicy: React.FC = () => {
                   {line}
                 </p>
               ))}
-              <p className="mt-4">
-                Please contact us through our social channels.
-              </p>
+              <a
+                href="/contact-form"
+                className={
+                  'mt-4 mb-4 text-lg inline-flex px-4 text-center bg-purple-500 text-white py-2 rounded-lg hover:bg-yellow hover:text-black transform transition-transform duration-200 hover:scale-105'
+                }
+              >
+                Contact Form
+              </a>
             </div>
           </div>
         </section>
