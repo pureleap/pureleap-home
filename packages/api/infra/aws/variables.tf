@@ -30,3 +30,14 @@ variable "lambdas" {
   description = "Map of endpoint and lambdas for API"
   type        = map
 }
+
+
+variable "recaptcha_secret_key" {
+  description = "Recaptacha secret key"
+  type = string
+}
+
+variable "contact_email" {
+  description = "Contact email"
+  type = string
+}

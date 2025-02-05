@@ -56,7 +56,6 @@ const ContactForm: React.FC = () => {
         throw new Error('reCAPTCHA not loaded');
       }
 
-      const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
       if (!siteKey) {
         throw new Error('reCAPTCHA site key not configured');
       }

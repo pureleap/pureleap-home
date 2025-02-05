@@ -31,6 +31,7 @@ export const handler: ProxyHandler = async (event, context) => {
   if (!event.body) {
     return {
       statusCode: 400,
+      body: 'Body expected',
     };
   }
 
@@ -38,9 +39,50 @@ export const handler: ProxyHandler = async (event, context) => {
 
   const ses = await connect();
 
+  const clientIp = event.requestContext.http.sourceIp;
+
+  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+  if (!secretKey) {
+    return {
+      statusCode: 500,
+      body: 'Secret key env variable not defined',
+    };
+  }
+  const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${request.recaptchaToken}&remoteip=${clientIp}`;
+
+  const res = await fetch(url, {
+    method: 'post',
+  });
+
+  if (res.status !== 200) {
+    return {
+      statusCode: 404,
+      body: 'Cannot verify recaptcha',
+    };
+  }
+
+  const recaptchaResponse = await res.json();
+
+  if (!recaptchaResponse.success === true) {
+    return {
+      statusCode: 404,
+      body: `Recaptcha invalid. Error code: ${recaptchaResponse.error_codes}`,
+    };
+  }
+
+  if (!process.env.CONTACT_EMAIL) {
+    return {
+      statusCode: 500,
+      body: 'Contact email not configured',
+    };
+  }
+
   await ses.send(
     new SendEmailCommand({
-      Destination: { ToAddresses: [request.email] },
+      Destination: {
+        ToAddresses: [request.email],
+        BccAddresses: [process.env.CONTACT_EMAIL],
+      },
       Message: {
         Subject: {
           Charset: 'UTF-8',
@@ -62,9 +104,9 @@ export const handler: ProxyHandler = async (event, context) => {
   );
 
   return {
-    statusCode: 201,
+    statusCode: 200,
     body: JSON.stringify({
-      message: `Unknown endpoint accessed on a ${format(new Date(), 'eeee')}`,
+      message: 'Message sent',
     }),
   };
 };

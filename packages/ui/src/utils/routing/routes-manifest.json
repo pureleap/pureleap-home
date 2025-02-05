@@ -23,6 +23,10 @@
       "regex": "^\\/anti-spam-policy$"
     },
     {
+      "page": "/contact-form",
+      "regex": "^\\/contact-form$"
+    },
+    {
       "page": "/index",
       "regex": "^\\/index$"
     },
@@ -43,6 +47,12 @@
       "regex": "^/anti\\-spam\\-policy(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/anti\\-spam\\-policy(?:/)?$"
+    },
+    {
+      "page": "/contact-form",
+      "regex": "^/contact\\-form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact\\-form(?:/)?$"
     },
     {
       "page": "/privacy-policy",
