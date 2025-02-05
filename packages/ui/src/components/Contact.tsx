@@ -27,13 +27,10 @@ const Contact: React.FC<ContactProps> = ({ className = '' }) => {
             {line}
           </p>
         ))}
-        <span className="text-xl font-sans mt-4 text-center">
-          Please contact us through the social channels above.
-        </span>
         <a
           href="/contact-form"
           className={
-            'w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500'
+            'w-full text-xl flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm font-medium text-white bg-purple-500 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500'
           }
         >
           Contact Form
