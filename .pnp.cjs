@@ -7487,7 +7487,6 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:22.13.1"],\
           ["@types/node-fetch", "npm:2.6.12"],\
           ["@yarnpkg/esbuild-plugin-pnp", "virtual:22c7fd9a67162f8472a1e2f7abd193f99a38d1e602b119ac6eed89f6e8d1cdc8a22ded4a09625ba537dab8a301b4ac4147a27900a8b8d3f08d3d1fd802d8daad#npm:3.0.0-rc.15"],\
-          ["date-fns", "npm:2.28.0"],\
           ["dotenv", "npm:16.4.7"],\
           ["email-send", "workspace:packages/email-send"],\
           ["esbuild", "npm:0.24.2"],\
@@ -9254,13 +9253,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["date-fns", [\
-      ["npm:2.28.0", {\
-        "packageLocation": "./.yarn/cache/date-fns-npm-2.28.0-c19c5add1b-2d99e884f7.zip/node_modules/date-fns/",\
-        "packageDependencies": [\
-          ["date-fns", "npm:2.28.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:2.29.1", {\
         "packageLocation": "./.yarn/cache/date-fns-npm-2.29.1-8c07562fd8-1a0fc4ee2b.zip/node_modules/date-fns/",\
         "packageDependencies": [\

@@ -5,9 +5,8 @@ import {
   APIGatewayProxyResultV2,
 } from 'aws-lambda';
 
-import { format } from 'date-fns';
-
 import { connect, getFromDomain } from 'email-send';
+import { withCors } from '../middleware/withCors';
 
 type ProxyHandler = Handler<APIGatewayProxyEventV2, APIGatewayProxyResultV2>;
 
@@ -27,7 +26,7 @@ export interface EmailRequest {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const handler: ProxyHandler = async (event, context) => {
+export const handler: ProxyHandler = withCors(async (event, context) => {
   if (!event.body) {
     return {
       statusCode: 400,
@@ -109,4 +108,4 @@ export const handler: ProxyHandler = async (event, context) => {
       message: 'Message sent',
     }),
   };
-};
+});
