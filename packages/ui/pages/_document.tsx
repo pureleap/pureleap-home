@@ -8,14 +8,16 @@ class MyDocument extends Document {
         <Head>
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-SRW19ZZQLW"
+            src="https://www.googletagmanager.com/gtag/js?id=G-7QXRC3D2FN"
           ></script>
           <script
-            content={`window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+            content={`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag('config', 'G-SRW19ZZQLW');`}
+  gtag('config', 'G-7QXRC3D2FN');
+`}
           ></script>
           <link
             rel="apple-touch-icon"
