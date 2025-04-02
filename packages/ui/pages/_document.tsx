@@ -6,10 +6,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-SRW19ZZQLW"
-          ></script>
+          <script src="https://www.googletagmanager.com/gtag/js?id=G-SRW19ZZQLW"></script>
           <script
             content={`
   window.dataLayer = window.dataLayer || [];
