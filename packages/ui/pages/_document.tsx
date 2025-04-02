@@ -8,7 +8,7 @@ class MyDocument extends Document {
         <Head>
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-7QXRC3D2FN"
+            src="https://www.googletagmanager.com/gtag/js?id=G-SRW19ZZQLW"
           ></script>
           <script
             content={`
@@ -16,7 +16,7 @@ class MyDocument extends Document {
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-7QXRC3D2FN');
+  gtag('config', 'G-SRW19ZZQLW');
 `}
           ></script>
           <link
