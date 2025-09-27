@@ -15,11 +15,9 @@ const Hero: React.FC<HeaderProps> = ({ className = '' }) => {
       <img
         src={PureleapLogo}
         alt="Pureleap Logo"
-        className="mx-auto mb-6 md:mb-8"
+        className="mx-auto"
         style={{
           width: '675px',
-          maxWidth: '90vw',
-          maxHeight: '35vh',
         }}
       />
       <div className="text-center font-serif mb-8 md:mb-12">
