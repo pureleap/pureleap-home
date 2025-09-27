@@ -1,17 +1,5 @@
 [
   {
-    "name": "prod",
-    "terraform": {
-      "edge_function_name": {
-        "sensitive": false,
-        "type": "string",
-        "value": "pureleap-com-edge"
-      },
-      "website_cdn_root_id": {
-        "sensitive": false,
-        "type": "string",
-        "value": "E290BMVDF8DQ2D"
-      }
-    }
+    "name": "prod"
   }
 ]
