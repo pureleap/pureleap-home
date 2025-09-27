@@ -16,6 +16,7 @@ const Contact: React.FC<ContactProps> = ({ className = '' }) => {
     <section
       className={`flex flex-col items-center justify-center pt-32 ${className}`}
       style={{ backgroundColor: '#fbfbff' }}
+      id="contact"
     >
       <h2 className="text-3xl text-center mb-24 font-serif">
         How to get in touch
@@ -26,9 +27,14 @@ const Contact: React.FC<ContactProps> = ({ className = '' }) => {
             {line}
           </p>
         ))}
-        <span className="text-xl font-sans mt-4 text-center">
-          Please contact us through the social channels above.
-        </span>
+        <a
+          href="/contact-form"
+          className={
+            'mt-4 mb-4 inline-flex px-4 text-center bg-purple-500 text-white py-2 rounded-lg hover:bg-yellow hover:text-black transform transition-transform duration-200 hover:scale-105'
+          }
+        >
+          Contact Form
+        </a>
       </div>
     </section>
   );

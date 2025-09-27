@@ -1,16 +1,17 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$ref": "#/definitions/ThisPackageConfiguration",
+  "$ref": "#/definitions/NextjsPackageConfiguration",
   "definitions": {
-    "ThisPackageConfiguration": {
-      "$ref": "#/definitions/PackageConfiguration",
-      "description": "Configures this service.",
-      "title": "Service Configuration"
+    "NextjsPackageConfiguration": {
+      "$ref": "#/definitions/ThisPackageConfiguration",
+      "description": "Configure NextJS application",
+      "title": "NextJs Configuration"
     },
-    "PackageConfiguration": {
+    "ThisPackageConfiguration": {
       "type": "object",
-      "description": "Configuration of this package",
-      "title": "Configuration"
+      "properties": {},
+      "description": "Configures a static website hosted on AWS.",
+      "title": "AWS Static Website Configuration"
     }
   }
 }

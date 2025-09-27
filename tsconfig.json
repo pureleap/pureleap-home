@@ -30,7 +30,10 @@
   "include": [],
   "references": [
     {
-      "path": "packages/esbuild-tailwind-ssr-plugin"
+      "path": "packages/api"
+    },
+    {
+      "path": "packages/email-send"
     },
     {
       "path": "packages/ui"

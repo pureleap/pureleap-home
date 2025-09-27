@@ -2,34 +2,23 @@
   "extends": "./tsconfig.json",
   "include": [
     "./src/**/*",
-    "./scripts/**/*",
-    "./src/typings.d.ts"
-  ],
-  "exclude": [
-    "./src/**/*.css"
+    "./pages/**/*",
+    "./scripts/**/*"
   ],
   "compilerOptions": {
     "incremental": true,
     "noEmit": false,
     "declarationMap": false,
-    "jsx": "react",
     "isolatedModules": false,
-    "module": "commonjs",
-    "target": "es2015",
+    "module": "CommonJS",
     "types": [
       "node",
       "dom"
     ],
     "lib": [
-      "es6",
-      "dom"
+      "ESNext"
     ],
     "outDir": "dist",
-    "baseUrl": ".",
-    "plugins": [
-      {
-        "name": "typescript-plugin-css-modules"
-      }
-    ]
+    "baseUrl": "."
   }
 }

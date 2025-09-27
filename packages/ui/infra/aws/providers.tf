@@ -5,11 +5,8 @@ terraform {
       version = "2.2.0"
     }
     aws = {
-      source  = "hashicorp/aws"
+      source = "hashicorp/aws"
       version = "5.76.0"
-    }
-    random = {
-      source = "hashicorp/random"
     }
   }
   required_version = ">= 1.6"
@@ -25,7 +22,7 @@ provider "aws" {
   shared_credentials_files = ["aws_credentials"]
 }
 
-# The provider below is required for CloudFront
+# The provider below is required to handle ACM
 provider "aws" {
   alias                       = "us-east-1"
   region                      = "us-east-1"
@@ -35,7 +32,4 @@ provider "aws" {
   skip_metadata_api_check     = true
   skip_credentials_validation = true
   shared_credentials_files = ["aws_credentials"]
-}
-
-provider "archive" {
 }
