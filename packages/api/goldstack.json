@@ -9,7 +9,7 @@
       "name": "prod",
       "configuration": {
         "lambdas": {},
-        "lambdaNamePrefix": "pureleap-home",
+        "lambdaNamePrefix": "pureleap-home-api-",
         "apiDomain": "api.pureleap.com",
         "hostedZoneDomain": "pureleap.com",
         "cors": "https://pureleap.com"

@@ -8,7 +8,7 @@
     {
       "name": "prod",
       "configuration": {
-        "domain": "pureleap.com",
+        "domain": "mailer.pureleap.com",
         "hostedZoneDomain": "pureleap.com"
       },
       "awsUser": "awsUser",
