@@ -13,19 +13,26 @@
     }
   ],
   "headers": [],
-  "rewrites": {
-    "beforeFiles": [],
-    "afterFiles": [],
-    "fallback": []
-  },
   "dynamicRoutes": [
     {
       "page": "/404",
       "regex": "^\\/404$"
     },
     {
+      "page": "/anti-spam-policy",
+      "regex": "^\\/anti-spam-policy$"
+    },
+    {
+      "page": "/contact-form",
+      "regex": "^\\/contact-form$"
+    },
+    {
       "page": "/index",
       "regex": "^\\/index$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^\\/privacy-policy$"
     }
   ],
   "staticRoutes": [
@@ -34,6 +41,24 @@
       "regex": "^/(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/anti-spam-policy",
+      "regex": "^/anti\\-spam\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/anti\\-spam\\-policy(?:/)?$"
+    },
+    {
+      "page": "/contact-form",
+      "regex": "^/contact\\-form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact\\-form(?:/)?$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^/privacy\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy\\-policy(?:/)?$"
     }
   ],
   "dataRoutes": [],
@@ -52,5 +77,6 @@
   "rewriteHeaders": {
     "pathHeader": "x-nextjs-rewritten-path",
     "queryHeader": "x-nextjs-rewritten-query"
-  }
+  },
+  "rewrites": []
 }

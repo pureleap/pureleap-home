@@ -30,13 +30,13 @@
   "include": [],
   "references": [
     {
-      "path": "packages/app-nextjs-tailwind"
+      "path": "packages/api"
     },
     {
       "path": "packages/email-send"
     },
     {
-      "path": "packages/serverless-api"
+      "path": "packages/ui"
     }
   ]
 }
