@@ -1,6 +1,8 @@
 import { excludeInBundle } from '@goldstack/utils-esbuild';
 import goldstackConfig from './../goldstack.json';
 
+export type { EmailRequest } from './routes/email';
+
 const cors = process.env.CORS;
 
 let testServerPort: null | number = null;

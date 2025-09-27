@@ -6827,7 +6827,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"api@workspace:packages/api":
+"api@workspace:^, api@workspace:packages/api":
   version: 0.0.0-use.local
   resolution: "api@workspace:packages/api"
   dependencies:
@@ -14905,6 +14905,7 @@ __metadata:
     "@types/react": "npm:^18"
     "@types/testing-library__jest-dom": "npm:5"
     "@types/testing-library__react": "npm:^10.2.0"
+    api: "workspace:^"
     autoprefixer: "npm:^10.4.20"
     concurrently: "npm:^7.3.0"
     file-loader: "npm:^6.2.0"

@@ -13,7 +13,8 @@
         "websiteDomain": "pureleap.com"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "app-nextjs-tailwind-prod-a83d9ff399b81fc9baa4.tfstate"
     }
   ]
 }

@@ -8,14 +8,22 @@
     {
       "name": "prod",
       "configuration": {
-        "lambdas": {},
+        "lambdas": {
+          "ANY /email": {
+            "function_name": "pureleap-home-api--email",
+            "route": "ANY /email"
+          }
+        },
         "lambdaNamePrefix": "pureleap-home-api-",
         "apiDomain": "api.pureleap.com",
         "hostedZoneDomain": "pureleap.com",
         "cors": "https://pureleap.com"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "serverless-api-prod-c62b66158d498526634c.tfstate",
+      "recaptchaSecretKey": "",
+      "contactEmail": ""
     }
   ]
 }

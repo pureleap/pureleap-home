@@ -37,6 +37,8 @@ resource "aws_lambda_function" "this" {
       GOLDSTACK_DEPLOYMENT = var.name
       CORS                 = var.cors
       NODE_OPTIONS         = "--enable-source-maps"
+      RECAPTCHA_SECRET_KEY = var.recaptcha_secret_key
+      CONTACT_EMAIL = var.contact_email
     }
   }
 
