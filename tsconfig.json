@@ -30,13 +30,10 @@
   "include": [],
   "references": [
     {
-      "path": "packages/api"
+      "path": "../utils/packages/utils-nodemonx"
     },
     {
-      "path": "packages/email-send"
-    },
-    {
-      "path": "packages/ui"
+      "path": "../utils/packages/utils-typescript-references"
     }
   ]
 }

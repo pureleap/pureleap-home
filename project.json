@@ -1,15 +1,27 @@
 {
   "packages": [
     {
-      "packageName": "server-side-rendering",
+      "packageName": "app-nextjs-tailwind",
       "templateReference": {
-        "templateName": "server-side-rendering"
+        "templateName": "app-nextjs-tailwind"
+      }
+    },
+    {
+      "packageName": "serverless-api",
+      "templateReference": {
+        "templateName": "serverless-api"
+      }
+    },
+    {
+      "packageName": "email-send",
+      "templateReference": {
+        "templateName": "email-send"
       }
     }
   ],
   "rootTemplateReference": {
     "templateName": "yarn-pnp-monorepo"
   },
-  "createdAt": "2024-12-08T02:00:11.403Z",
-  "projectName": "pureleap-homepage"
+  "createdAt": "2025-09-27T09:02:33.910Z",
+  "projectName": "pureleap-home"
 }

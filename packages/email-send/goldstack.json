@@ -2,18 +2,17 @@
   "$schema": "./schemas/package.schema.json",
   "name": "email-send",
   "template": "email-send",
-  "templateVersion": "0.1.98",
+  "templateVersion": "0.1.102",
   "configuration": {},
   "deployments": [
     {
       "name": "prod",
       "configuration": {
-        "domain": "mailer.pureleap.com",
+        "domain": "pureleap.com",
         "hostedZoneDomain": "pureleap.com"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2",
-      "tfStateKey": "email-send-prod-074f6a651abdb2c89a5e.tfstate"
+      "awsRegion": "us-west-2"
     }
   ]
 }

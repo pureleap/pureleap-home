@@ -1,0 +1,19 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "app-nextjs-tailwind",
+  "template": "app-nextjs-tailwind",
+  "templateVersion": "0.1.0",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "prod",
+      "configuration": {
+        "defaultCacheDuration": 10,
+        "hostedZoneDomain": "pureleap.com",
+        "websiteDomain": "pureleap.com"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}
