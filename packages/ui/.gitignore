@@ -3,6 +3,7 @@ webDist/
 out/
 dist/
 cache/
+distLambda/
 .env.production
 node_modules
 lambda.zip
@@ -11,3 +12,4 @@ tsconfig.tsbuildinfo
 coverage/
 goldstackLocal/
 .localInstances.json
+static/generated
