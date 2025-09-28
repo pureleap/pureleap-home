@@ -86,9 +86,11 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
         Body: {
           Text: {
             Charset: 'UTF-8',
-            Data: `Thank you for contacting Pureleap.\n\nWe have received your message:\n\n${request.message
-              }\n\n${request.phone ? `Your phone number: ${request.phone}\n\n` : ''
-              }We will get back to you in the next few days.\n\nThanks, Shally and Max`,
+            Data: `Thank you for contacting Pureleap.\n\nWe have received your message:\n\n${
+              request.message
+            }\n\n${
+              request.phone ? `Your phone number: ${request.phone}\n\n` : ''
+            }We will get back to you in the next few days.\n\nThanks, Shally and Max`,
           },
         },
       },
