@@ -2,7 +2,6 @@
   "typescript.validate.enable": true,
   "files.eol": "\n",
   "editor.formatOnSave": true,
-  "gitlens.advanced.repositorySearchDepth": 2,
   "editor.tabSize": 2,
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "[html]": {

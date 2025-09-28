@@ -9,13 +9,27 @@
     "lineWidth": 100,
     "lineEnding": "lf"
   },
-
   "javascript": {
     "formatter": {
       "quoteStyle": "single"
     }
   },
-
+  "json": {
+    "parser": {
+      "allowComments": false,
+      "allowTrailingCommas": false
+    },
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf",
+      "trailingCommas": "none"
+    },
+    "linter": {
+      "enabled": true
+    }
+  },
   "linter": {
     "rules": {
       "suspicious": {
@@ -62,7 +76,6 @@
       "!**/*.tfstate.backup",
       "!**/.pnp.js",
       "!**/.pnp.cjs",
-      "!**/*.json",
       "!**/.pnp.loader.mjs",
       "!**/.yarnrc.yml",
       "!**/.yarn/**",
