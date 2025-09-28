@@ -5,5 +5,4 @@ import Homepage from '../pages/index';
 
 test('Check App component render', () => {
   const res = render(<Homepage />);
-
 });
