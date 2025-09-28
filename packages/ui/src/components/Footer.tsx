@@ -11,22 +11,14 @@ interface FooterProps {
  */
 const Footer: React.FC<FooterProps> = ({ className = '' }) => {
   return (
-    <footer
-      className={`bg-gray-50 pt-64 ${className}`}
-      style={{ backgroundColor: '#fbfbff' }}
-    >
+    <footer className={`bg-gray-50 pt-64 ${className}`} style={{ backgroundColor: '#fbfbff' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col sm:flex-row justify-between items-start">
-          <div className="text-gray-800 mb-4 sm:mb-0 font-sans">
-            © 2014-2025 Pureleap Pty. Ltd.
-          </div>
+          <div className="text-gray-800 mb-4 sm:mb-0 font-sans">© 2014-2025 Pureleap Pty. Ltd.</div>
           <div className="text-gray-800 flex flex-col">
             <h3 className="font-sans font-bold mb-2">Legal</h3>
             <div className="flex flex-col space-y-2">
-              <a
-                href="/privacy-policy"
-                className="text-black-500 hover:text-orange-500 font-sans"
-              >
+              <a href="/privacy-policy" className="text-black-500 hover:text-orange-500 font-sans">
                 Privacy Policy
               </a>
               <a
@@ -40,16 +32,10 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
           <div className="text-gray-800 flex flex-col ml-8">
             <h3 className="font-sans font-bold mb-2">Contact</h3>
             <div className="flex flex-col space-y-2">
-              <a
-                href="/#contact"
-                className="text-black-500 hover:text-orange-500 font-sans"
-              >
+              <a href="/#contact" className="text-black-500 hover:text-orange-500 font-sans">
                 Contact Us
               </a>
-              <a
-                href="/contact-form"
-                className="text-black-500 hover:text-orange-500 font-sans"
-              >
+              <a href="/contact-form" className="text-black-500 hover:text-orange-500 font-sans">
                 Contact Form
               </a>
             </div>

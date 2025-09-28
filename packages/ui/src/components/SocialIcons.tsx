@@ -104,9 +104,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ links }) => {
                 className="object-contain"
               />
             </div>
-            <span className="text-lg font-medium group-hover:underline">
-              {link.label}
-            </span>
+            <span className="text-lg font-medium group-hover:underline">{link.label}</span>
           </a>
         );
       })}

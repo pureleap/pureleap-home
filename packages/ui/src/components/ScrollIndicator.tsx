@@ -5,8 +5,7 @@ const ScrollIndicator: React.FC = () => {
 
   useEffect(() => {
     const checkScrollPosition = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const isAtTop = scrollTop < 100;
       setIsVisible(isAtTop);
     };

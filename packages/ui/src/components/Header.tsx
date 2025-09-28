@@ -12,18 +12,13 @@ interface HeaderProps {
  * @param props - Component properties including visibility control
  * @returns Header component with responsive navigation
  */
-export const Header: React.FC<HeaderProps> = ({
-  className = '',
-  visible = true,
-}) => {
+export const Header: React.FC<HeaderProps> = ({ className = '', visible = true }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 bg-gray-50 z-50 transition-all ease-in-out duration-500 ${className} ${
-        visible
-          ? 'opacity-100 translate-y-0'
-          : 'opacity-0 -translate-y-2 pointer-events-none'
+        visible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
       }`}
       style={{ backgroundColor: '#fbfbff' }}
     >
@@ -64,11 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d={
-                    isMenuOpen
-                      ? 'M6 18L18 6M6 6l12 12'
-                      : 'M4 6h16M4 12h16M4 18h16'
-                  }
+                  d={isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
                 />
               </svg>
             </button>
