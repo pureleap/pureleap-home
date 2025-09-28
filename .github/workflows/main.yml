@@ -1,0 +1,29 @@
+name: Main build
+run-name: Main build by ${{ github.actor }} 🚀
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: '🚀 Test & Deploy'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/goldstack-setup
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: '1.10.2'
+      - run: |
+          yarn build
+          yarn test
+          yarn infra up prod
+          yarn deploy prod
+    env:
+      CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+      RECAPTCHA_SECRET_KEY: ${{ secrets.RECAPTCHA_SECRET_KEY }}  
+      AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+     
