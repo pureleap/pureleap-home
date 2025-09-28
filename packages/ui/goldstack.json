@@ -1,8 +1,8 @@
 {
   "$schema": "./schemas/package.schema.json",
-  "name": "ui",
-  "template": "app-nextjs",
-  "templateVersion": "0.1.102",
+  "name": "app-nextjs-tailwind",
+  "template": "app-nextjs-tailwind",
+  "templateVersion": "0.1.0",
   "configuration": {},
   "deployments": [
     {
@@ -14,7 +14,7 @@
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
-      "tfStateKey": "ui-prod-c335f662f63fcba2ac87.tfstate"
+      "tfStateKey": "app-nextjs-tailwind-prod-a83d9ff399b81fc9baa4.tfstate"
     }
   ]
 }

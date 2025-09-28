@@ -1,9 +1,5 @@
 import { SendEmailCommand } from '@aws-sdk/client-ses';
-import {
-  Handler,
-  APIGatewayProxyEventV2,
-  APIGatewayProxyResultV2,
-} from 'aws-lambda';
+import { Handler, APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from 'aws-lambda';
 
 import { connect, getFromDomain } from 'email-send';
 import { withCors } from '../middleware/withCors';
@@ -99,7 +95,7 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
         },
       },
       Source: 'no-reply@' + (await getFromDomain()),
-    })
+    }),
   );
 
   return {

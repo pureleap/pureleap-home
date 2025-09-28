@@ -10,7 +10,7 @@ import {
  */
 export type WrappedHandler = (
   event: APIGatewayProxyEventV2,
-  context: Context
+  context: Context,
 ) => Promise<APIGatewayProxyStructuredResultV2>;
 
 /**
@@ -20,7 +20,7 @@ export type WrappedHandler = (
  * @returns An AWS Lambda handler with CORS headers
  */
 export function withCors(
-  handler: WrappedHandler
+  handler: WrappedHandler,
 ): Handler<APIGatewayProxyEventV2, APIGatewayProxyStructuredResultV2> {
   return async (event, context) => {
     try {

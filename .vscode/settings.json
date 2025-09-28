@@ -1,43 +1,31 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
   "typescript.validate.enable": true,
   "files.eol": "\n",
-  "editor.formatOnSave": false,
-  "gitlens.advanced.repositorySearchDepth": 2,
+  "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "eslint.nodePath": ".yarn/sdks",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "eslint.validate": [
-    "json",
-    "jsonc",
-    "yml",
-    "yaml",
-    "html"
-  ],
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "eslint.packageManager": "yarn",
   "typescript.preferences.importModuleSpecifier": "relative",
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "cSpell.words": [
-    "GOLDSTACK",
-    "hetzner",
-    "Jwks",
-    "pino",
-    "Pureleap",
-    "runcmd",
-    "testcontainers"
-  ],
+  "cSpell.words": ["GOLDSTACK", "hetzner", "Jwks", "pino", "runcmd", "testcontainers"],
   "github-actions.workflows.pinned.workflows": [
+    ".github/workflows/template_deploy_dev.yml",
+    ".github/workflows/master.yml",
     ".github/workflows/branch.yml"
-  ]
+  ],
+  "[javascript][typescript][javascriptreact][typescriptreact][json][jsonc][css][graphql]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "editor.formatOnPaste": true,
+  "emmet.showExpandedAbbreviation": "never",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  }
 }

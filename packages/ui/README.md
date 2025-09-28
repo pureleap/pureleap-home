@@ -1,10 +1,16 @@
-# Next.js Template
+# Next.js Template (with Tailwind Support)
 
 ❤️ Check out the [Goldstack Project Builder](https://goldstack.party) to use this template ❤️
 
 Goldstack's Next.js template provides a [Next.js](https://nextjs.org/) application that is deployed on AWS using the [CloudFront CDN](https://aws.amazon.com/cloudfront/) and [Lambda@Edge](https://aws.amazon.com/lambda/edge/).
 
+This template comes preloaded with all Tailwind config you need to start a project.
+
 ## Features
+
+### Tailwind Configured
+
+Get started applying those classes right away and enjoy Tailwind styling.
 
 ### Configured for TypeScript
 
@@ -93,7 +99,7 @@ The configuration tool will define one deployment. This will be either `dev` or 
 
 ### Infrastructure Commands
 
-Infrastructure commands for this template can be run using `yarn`. There are four commands in total:
+Infrastructure commands for this template can be run using `yarn`. The following commands are supported:
 
 *   `yarn infra up`: For standing up infrastructure.
 *   `yarn infra init`: For [initialising Terraform](https://www.terraform.io/docs/commands/init.html).
@@ -102,6 +108,7 @@ Infrastructure commands for this template can be run using `yarn`. There are fou
 *   `yarn infra destroy`: For destroying all infrastructure using [Terraform destroy](https://www.terraform.io/docs/commands/destroy.html).
 *   `yarn infra upgrade`: For upgrading the Terraform versions (supported by the template). To upgrade to an arbitrary version, use `yarn infra terraform`.
 *   `yarn infra terraform`: For running arbitrary [Terraform commands](https://www.terraform.io/cli/commands).
+*   `yarn infra is-up`: Will return `is-up: true` if infrastructure for a deployment exists, otherwise returns `is-up: false`
 
 For each command, the deployment they should be applied to must be specified.
 

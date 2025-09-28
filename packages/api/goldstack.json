@@ -1,8 +1,8 @@
 {
   "$schema": "./schemas/package.schema.json",
-  "name": "api",
+  "name": "serverless-api",
   "template": "serverless-api",
-  "templateVersion": "0.1.60",
+  "templateVersion": "0.1.64",
   "configuration": {},
   "deployments": [
     {
@@ -10,20 +10,20 @@
       "configuration": {
         "lambdas": {
           "ANY /email": {
-            "function_name": "plapi--email",
+            "function_name": "pureleap-home-api--email",
             "route": "ANY /email"
           }
         },
-        "lambdaNamePrefix": "plapi-",
+        "lambdaNamePrefix": "pureleap-home-api-",
         "apiDomain": "api.pureleap.com",
         "hostedZoneDomain": "pureleap.com",
-        "cors": "https://pureleap.com",
-        "recaptchaSecretKey": "",
-        "contactEmail": ""
+        "cors": "https://pureleap.com"
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
-      "tfStateKey": "api-prod-ad96bf9d0ff89c2d4b25.tfstate"
+      "tfStateKey": "serverless-api-prod-c62b66158d498526634c.tfstate",
+      "recaptchaSecretKey": "",
+      "contactEmail": ""
     }
   ]
 }
