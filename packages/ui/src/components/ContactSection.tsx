@@ -1,12 +1,12 @@
 import React from 'react';
 
-interface ContactProps {
+interface ContactSectionProps {
   className?: string;
 }
 
 const contactInfo = ['Pureleap Pty. Ltd.', '3023 VIC Caroline Springs', 'Australia'];
 
-const Contact: React.FC<ContactProps> = ({ className = '' }) => {
+export const ContactSection: React.FC<ContactSectionProps> = ({ className = '' }) => {
   return (
     <section
       className={`flex flex-col items-center justify-center pt-32 ${className}`}
@@ -32,5 +32,3 @@ const Contact: React.FC<ContactProps> = ({ className = '' }) => {
     </section>
   );
 };
-
-export default Contact;

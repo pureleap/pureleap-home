@@ -6,7 +6,7 @@ interface HeaderProps {
   className?: string;
 }
 
-const Hero: React.FC<HeaderProps> = ({ className = '' }) => {
+export const HeroSection: React.FC<HeaderProps> = ({ className = '' }) => {
   return (
     <header
       className={`flex flex-col items-center justify-center h-full bg-white ${className}`}
@@ -30,5 +30,3 @@ const Hero: React.FC<HeaderProps> = ({ className = '' }) => {
     </header>
   );
 };
-
-export default Hero;

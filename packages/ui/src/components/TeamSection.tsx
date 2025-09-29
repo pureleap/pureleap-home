@@ -1,10 +1,9 @@
 import React from 'react';
-import SocialIcons from './SocialIcons';
-
 import Max from './../img/max.png';
 import Shally from './../img/shally2.jpg';
+import SocialIcons from './SocialIcons';
 
-interface TeamProps {
+interface TeamSectionProps {
   className?: string;
 }
 
@@ -58,7 +57,7 @@ const team = [
   },
 ];
 
-const Team: React.FC<TeamProps> = ({ className = '' }) => {
+export const TeamSection: React.FC<TeamSectionProps> = ({ className = '' }) => {
   return (
     <section
       className={`flex flex-col items-center justify-center bg-gray-50 pt-32 ${className}`}
@@ -89,5 +88,3 @@ const Team: React.FC<TeamProps> = ({ className = '' }) => {
     </section>
   );
 };
-
-export default Team;

@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import React, { useCallback, useEffect, useState } from 'react';
-import Contact from '../components/Contact';
+import Contact from '../components/ContactSection';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import Hero from '../components/Hero';
+import Hero from '../components/HeroSection';
 import ScrollIndicator from '../components/ScrollIndicator';
-import Solutions from '../components/Solutions';
-import Team from '../components/Team';
+import Solutions from '../components/SolutionsSection';
+import Team from '../components/TeamSection';
 
 export const Index: React.FC = () => {
   const [showHeader, setShowHeader] = useState(false);

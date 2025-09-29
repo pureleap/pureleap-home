@@ -1,12 +1,12 @@
 import React from 'react';
 
-interface SolutionsProps {
+interface SolutionsSectionProps {
   className?: string;
 }
 
 import MagicTablet from './../img/magic_tablet_reposition_fixed.png';
-import TeaCup from './../img/tea_cup.png';
 import Notebook from './../img/notebook.jpg';
+import TeaCup from './../img/tea_cup.png';
 
 const solutions = [
   {
@@ -27,7 +27,7 @@ const solutions = [
   },
 ];
 
-const Solutions: React.FC<SolutionsProps> = ({ className = '' }) => {
+export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ className = '' }) => {
   return (
     <section
       className={`flex flex-col items-center justify-center pb-12 ${className}`}
@@ -52,5 +52,3 @@ const Solutions: React.FC<SolutionsProps> = ({ className = '' }) => {
     </section>
   );
 };
-
-export default Solutions;
