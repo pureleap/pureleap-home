@@ -1,6 +1,6 @@
 import React from 'react';
 import PureleapLogo from './../img/pureleap_logo_nobg.png';
-import styles from './Hero.module.css';
+import styles from './HeroSection.module.css';
 
 interface HeaderProps {
   className?: string;
