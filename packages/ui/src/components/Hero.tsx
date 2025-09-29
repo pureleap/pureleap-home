@@ -1,6 +1,6 @@
 import React from 'react';
-
 import PureleapLogo from './../img/pureleap_logo_nobg.png';
+import styles from './Hero.module.css';
 
 interface HeaderProps {
   className?: string;
@@ -20,11 +20,13 @@ const Hero: React.FC<HeaderProps> = ({ className = '' }) => {
           width: '275px',
         }}
       />
-      <div className="text-left font-sans mb-4 xs:mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16">
+      <div
+        className={`${styles.heroText} font-sans mb-4 xs:mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16`}
+      >
         <div className="xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl xs:text-xl">
-          <p className="mb-2">Remove clutter.</p>
-          <p className="mb-2">Find clarity.</p>
-          <p className="mb-2">Move true.</p>
+          <div className={styles.heroLine}>Remove clutter.</div>
+          <div className={styles.heroLine}>Find clarity.</div>
+          <div className={styles.heroLine}>Move true.</div>
         </div>
       </div>
     </header>
