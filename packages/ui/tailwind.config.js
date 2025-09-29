@@ -17,7 +17,7 @@ module.exports = {
         hindvadodara: ['Hind Vadodara', 'sans-serif'],
         handwritten: ['Amatic SC', 'sans-serif'],
         serif: ['Roboto Slab', 'serif'],
-        sans: ['Hind Vadodara', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
       },
       // via https://www.tints.dev
       colors: {
