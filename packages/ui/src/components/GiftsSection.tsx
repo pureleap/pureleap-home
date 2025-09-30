@@ -33,7 +33,10 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
       </h2>
       <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-200">
         {gifts.map((gift, index) => (
-          <div key={index} className="text-center max-w-64">
+          <div
+            key={index}
+            className="text-center max-w-64 group group-hover:bg-gray-100 hover:bg-gray-100 cursor-pointer"
+          >
             <div className="mb-6">
               <img
                 src={gift.image}
@@ -46,10 +49,16 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
             <p className="text-base font-sans text-gray-800 mb-6">{gift.description}</p>
             <a
               href={gift.link}
+              className="btn rounded-lg border border-gray-200 pt-1 pb-1 pr-2 pl-2 group-hover:bg-gray-300"
+            >
+              learn more
+            </a>
+            {/* <a
+              href={gift.link}
               className="group btn rounded-lg border border-gray-200 pt-1 pb-1 pr-2 pl-2 hover:bg-gray-200"
             >
               <span className="text-gray-200 group-hover:text-black">❤</span> Get for $0
-            </a>
+            </a> */}
             {/* <div className="text-base text-right font-sans">{gift.price}</div> */}
           </div>
         ))}
