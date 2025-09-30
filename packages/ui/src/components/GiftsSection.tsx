@@ -35,9 +35,9 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
         {gifts.map((gift, index) => (
           <div
             key={index}
-            className="text-center max-w-64 border rounded-lg border-gray-200 group group-hover:bg-gray-100 hover:bg-gray-200 cursor-pointer"
+            className="flex flex-col text-center max-w-64 border rounded-lg border-gray-200 group group-hover:bg-gray-100 hover:bg-gray-200 cursor-pointer"
           >
-            <div className="p-4">
+            <div className="flex-1 p-4">
               <div className="mb-6">
                 <img
                   src={gift.image}
@@ -47,11 +47,13 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
               </div>
               <h3 className="text-2xl font-sans mb-2">{gift.title}</h3>
               <p className="text-base font-sans text-gray-600 mb-4">{gift.subtitle}</p>
-              <p className="text-base font-sans text-gray-800 mb-6">{gift.description}</p>
+              <p className="text-base font-sans text-gray-800">{gift.description}</p>
             </div>
-            <div className="flex justify-between items-center border-t border-gray-200">
-              <span className="text-base font-sans">$0</span>
-              <div className="">
+            <div className="flex justify-between items-center border-t border-gray-200 h-12 max-h-12">
+              <div className="flex items-center justify-center border-r border-gray-200 h-12 w-12 ">
+                <span className="text-base font-sans">$0</span>
+              </div>
+              <div className="flex items-center justify-center flex-1">
                 <a href={gift.link} className="btn pt-1 pb-1 pr-2 pl-2 group-hover:bg-gray-300">
                   learn more
                 </a>
