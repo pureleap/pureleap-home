@@ -35,31 +35,28 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
         {gifts.map((gift, index) => (
           <div
             key={index}
-            className="text-center max-w-64 group group-hover:bg-gray-100 hover:bg-gray-100 cursor-pointer"
+            className="text-center max-w-64 border rounded-lg border-gray-200 group group-hover:bg-gray-100 hover:bg-gray-200 cursor-pointer"
           >
-            <div className="mb-6">
-              <img
-                src={gift.image}
-                alt={gift.title}
-                className="w-full max-w-48 aspect-square object-cover mx-auto"
-              />
+            <div className="p-4">
+              <div className="mb-6">
+                <img
+                  src={gift.image}
+                  alt={gift.title}
+                  className="w-full max-w-48 aspect-square object-cover mx-auto"
+                />
+              </div>
+              <h3 className="text-2xl font-sans mb-2">{gift.title}</h3>
+              <p className="text-base font-sans text-gray-600 mb-4">{gift.subtitle}</p>
+              <p className="text-base font-sans text-gray-800 mb-6">{gift.description}</p>
             </div>
-            <h3 className="text-2xl font-sans mb-2">{gift.title}</h3>
-            <p className="text-base font-sans text-gray-600 mb-4">{gift.subtitle}</p>
-            <p className="text-base font-sans text-gray-800 mb-6">{gift.description}</p>
-            <a
-              href={gift.link}
-              className="btn rounded-lg border border-gray-200 pt-1 pb-1 pr-2 pl-2 group-hover:bg-gray-300"
-            >
-              learn more
-            </a>
-            {/* <a
-              href={gift.link}
-              className="group btn rounded-lg border border-gray-200 pt-1 pb-1 pr-2 pl-2 hover:bg-gray-200"
-            >
-              <span className="text-gray-200 group-hover:text-black">❤</span> Get for $0
-            </a> */}
-            {/* <div className="text-base text-right font-sans">{gift.price}</div> */}
+            <div className="flex justify-between items-center border-t border-gray-200">
+              <span className="text-base font-sans">$0</span>
+              <div className="">
+                <a href={gift.link} className="btn pt-1 pb-1 pr-2 pl-2 group-hover:bg-gray-300">
+                  learn more
+                </a>
+              </div>
+            </div>
           </div>
         ))}
       </div>
