@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React, { useCallback, useEffect, useState } from 'react';
 import { ContactSection as Contact } from '../components/ContactSection';
 import Footer from '../components/Footer';
+import { GiftsSection } from '../components/GiftsSection';
 import Header from '../components/Header';
 import { HeroSection as Hero } from '../components/HeroSection';
 import ScrollIndicator from '../components/ScrollIndicator';
@@ -63,6 +64,9 @@ export const Index: React.FC = () => {
         <Header visible={showHeader} />
         <div className="min-h-screen pb-32" style={{ backgroundColor: '#fbfbff' }}>
           <Hero className="h-full" />
+        </div>
+        <div className="">
+          <GiftsSection></GiftsSection>
         </div>
         <div className="">
           <Solutions className="" />
