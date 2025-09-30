@@ -46,9 +46,9 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
             <p className="text-base font-sans text-gray-800 mb-6">{gift.description}</p>
             <a
               href={gift.link}
-              className="btn rounded-lg border border-gray-200 pt-1 pb-1 pr-2 pl-2 hover:bg-gray-200"
+              className="group btn rounded-lg border border-gray-200 pt-1 pb-1 pr-2 pl-2 hover:bg-gray-200"
             >
-              <span className="text-gray-200">❤</span> Get for $0
+              <span className="text-gray-200 group-hover:text-black">❤</span> Get for $0
             </a>
             {/* <div className="text-base text-right font-sans">{gift.price}</div> */}
           </div>
