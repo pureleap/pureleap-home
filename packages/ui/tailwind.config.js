@@ -1,15 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     screens: {
-      'xs': '480px',
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
+      xs: '480px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
     },
     extend: {
       fontFamily: {
@@ -36,18 +34,18 @@ module.exports = {
           950: '#000000',
         },
         white: {
-          50: '#FEFCFB',
-          100: '#FEF8F6',
-          200: '#FCEEE9',
-          300: '#FAE7E0',
-          400: '#F8DDD3',
-          500: '#F7D7CA',
-          DEFAULT: '#F7D7CA',
-          600: '#EB9A7A',
-          700: '#E0612F',
-          800: '#9B3D17',
-          900: '#501F0C',
-          950: '#281006',
+          DEFAULT: '#fbfbff',
+          50: '#FFFFFF',
+          100: '#FFFFFF',
+          200: '#FCFCFF',
+          300: '#FCFCFF',
+          400: '#FCFCFF',
+          500: '#FBFBFF',
+          600: '#BEBEFF',
+          700: '#7F7FFF',
+          800: '#3636FF',
+          900: '#0000AC',
+          950: '#00006E',
         },
         orange: {
           50: '#FFF0EB',

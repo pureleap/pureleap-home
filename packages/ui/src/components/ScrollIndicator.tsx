@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const ScrollIndicator: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,7 +26,7 @@ const ScrollIndicator: React.FC = () => {
         href="#solutions"
         onClick={(e) => {
           e.preventDefault();
-          const element = document.getElementById('solutions');
+          const element = document.getElementById('gifts');
           if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
