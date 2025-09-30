@@ -12,7 +12,7 @@ interface GiftsSectionProps {
 const gifts = [
   {
     title: 'Commonplace Book',
-    subtitle: 'Notion Template',
+    subtitle: 'Template',
     link: '#',
     description: 'A refuge for your thoughts inspired by ancient practices.',
     price: '$0',
@@ -20,7 +20,7 @@ const gifts = [
   },
   {
     title: 'River Not a Bucket',
-    subtitle: 'Notion Template',
+    subtitle: 'Template',
     link: '#',
     description: 'Collect what inspires without creating clutter.',
     price: '$0',
@@ -28,7 +28,7 @@ const gifts = [
   },
   {
     title: 'AI Auto Relation',
-    subtitle: 'Notion Integration',
+    subtitle: 'Integration',
     link: 'https://auto-relation.com',
     description: 'Bring order to chaos using the power of relations.',
     price: '$0',
@@ -60,8 +60,8 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
               <div className="flex justify-center items-center min-h-20">
                 <h3 className="text-2xl font-sans">{gift.title}</h3>
               </div>
-              <p className="text-base font-sans text-gray-600 mb-4">
-                <img src={notionLogoGray} className="h-1 w-1"></img> {gift.subtitle}
+              <p className="flex justify-center items-center text-base font-sans text-gray-600 mb-4">
+                <img src={notionLogoGray} className="h-4 w-4 mr-1"></img> {gift.subtitle}
               </p>
               <p className="text-base font-sans text-gray-800">{gift.description}</p>
             </div>
