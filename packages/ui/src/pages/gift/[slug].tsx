@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
+import DoubleChevronDown from '../../components/DoubleChevronDown';
 import GiftBox from '../../components/gift-box-256x256.png';
 import notionLogoGray from '../../components/notion-logo-gray.svg';
 import { gifts } from '../../data/gifts';
@@ -68,21 +69,24 @@ const GiftPage: React.FC = () => {
           </div>
         </div>
         {/* Learn more button */}
-        <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-50">
-          <a
-            href="#details"
-            onClick={(e) => {
-              e.preventDefault();
-              const element = document.getElementById('details');
-              if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }
-            }}
-          >
-            <span className="font-handwritten text-2xl text-gray-400 hover:text-gray-600">
-              learn more
-            </span>
-          </a>
+        <div className="fixed bottom-8 transform -translate-x-1/2 animate-bounce z-50">
+          <div className="flex justify-center">
+            <a
+              href="#details"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('details');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
+            >
+              <span className="font-sans text-2xl text-gray-400 hover:text-gray-600 flex items-center">
+                <DoubleChevronDown />
+                learn more
+              </span>
+            </a>
+          </div>
         </div>
         <div id="details" className="py-12">
           <h2 className="text-5xl text-center font-handwritten">What we've made for you</h2>
