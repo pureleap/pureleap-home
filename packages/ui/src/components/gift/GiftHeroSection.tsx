@@ -54,25 +54,13 @@ export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
             </span>
           ))}
         </p>
-        <div className="h-12 max-h-12 mr-8 ml-8 mt-8">
-          <a className="rounded-lg border-gray-200 hover:bg-gray-300 " href={gift.link}>
-            <div className="flex justify-center items-center ">
-              <div className="flex items-center justify-center border-gray-200 h-12 w-12">
-                <span className="text-base font-sans">
-                  <img src={GiftBox} className="img" alt="Gift box" />
-                </span>
-              </div>
-              <div className="flex items-center justify-center mt-3 mb-3 ml-1 mr-1">
-                <span
-                  href={gift.link}
-                  className="font-handwritten text-4xl pt-1 pb-1 pr-2 pl-2 cursor-pointer"
-                >
-                  Get it Now
-                </span>
-              </div>
-            </div>
-          </a>
-        </div>
+        <a
+          href={gift.link}
+          className="flex items-center justify-center gap-2 px-4 py-3 mt-8 mx-8 rounded-lg border border-gray-200 hover:bg-gray-300 transition-colors"
+        >
+          <img src={GiftBox} alt="Gift box" className="w-6 h-6" />
+          <span className="font-handwritten text-4xl">Get it Now</span>
+        </a>
       </div>
     </section>
   );
