@@ -1,7 +1,7 @@
 import React from 'react';
 import { Gift } from '../../types/gift';
-import GiftBox from '../gift-box-256x256.png';
 import notionLogoGray from '../notion-logo-gray.svg';
+import GiftBox from './gift-light.svg';
 
 /**
  * Props for the GiftHeroSection component.
@@ -57,10 +57,11 @@ export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
         <div className="flex justify-center mt-8">
           <a
             href={gift.link}
-            className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-gray-200 hover:bg-gray-300 transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-purple text-white rounded-lg border border-gray-200 hover:bg-yellow transition-colors"
           >
-            <img src={GiftBox} alt="Gift box" className="w-10 h-10" />
-            <span className="font-handwritten text-4xl">Get it Now</span>
+            {/* www.svgrepo.com/svg/473212/gift  */}
+            <img src={GiftBox} alt="Gift box" className=" w-10 h-10 ml-2" />
+            <span className="font-handwritten text-5xl ml-2 mr-2">Get it Now</span>
           </a>
         </div>
       </div>

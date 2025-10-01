@@ -36,7 +36,7 @@ const GiftPage: React.FC = () => {
                 }
               }}
             >
-              <span className="font-sans text-base text-gray-400 hover:text-gray-600 flex items-center">
+              <span className="font-sans text-lg text-gray-400 hover:text-gray-600 flex items-center">
                 <DoubleChevronDown />
                 learn more
               </span>
