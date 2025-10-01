@@ -69,7 +69,7 @@ const GiftPage: React.FC = () => {
           </div>
         </div>
         {/* Learn more button */}
-        <div className="fixed bottom-8 transform -translate-x-1/2 animate-bounce z-50">
+        <div className="fixed bottom-8 left-0 right-0 flex justify-center animate-bounce z-50">
           <div className="flex justify-center">
             <a
               href="#details"
@@ -81,7 +81,7 @@ const GiftPage: React.FC = () => {
                 }
               }}
             >
-              <span className="font-sans text-2xl text-gray-400 hover:text-gray-600 flex items-center">
+              <span className="font-sans text-base text-gray-400 hover:text-gray-600 flex items-center">
                 <DoubleChevronDown />
                 learn more
               </span>
