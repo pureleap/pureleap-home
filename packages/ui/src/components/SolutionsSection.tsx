@@ -33,7 +33,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ className = 
       className={`flex flex-col items-center justify-center pb-12 ${className}`}
       style={{ backgroundColor: '#fbfbff' }}
     >
-      <h2 id="solutions" className="text-3xl text-center mb-24 font-serif pt-16">
+      <h2 id="solutions" className="text-5xl text-center mb-24 font-handwritten pt-16">
         What we make solutions for
       </h2>
       <div className="flex flex-wrap justify-center gap-12 mx-auto px-4">
@@ -44,8 +44,8 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ className = 
               alt={solution.title}
               className="w-full h-64 object-contain mb-4"
             />
-            <h3 className="text-2xl font-medium font-sans mb-6 mt-12">{solution.title}</h3>
-            <p className="text-gray-800 text-xl font-sans">{solution.description}</p>
+            <h3 className="text-2xl font-sans mb-6 mt-12">{solution.title}</h3>
+            <p className="text-gray-800 text-base font-sans">{solution.description}</p>
           </div>
         ))}
       </div>

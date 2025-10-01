@@ -13,7 +13,7 @@ const gifts = [
   {
     title: 'Commonplace Book',
     subtitle: 'Template',
-    link: '#',
+    link: 'https://www.notion.com/templates/commonplace-book-379',
     description: 'A refuge for your thoughts inspired by ancient practices.',
     price: '$0',
     image: commonplaceBookImage,
@@ -21,7 +21,7 @@ const gifts = [
   {
     title: 'River Not a Bucket',
     subtitle: 'Template',
-    link: '#',
+    link: 'https://shalveena.notion.site/River-Not-a-Bucket-2786810dcbf0804d87b4df1a553de3af',
     description: 'Collect what inspires without creating clutter.',
     price: '$0',
     image: riverNotABucketImage,
@@ -42,7 +42,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
       <h2 id="gifts" className="text-5xl text-center mb-16 pt-16 font-handwritten">
         Our gifts for you
       </h2>
-      <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-200">
+      <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
         {gifts.map((gift, index) => (
           <a
             href={gift.link}
@@ -61,7 +61,8 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
                 <h3 className="text-2xl font-sans">{gift.title}</h3>
               </div>
               <p className="flex justify-center items-center text-base font-sans text-gray-600 mb-4">
-                <img src={notionLogoGray} className="h-4 w-4 mr-1"></img> {gift.subtitle}
+                <img src={notionLogoGray} className="h-4 w-4 mr-1" alt="Notion Logo"></img>{' '}
+                {gift.subtitle}
               </p>
               <p className="text-base font-sans text-gray-800">{gift.description}</p>
             </div>

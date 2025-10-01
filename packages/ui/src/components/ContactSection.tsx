@@ -13,10 +13,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ className = '' }
       style={{ backgroundColor: '#fbfbff' }}
       id="contact"
     >
-      <h2 className="text-3xl text-center mb-24 font-serif">How to get in touch</h2>
+      <h2 className="text-5xl text-center mb-24 font-handwritten">How to get in touch</h2>
       <div className="flex flex-col items-center">
         {contactInfo.map((line, index) => (
-          <p key={index} className="text-gray-800 text-xl font-sans mb-2">
+          <p key={index} className="text-gray-800 text-base font-sans mb-2">
             {line}
           </p>
         ))}
