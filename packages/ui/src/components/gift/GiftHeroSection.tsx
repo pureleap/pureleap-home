@@ -43,7 +43,7 @@ export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
 
           <p className="text-base font-sans text-gray-800 mt-4">{gift.description}</p>
         </div>
-        <p className="text-sm font-sans text-gray-600 mt-2">
+        {/* <p className="text-sm font-sans text-gray-600 mt-2">
           made by{' '}
           {gift.authors.map((author, index) => (
             <span key={index}>
@@ -53,7 +53,7 @@ export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
               {index < gift.authors.length - 1 ? ', ' : ''}
             </span>
           ))}
-        </p>
+        </p> */}
         <div className="flex justify-center mt-8">
           <a
             href={gift.link}
