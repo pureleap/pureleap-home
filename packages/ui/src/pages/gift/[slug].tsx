@@ -24,8 +24,8 @@ const GiftPage: React.FC = () => {
       </Head>
       <div className="font-sans bg-white min-h-screen">
         <div className="flex flex-col items-center justify-center py-12">
-          <h2 className="text-5xl text-center mb-16 pt-16 font-handwritten">Our gift for you</h2>
-          <div className="flex flex-col text-center max-w-64">
+          <h2 className="text-2xl text-center mb-16 pt-16 font-handwritten">Our gift for you</h2>
+          <div className="flex flex-col text-center max-w-128">
             <div className="p-4">
               <div className="mb-2">
                 <img
@@ -38,7 +38,7 @@ const GiftPage: React.FC = () => {
                 <h3 className="text-2xl font-sans">{gift.title}</h3>
               </div>
               <p className="flex justify-center items-center text-base font-sans text-gray-600 mb-4">
-                <img src={notionLogoGray} className="h-4 w-4 mr-1" alt="Notion Logo" />{' '}
+                <img src={notionLogoGray} className="h-4 w-4 mr-1" alt="Notion Logo" /> Notion{' '}
                 {gift.subtitle}
               </p>
               <p className="text-base font-sans text-gray-800">{gift.description}</p>
