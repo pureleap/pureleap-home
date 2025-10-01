@@ -43,10 +43,10 @@ const GiftPage: React.FC = () => {
             </a>
           </div>
         </div>
-        <div id="details" className="py-12">
-          <h2 className="text-5xl text-center font-handwritten">What we've made for you</h2>
-        </div>
       </div>
+      <section id="details" className="py-12">
+        <h2 className="text-5xl text-center font-handwritten">What we've made for you</h2>
+      </section>
     </>
   );
 };
