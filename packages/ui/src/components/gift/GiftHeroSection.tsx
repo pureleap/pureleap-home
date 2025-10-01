@@ -18,7 +18,7 @@ interface GiftHeroSectionProps {
 export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
   return (
     <section className="flex flex-col items-center justify-center h-full bg-white">
-      <h2 className="text-2xl text-center mb-16 pt-24 font-handwritten">Our gift for you</h2>
+      <h2 className="text-3xl text-center mb-6 pt-32 font-handwritten">Our gift for you</h2>
       <div className="flex flex-col text-center max-w-128">
         <div className="p-4">
           <div className="mb-2">
@@ -54,13 +54,15 @@ export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
             </span>
           ))}
         </p>
-        <a
-          href={gift.link}
-          className="flex items-center justify-center gap-2 px-4 py-3 mt-8 mx-8 rounded-lg border border-gray-200 hover:bg-gray-300 transition-colors"
-        >
-          <img src={GiftBox} alt="Gift box" className="w-6 h-6" />
-          <span className="font-handwritten text-4xl">Get it Now</span>
-        </a>
+        <div className="flex justify-center mt-8">
+          <a
+            href={gift.link}
+            className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-gray-200 hover:bg-gray-300 transition-colors"
+          >
+            <img src={GiftBox} alt="Gift box" className="w-10 h-10" />
+            <span className="font-handwritten text-4xl">Get it Now</span>
+          </a>
+        </div>
       </div>
     </section>
   );
