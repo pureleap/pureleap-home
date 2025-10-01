@@ -31,10 +31,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '', visible = true }
 
           {/* Desktop Navigation */}
           <nav className="hidden sm:block">
-            <a
-              href="/"
-              className="text-black-500 hover:text-orange-500 px-3 py-2 rounded-md font-xl font-serif"
-            >
+            <a href="/" className="text-black-500 hover:text-orange-500 text-2xl font-handwritten">
               Home
             </a>
           </nav>
@@ -55,6 +52,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '', visible = true }
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
+                <title>Hamburger Icon</title>
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -72,7 +70,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '', visible = true }
             <div className="px-2 pt-2 pb-3 space-y-1 text-right">
               <a
                 href="/"
-                className="block px-3 py-2 rounded-md text-base font-medium text-black-500 hover:text-orange-500 font-serif"
+                className="block px-3 py-2 rounded-md text-base font-medium text-black-500 hover:text-orange-500 font-sans"
               >
                 Home
               </a>

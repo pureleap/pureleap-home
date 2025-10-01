@@ -10,10 +10,9 @@ import TeaCup from './../img/tea_cup.png';
 
 const solutions = [
   {
-    image: MagicTablet,
-    title: 'Coding You’ll Love',
-    description:
-      'Building software should be a joy, not a chore. Our tools turn complex challenges into seamless fun.',
+    image: Notebook,
+    title: 'Chill Productivity',
+    description: 'Forget burnout. Work smarter, deliver better, and feel good doing it.',
   },
   {
     image: TeaCup,
@@ -21,9 +20,10 @@ const solutions = [
     description: 'Life’s too short not to enjoy it. We help you find health, joy, and peace.',
   },
   {
-    image: Notebook,
-    title: 'Chill Productivity',
-    description: 'Forget burnout. Work smarter, deliver better, and feel good doing it.',
+    image: MagicTablet,
+    title: 'Coding You’ll Love',
+    description:
+      'Building software should be a joy, not a chore. Our tools turn complex challenges into seamless fun.',
   },
 ];
 
