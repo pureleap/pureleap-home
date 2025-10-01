@@ -1,5 +1,5 @@
 import { SendEmailCommand } from '@aws-sdk/client-ses';
-import { Handler, APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from 'aws-lambda';
+import { APIGatewayProxyEventV2, APIGatewayProxyResultV2, Handler } from 'aws-lambda';
 
 import { connect, getFromDomain } from 'email-send';
 import { withCors } from '../middleware/withCors';
@@ -90,7 +90,7 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
               request.message
             }\n\n${
               request.phone ? `Your phone number: ${request.phone}\n\n` : ''
-            }We should be able to get back to you in the next few days.\n\nThanks, Shally and Max`,
+            }We will get back to you in the next few days.\n\nThanks, Shally and Max`,
           },
         },
       },

@@ -1,10 +1,9 @@
 import React from 'react';
-
-import LinkedIn from './../icons/linkedin.png';
-import YouTube from './../icons/youtube.png';
-import Instagram from './../icons/instagram.png';
-import Twitter from './../icons/twitter.png';
 import Heart from './../icons/heart.png';
+import Instagram from './../icons/instagram.png';
+import LinkedIn from './../icons/linkedin.png';
+import Twitter from './../icons/twitter.png';
+import YouTube from './../icons/youtube.png';
 
 /**
  * Configuration for a known social media icon
@@ -104,7 +103,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ links }) => {
                 className="object-contain"
               />
             </div>
-            <span className="text-lg font-medium group-hover:underline">{link.label}</span>
+            <span className="text-base group-hover:underline">{link.label}</span>
           </a>
         );
       })}

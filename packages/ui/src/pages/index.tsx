@@ -1,12 +1,13 @@
 import Head from 'next/head';
 import React, { useCallback, useEffect, useState } from 'react';
-import Contact from '../components/Contact';
+import { ContactSection as Contact } from '../components/ContactSection';
 import Footer from '../components/Footer';
+import { GiftsSection } from '../components/GiftsSection';
 import Header from '../components/Header';
-import Hero from '../components/Hero';
+import { HeroSection as Hero } from '../components/HeroSection';
 import ScrollIndicator from '../components/ScrollIndicator';
-import Solutions from '../components/Solutions';
-import Team from '../components/Team';
+import { SolutionsSection as Solutions } from '../components/SolutionsSection';
+import { TeamSection as Team } from '../components/TeamSection';
 
 export const Index: React.FC = () => {
   const [showHeader, setShowHeader] = useState(false);
@@ -63,6 +64,9 @@ export const Index: React.FC = () => {
         <Header visible={showHeader} />
         <div className="min-h-screen pb-32" style={{ backgroundColor: '#fbfbff' }}>
           <Hero className="h-full" />
+        </div>
+        <div className="">
+          <GiftsSection></GiftsSection>
         </div>
         <div className="">
           <Solutions className="" />

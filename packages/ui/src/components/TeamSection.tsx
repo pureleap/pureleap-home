@@ -1,10 +1,9 @@
 import React from 'react';
-import SocialIcons from './SocialIcons';
-
 import Max from './../img/max.png';
 import Shally from './../img/shally2.jpg';
+import SocialIcons from './SocialIcons';
 
-interface TeamProps {
+interface TeamSectionProps {
   className?: string;
 }
 
@@ -58,13 +57,13 @@ const team = [
   },
 ];
 
-const Team: React.FC<TeamProps> = ({ className = '' }) => {
+export const TeamSection: React.FC<TeamSectionProps> = ({ className = '' }) => {
   return (
     <section
       className={`flex flex-col items-center justify-center bg-gray-50 pt-32 ${className}`}
       style={{ backgroundColor: '#fbfbff' }}
     >
-      <h2 className="text-3xl text-center mb-24 font-serif">Who we are</h2>
+      <h2 className="text-5xl text-center mb-24 font-handwritten">Who we are</h2>
       <div className="flex flex-wrap justify-center gap-12 mx-auto px-4">
         {team.map((member, index) => (
           <div key={index} className="max-w-sm text-center flex flex-col min-h-[600px]">
@@ -76,9 +75,9 @@ const Team: React.FC<TeamProps> = ({ className = '' }) => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl font-medium font-sans mb-6 mt-12">{member.name}</h3>
+              <h3 className="text-2xl font-sans mb-6 mt-12">{member.name}</h3>
               <p className="text-gray-500 italic mb-4">{member.role}</p>
-              <p className="text-gray-800 text-xl font-sans min-h-[80px]">{member.description}</p>
+              <p className="text-gray-800 text-base font-sans min-h-[80px]">{member.description}</p>
             </div>
             <div className="flex justify-center gap-4 pt-8">
               <SocialIcons links={member.socialIcons}></SocialIcons>
@@ -89,5 +88,3 @@ const Team: React.FC<TeamProps> = ({ className = '' }) => {
     </section>
   );
 };
-
-export default Team;

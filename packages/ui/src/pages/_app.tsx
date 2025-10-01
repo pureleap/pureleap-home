@@ -9,6 +9,7 @@ const App = ({ Component, pageProps }): JSX.Element => {
     <>
       <noscript>
         <iframe
+          title="Google Tag Manager"
           src="https://www.googletagmanager.com/ns.html?id=GTM-WZ7HST3B"
           height="0"
           width="0"
