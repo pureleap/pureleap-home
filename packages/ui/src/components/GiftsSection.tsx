@@ -1,40 +1,11 @@
 import React from 'react';
-import aiAutoRelationImage from '../img/gifts/ai-auto-relation.png';
-import commonplaceBookImage from '../img/gifts/commonplace-book.png';
-import riverNotABucketImage from '../img/gifts/river-not-a-bucket.png';
+import { gifts } from '../data/gifts';
 import GiftBox from './gift-box-256x256.png';
 import notionLogoGray from './notion-logo-gray.svg';
 
 interface GiftsSectionProps {
   className?: string;
 }
-
-const gifts = [
-  {
-    title: 'Commonplace Book',
-    subtitle: 'Template',
-    link: 'https://www.notion.com/templates/commonplace-book-379',
-    description: 'A refuge for your thoughts inspired by ancient practices.',
-    price: '$0',
-    image: commonplaceBookImage,
-  },
-  {
-    title: 'River Not a Bucket',
-    subtitle: 'Template',
-    link: 'https://shalveena.notion.site/River-Not-a-Bucket-2786810dcbf0804d87b4df1a553de3af',
-    description: 'Collect what inspires without creating clutter.',
-    price: '$0',
-    image: riverNotABucketImage,
-  },
-  {
-    title: 'AI Auto Relation',
-    subtitle: 'Integration',
-    link: 'https://auto-relation.com',
-    description: 'Bring order to chaos using the power of relations.',
-    price: '$0',
-    image: aiAutoRelationImage,
-  },
-];
 
 export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) => {
   return (
@@ -45,7 +16,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
       <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
         {gifts.map((gift, index) => (
           <a
-            href={gift.link}
+            href={`/gift/${gift.slug}`}
             key={index}
             className="flex flex-col text-center max-w-64 group group-hover:bg-gray-100 hover:bg-gray-200 cursor-pointer"
           >
