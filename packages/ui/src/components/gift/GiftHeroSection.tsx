@@ -60,8 +60,8 @@ export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
             className="inline-flex items-center justify-center gap-2 px-4 py-3 bg-purple text-white rounded-lg border border-gray-200 hover:bg-yellow transition-colors"
           >
             {/* www.svgrepo.com/svg/473212/gift  */}
-            <img src={GiftBox} alt="Gift box" className=" w-10 h-10 ml-2" />
-            <span className="font-handwritten text-5xl ml-2 mr-2">Get it Now</span>
+            <img src={GiftBox} alt="Gift box" className=" w-6 h-6 ml-2" />
+            <span className="font-handwritten text-3xl ml-2 mr-2">Get it Now</span>
           </a>
         </div>
       </div>

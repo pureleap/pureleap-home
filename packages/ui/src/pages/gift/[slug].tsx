@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import { GiftHeroSection } from '../../components/gift/GiftHeroSection';
+import { ProblemSection } from '../../components/gift/ProblemSection';
+import Header from '../../components/Header';
 import { gifts } from '../../data/gifts';
 
 const GiftPage: React.FC = () => {
@@ -21,13 +23,14 @@ const GiftPage: React.FC = () => {
         <title>{gift.title} - Pureleap</title>
         <meta name="description" content={gift.description} />
       </Head>
+      <Header></Header>
       <div className="font-sans bg-white min-h-screen pb-32">
         <GiftHeroSection gift={gift} />
         {/* Learn more button */}
         <div className="fixed bottom-8 left-0 right-0 flex justify-center animate-bounce z-50">
           <div className="flex justify-center">
-            <a
-              href="#details"
+            <button
+              type="button"
               onClick={(e) => {
                 e.preventDefault();
                 const element = document.getElementById('details');
@@ -40,10 +43,11 @@ const GiftPage: React.FC = () => {
                 <DoubleChevronDown />
                 learn more
               </span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
+      <ProblemSection></ProblemSection>
       <section id="details" className="py-12">
         <h2 className="text-5xl text-center font-handwritten">What we've made for you</h2>
       </section>
