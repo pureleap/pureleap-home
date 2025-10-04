@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import { GiftHeroSection } from '../../components/gift/GiftHeroSection';
 import { ProblemSection } from '../../components/gift/ProblemSection';
+import { WhatWeHaveMadeSection } from '../../components/gift/WhatWeHaveMadeSection';
 import Header from '../../components/Header';
 import { gifts } from '../../data/gifts';
 
@@ -66,9 +67,7 @@ const GiftPage: React.FC = () => {
         )}
       </div>
       <ProblemSection></ProblemSection>
-      <section id="details" className="py-12">
-        <h2 className="text-5xl text-center font-handwritten">What we've made for you</h2>
-      </section>
+      <WhatWeHaveMadeSection></WhatWeHaveMadeSection>
     </>
   );
 };

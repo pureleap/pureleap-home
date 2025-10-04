@@ -1,8 +1,7 @@
 import pulled from './person-undecided.jpeg';
-
 export function ProblemSection() {
   return (
-    <section className="py-12">
+    <section className="mt-32 bg-white" id="details">
       <h2 className="text-5xl mb-16 text-center font-handwritten">The problem</h2>
       <div className="flex flex-row justify-evenly">
         <div>
