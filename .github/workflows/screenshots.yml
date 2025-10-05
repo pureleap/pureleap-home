@@ -27,7 +27,9 @@ jobs:
           yarn node scripts/screenshot.js
 
       - name: Upload screenshots
-        uses: actions/upload-artifact@v4
-        with:
-          name: screenshots
-          path: packages/ui/screenshots/
+        run: |
+          for file in packages/ui/screenshots/**/*.png; do
+            name=$(basename "$file" .png)
+            echo "Uploading $file as $name"
+            gh artifact upload "$name" "$file"
+          done
