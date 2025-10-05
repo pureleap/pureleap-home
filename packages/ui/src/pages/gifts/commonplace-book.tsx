@@ -1,20 +1,16 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
 import { GiftCTA } from '../../components/gifts/commonplace-book/GiftCTA';
 import { GiftHeroSection } from '../../components/gifts/commonplace-book/GiftHeroSection';
 import { ProblemSection } from '../../components/gifts/commonplace-book/ProblemSection';
-import { WhatsIncluded } from '../../components/gifts/commonplace-book/WhatsIncluded';
 import { WhatWeHaveMadeSection } from '../../components/gifts/commonplace-book/WhatWeHaveMadeSection';
 import { WhyGiveItATrySection } from '../../components/gifts/commonplace-book/WhyGiveItATrySection';
 import Header from '../../components/Header';
 import { gifts } from '../../data/gifts';
 
 const GiftPage: React.FC = () => {
-  const router = useRouter();
-  const { slug } = router.query;
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -32,7 +28,7 @@ const GiftPage: React.FC = () => {
     return () => window.removeEventListener('scroll', checkScrollPosition);
   }, []);
 
-  const gift = gifts.find((g) => g.slug === slug);
+  const gift = gifts.find((g) => g.slug === 'commonplace-book');
 
   if (!gift) {
     return <div>Gift not found</div>;
@@ -41,7 +37,7 @@ const GiftPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>{gift.title} - Pureleap</title>
+        <title>{`${gift.title} - Pureleap`}</title>
         <meta name="description" content={gift.description} />
       </Head>
       <Header></Header>
