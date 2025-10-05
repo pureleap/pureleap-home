@@ -9,10 +9,8 @@ interface GiftsSectionProps {
 
 export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) => {
   return (
-    <section
-      className={`bg-white bg-gradient-to-r from-blue-500 via-purple-500 to-magenta-500 flex flex-col items-center justify-center py-12 ${className}`}
-    >
-      <h2 id="gifts" className="text-5xl text-center mb-16 pt-16 font-handwritten text-white">
+    <section className={`bg-white flex flex-col items-center justify-center py-12 ${className}`}>
+      <h2 id="gifts" className="text-5xl text-center mb-16 pt-16 font-handwritten">
         Our gifts for you
       </h2>
       <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
@@ -20,14 +18,14 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
           <a
             href={gift.learnMoreLink}
             key={index}
-            className="flex flex-col text-center max-w-64 group group-hover:bg-gray-100 hover:bg-gray-200 cursor-pointer rounded-xl bg-white"
+            className="flex flex-col text-center max-w-64 group group-hover:bg-gray-100 hover:bg-gray-200 cursor-pointer rounded-xl"
           >
             <div className="flex-1 p-4">
               <div className="mb-2">
                 <img
                   src={gift.image}
                   alt={gift.title}
-                  className="w-full max-w-32 aspect-square object-cover mx-auto"
+                  className="w-full max-w-48 aspect-square object-cover mx-auto"
                 />
               </div>
               <div className="flex justify-center items-center min-h-20">
@@ -39,7 +37,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
               </p>
               <p className="text-base font-sans text-gray-800">{gift.description}</p>
             </div>
-            {/* <div className="flex justify-center items-center rounded-lg border-gray-200 h-8 max-h-8 group-hover:bg-gray-300 mr-8 ml-8 mb-4">
+            <div className="flex justify-center items-center rounded-lg border-gray-200 h-8 max-h-8 group-hover:bg-gray-300 mr-8 ml-8 mb-4">
               <div className="flex items-center justify-center border-gray-200 h-8 w-8">
                 <span className="text-base font-sans">
                   <img src={GiftBox} className="img" alt="Gift box"></img>
@@ -50,7 +48,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
                   learn more
                 </span>
               </div>
-            </div> */}
+            </div>
           </a>
         ))}
       </div>
