@@ -1,8 +1,10 @@
+import { SectionHeading } from './SectionHeading';
 import study from './Vittore_carpaccio.jpg';
+
 export function WhatWeHaveMadeSection() {
   return (
     <section className="pt-32 bg-white" id="what-we-have-made">
-      <h2 className="text-5xl mb-16 text-center font-handwritten">What we've made for you</h2>
+      <SectionHeading>What we've made for you</SectionHeading>
       <div className="flex flex-col md:flex-row justify-center md:justify-evenly items-center">
         <div className="flex items-center font-sans text-center text-xl max-w-96 mb-8 md:mb-0">
           <div>

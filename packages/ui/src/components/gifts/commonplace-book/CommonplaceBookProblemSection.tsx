@@ -1,8 +1,10 @@
 import pulled from './person-undecided.jpeg';
+import { SectionHeading } from './SectionHeading';
+
 export function CommonplaceBookProblemSection() {
   return (
     <section className="pt-32 bg-white" id="details">
-      <h2 className="text-5xl mb-16 text-center font-handwritten">The problem</h2>
+      <SectionHeading>The problem</SectionHeading>
       <div className="flex flex-col md:flex-row justify-center md:justify-evenly items-center">
         <div className="mb-8 md:mb-0">
           <img className="h-64 md:h-96" src={pulled} alt="Person pulled in many directions"></img>

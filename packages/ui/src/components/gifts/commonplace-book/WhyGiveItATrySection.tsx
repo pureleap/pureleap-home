@@ -4,6 +4,7 @@ import laptopMagic from './laptop-magic.png';
 import magicBook from './magic-book.jpeg';
 import notebook from './notebook.png';
 import robotSorting from './robot-sorting.jpeg';
+import { SectionHeading } from './SectionHeading';
 import teaCup from './tea-cup.png';
 
 export function WhyGiveItATrySection() {
@@ -36,7 +37,7 @@ export function WhyGiveItATrySection() {
 
   return (
     <section className="pt-32 flex justify-center flex-col items-center bg-white">
-      <h2 className="text-5xl mb-16 text-center font-handwritten">Why give it a try?</h2>
+      <SectionHeading>Why give it a try?</SectionHeading>
       <div className="flex flex-col items-center justify-center">
         <Row>
           <RowImage src={teaCup} alt="simple" />
