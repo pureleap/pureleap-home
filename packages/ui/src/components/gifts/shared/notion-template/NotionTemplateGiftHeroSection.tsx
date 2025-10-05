@@ -1,6 +1,6 @@
 import React from 'react';
 import { Gift } from '../../../../types/gift';
-import notionLogoGray from '../../notion-logo-gray.svg';
+import notionLogoGray from '../../../notion-logo-gray.svg';
 import { NotionTemplateGiftCTAButton } from './NotionTemplateGiftCTAButton';
 
 /**
