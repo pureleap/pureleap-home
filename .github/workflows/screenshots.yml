@@ -33,11 +33,5 @@ jobs:
           name: screenshots
           path: packages/ui/screenshots/
       
-      - name: Upload screenshots individually
-        run: |
-          for file in $(find packages/ui/screenshots -type f -name '*.png'); do
-            name=$(basename "$file" .png)
-            echo "Uploading $file as $name"
-            gh run upload-artifact "$name" "$file"
-          done
+
      
