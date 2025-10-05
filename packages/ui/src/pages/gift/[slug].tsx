@@ -6,6 +6,7 @@ import { GiftHeroSection } from '../../components/gift/GiftHeroSection';
 import { ProblemSection } from '../../components/gift/ProblemSection';
 import { WhatsIncluded } from '../../components/gift/WhatsIncluded';
 import { WhatWeHaveMadeSection } from '../../components/gift/WhatWeHaveMadeSection';
+import { WhyGiveItATrySection } from '../../components/gift/WhyGiveItATrySection';
 import Header from '../../components/Header';
 import { gifts } from '../../data/gifts';
 
@@ -69,7 +70,7 @@ const GiftPage: React.FC = () => {
       </div>
       <ProblemSection></ProblemSection>
       <WhatWeHaveMadeSection></WhatWeHaveMadeSection>
-      <WhatsIncluded />
+      <WhyGiveItATrySection></WhyGiveItATrySection>
     </>
   );
 };
