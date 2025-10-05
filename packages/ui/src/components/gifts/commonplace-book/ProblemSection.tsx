@@ -1,5 +1,5 @@
 import pulled from './person-undecided.jpeg';
-export function ProblemSection() {
+export function CommonplaceBookProblemSection() {
   return (
     <section className="pt-32 bg-white" id="details">
       <h2 className="text-5xl mb-16 text-center font-handwritten">The problem</h2>

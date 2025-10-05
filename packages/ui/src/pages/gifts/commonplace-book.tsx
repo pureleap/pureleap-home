@@ -2,11 +2,10 @@ import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
-import { GiftCTASection } from '../../components/gifts/commonplace-book/GiftCTASection';
-import { ProblemSection } from '../../components/gifts/commonplace-book/ProblemSection';
+import { CommonplaceBookProblemSection } from '../../components/gifts/commonplace-book/ProblemSection';
 import { WhatWeHaveMadeSection } from '../../components/gifts/commonplace-book/WhatWeHaveMadeSection';
 import { WhyGiveItATrySection } from '../../components/gifts/commonplace-book/WhyGiveItATrySection';
-import { NotionTemplateGiftCTAButton } from '../../components/gifts/shared/NotionTemplateGiftCTAButton';
+import { NotionTemplateGiftCTASection } from '../../components/gifts/shared/NotionTemplateGiftCTASection';
 import { NotionTemplateGiftHeroSection } from '../../components/gifts/shared/NotionTemplateGiftHeroSection';
 import Header from '../../components/Header';
 import { gifts } from '../../data/gifts';
@@ -68,10 +67,10 @@ const GiftPage: React.FC = () => {
         )}
       </div>
       <div className="pr-8 pl-8">
-        <ProblemSection></ProblemSection>
+        <CommonplaceBookProblemSection></CommonplaceBookProblemSection>
         <WhatWeHaveMadeSection></WhatWeHaveMadeSection>
         <WhyGiveItATrySection></WhyGiveItATrySection>
-        <GiftCTASection ctaLink={gift.ctaLink} />
+        <NotionTemplateGiftCTASection ctaLink={gift.ctaLink} />
       </div>
       <Footer></Footer>
     </>

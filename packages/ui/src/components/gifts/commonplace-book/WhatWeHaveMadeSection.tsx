@@ -1,6 +1,4 @@
-import book from './commonplace-book.png';
 import study from './Vittore_carpaccio.jpg';
-import { WhatsIncluded } from './WhatsIncluded';
 export function WhatWeHaveMadeSection() {
   return (
     <section className="pt-32 bg-white" id="what-we-have-made">
