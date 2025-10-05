@@ -1,6 +1,6 @@
 import book from './commonplace-book.png';
-import instructions from './handwritten-instructions.png';
 import study from './Vittore_carpaccio.jpg';
+import { WhatsIncluded } from './WhatsIncluded';
 export function WhatWeHaveMadeSection() {
   return (
     <section className="mt-32 bg-white" id="what-we-have-made">
@@ -38,26 +38,7 @@ export function WhatWeHaveMadeSection() {
           ></img>
         </div>
       </div>
-      <div className="mt-48 flex justify-center flex-col items-center">
-        <div className="text-xl max-w-lg">
-          <p>What's included:</p>
-        </div>
-        <div className="mt-8 flex flex-col items-center justify-center">
-          <div className="flex flex-row items-center justify-evenly">
-            <div>
-              {/* https://new.express.adobe.com/id/urn:aaid:sc:AP:79a9ebcb-18d1-4680-be7b-295e9e8da54f?invite=true&accept=true?preload=sharesheet */}
-              <img
-                src={instructions}
-                alt="handwritten instructions"
-                className="max-w-64 rounded-lg shadow-xl shadow-blue-gray-900/50"
-              ></img>
-            </div>
-            <div className="mx-16 max-w-md">
-              Handwritten notes to help you <em>slow down</em> and create something meaningful.
-            </div>
-          </div>
-        </div>
-      </div>
+      <WhatsIncluded />
     </section>
   );
 }
