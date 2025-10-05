@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
 import { GiftCTAButton } from '../../components/gifts/commonplace-book/GiftCTAButton';
+import { GiftCTASection } from '../../components/gifts/commonplace-book/GiftCTASection';
 import { GiftHeroSection } from '../../components/gifts/commonplace-book/GiftHeroSection';
 import { ProblemSection } from '../../components/gifts/commonplace-book/ProblemSection';
 import { WhatWeHaveMadeSection } from '../../components/gifts/commonplace-book/WhatWeHaveMadeSection';
@@ -70,20 +71,7 @@ const GiftPage: React.FC = () => {
         <ProblemSection></ProblemSection>
         <WhatWeHaveMadeSection></WhatWeHaveMadeSection>
         <WhyGiveItATrySection></WhyGiveItATrySection>
-        <section className="pt-32 bg-white">
-          <div className="flex flex-col sm:flex-row justify-center">
-            <div className="flex items-center justify-center font-sans text-center text-xl max-w-64 px-2 sm:px-0 self-center">
-              <div>
-                <p className="mb-4">
-                  Explore the template on Notion and we hope you'll give it a try!
-                </p>
-              </div>
-            </div>
-            <div className="mt-4 sm:mt-0 sm:pl-16 flex justify-center">
-              <GiftCTAButton link={gift.ctaLink} />
-            </div>
-          </div>
-        </section>
+        <GiftCTASection ctaLink={gift.ctaLink} />
       </div>
       <Footer></Footer>
     </>
