@@ -16,7 +16,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
       <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
         {gifts.map((gift, index) => (
           <a
-            href={`/gift/${gift.slug}`}
+            href={gift.learnMoreLink}
             key={index}
             className="flex flex-col text-center max-w-64 group group-hover:bg-gray-100 hover:bg-gray-200 cursor-pointer rounded-xl"
           >

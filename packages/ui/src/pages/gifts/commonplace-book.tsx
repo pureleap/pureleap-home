@@ -28,7 +28,7 @@ const GiftPage: React.FC = () => {
     return () => window.removeEventListener('scroll', checkScrollPosition);
   }, []);
 
-  const gift = gifts.find((g) => g.slug === 'commonplace-book');
+  const gift = gifts.find((g) => g.id === 'commonplace-book');
 
   if (!gift) {
     return <div>Gift not found</div>;
@@ -79,7 +79,7 @@ const GiftPage: React.FC = () => {
             </div>
           </div>
           <div className="pl-16">
-            <GiftCTA link={gift.link} />
+            <GiftCTA link={gift.ctaLink} />
           </div>
         </div>
       </section>

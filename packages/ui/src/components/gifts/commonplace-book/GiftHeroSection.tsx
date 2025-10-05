@@ -55,7 +55,7 @@ export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
           ))}
         </p> */}
         <div className="flex justify-center mt-8">
-          <GiftCTA link={gift.link} />
+          <GiftCTA link={gift.ctaLink} />
         </div>
       </div>
     </section>

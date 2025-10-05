@@ -7,7 +7,7 @@ export interface Gift {
   /** The subtitle or type of the gift */
   subtitle: string;
   /** External link to the gift */
-  link: string;
+  ctaLink: string;
   /** Description of the gift */
   description: string;
   /** Price of the gift */
@@ -17,5 +17,7 @@ export interface Gift {
   /** Array of authors with name and link */
   authors: { name: string; link: string }[];
   /** URL slug for the gift page */
-  slug: string;
+  id: string;
+  /** Link for learn more on index page */
+  learnMoreLink: string;
 }

@@ -18,6 +18,12 @@
     "moduleResolution": "node",
     "isolatedModules": true
   },
-  "exclude": ["node_modules"],
-  "references": []
+  "exclude": [
+    "node_modules"
+  ],
+  "references": [
+    {
+      "path": "../api"
+    }
+  ]
 }
