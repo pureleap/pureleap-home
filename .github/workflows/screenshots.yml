@@ -19,10 +19,11 @@ jobs:
         with:
           node-version: 20
 
-
+      
       - name: Take screenshots
         run: |
           cd packages/ui
+          yarn playwright install --with-deps
           yarn node scripts/screenshot.js
 
       - name: Upload screenshots
