@@ -117,10 +117,7 @@ const ContactForm: React.FC = () => {
       </Head>
       <Header></Header>
       <div className="font-sans">
-        <section
-          className="flex flex-col items-center justify-center pt-32 px-4 md:px-8 lg:px-16"
-          style={{ backgroundColor: '#fbfbff' }}
-        >
+        <section className="flex flex-col items-center justify-center pt-32 px-4 md:px-8 lg:px-16 bg-white">
           <h1 className="text-4xl text-center mb-16 font-serif">Contact Form</h1>
 
           <div className="max-w-2xl w-full">

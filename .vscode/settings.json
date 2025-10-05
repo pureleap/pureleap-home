@@ -32,8 +32,7 @@
   "github-actions.workflows.pinned.workflows": [
     ".github/workflows/template_deploy_dev.yml",
     ".github/workflows/master.yml",
-    ".github/workflows/branch.yml",
-    ".github/workflows/main.yml"
+    ".github/workflows/branch.yml"
   ],
   "[javascript][typescript][javascriptreact][typescriptreact][css][graphql]": {
     "editor.defaultFormatter": "biomejs.biome"

@@ -32,6 +32,10 @@
       "regex": "^\\/contact-form$"
     },
     {
+      "page": "/gifts/commonplace-book",
+      "regex": "^\\/gifts\\/commonplace-book$"
+    },
+    {
       "page": "/index",
       "regex": "^\\/index$"
     },
@@ -58,6 +62,12 @@
       "regex": "^/contact\\-form(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/contact\\-form(?:/)?$"
+    },
+    {
+      "page": "/gifts/commonplace-book",
+      "regex": "^/gifts/commonplace\\-book(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/gifts/commonplace\\-book(?:/)?$"
     },
     {
       "page": "/privacy-policy",
