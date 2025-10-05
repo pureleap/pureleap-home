@@ -26,8 +26,7 @@ export function WhatWeHaveMadeSection() {
       <div className="mt-16 flex justify-center flex-col items-center">
         <div className="text-xl max-w-lg">
           <p className="max-w-lg text-center">
-            We made a <b>Notion template</b> that allows you to create your own digital Commonplace
-            book.
+            We've made a <b>Notion template</b> so you can create your own digital Commonplace book.
           </p>
         </div>
         {/* <div>

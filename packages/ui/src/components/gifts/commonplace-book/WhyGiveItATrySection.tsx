@@ -49,21 +49,21 @@ export function WhyGiveItATrySection() {
           <RowImage src={magicBook} alt="not just a template" />
           <RowContent
             heading="Not just a template"
-            text="We've included short guides on how to use the template so it brings clarity not clutter."
+            text="Includes guides on how to use the template effectively: to create clarity not clutter."
           />
         </Row>
         <Row>
           <RowImage src={robotSorting} alt="use AI mindfully" />
           <RowContent
             heading="Use AI to enrich, not replace"
-            text="Let AI help you with chores, not replace your thinking."
+            text="Let AI help with chores, not replace your thinking."
           />
         </Row>
         <Row>
           <RowImage src={notebook} alt="make it yours" />
           <RowContent
             heading="Make it yours"
-            text="We've added a collection of free cover images so you can shape the template to your taste."
+            text="A collection of free cover images to shape it to your taste."
           />
         </Row>
         <Row>
