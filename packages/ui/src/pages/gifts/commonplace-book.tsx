@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
-import { CommonplaceBookProblemSection } from '../../components/gifts/commonplace-book/ProblemSection';
+import { CommonplaceBookProblemSection } from '../../components/gifts/commonplace-book/CommonplaceBookProblemSection';
 import { WhatWeHaveMadeSection } from '../../components/gifts/commonplace-book/WhatWeHaveMadeSection';
 import { WhyGiveItATrySection } from '../../components/gifts/commonplace-book/WhyGiveItATrySection';
 import { NotionTemplateGiftCTASection } from '../../components/gifts/shared/NotionTemplateGiftCTASection';
