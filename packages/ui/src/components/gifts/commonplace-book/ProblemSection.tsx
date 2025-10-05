@@ -3,9 +3,9 @@ export function ProblemSection() {
   return (
     <section className="pt-32 bg-white" id="details">
       <h2 className="text-5xl mb-16 text-center font-handwritten">The problem</h2>
-      <div className="flex flex-row justify-evenly">
-        <div>
-          <img className="h-96" src={pulled} alt="Person pulled in many directions"></img>
+      <div className="flex flex-col md:flex-row justify-center md:justify-evenly items-center">
+        <div className="mb-8 md:mb-0">
+          <img className="h-64 md:h-96" src={pulled} alt="Person pulled in many directions"></img>
         </div>
         <div className="flex items-center font-sans text-center text-xl max-w-96">
           <div>
