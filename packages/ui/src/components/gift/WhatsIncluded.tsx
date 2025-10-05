@@ -20,16 +20,14 @@ export function WhatsIncluded() {
   }
 
   return (
-    <div className="mt-48 flex justify-center flex-col items-center">
-      <div className="text-xl max-w-lg">
-        <p>What's included:</p>
-      </div>
-      <div className="mt-8 flex flex-col items-center justify-center">
+    <section className="mt-32 flex justify-center flex-col items-center">
+      <h2 className="text-5xl mb-16 text-center font-handwritten">What's included</h2>
+      <div className="flex flex-col items-center justify-center">
         <Row>
           <RowImage
             src={instructions}
             alt="handwritten instructions"
-            className="max-w-64 rounded-lg shadow-xl shadow-blue-gray-900/50"
+            className="w-64 h-32 object-cover object-top rounded-lg shadow-xl shadow-blue-gray-900/50"
           />
           <RowText>
             Handwritten notes to help you <em>slow down</em> and create something meaningful.
@@ -46,6 +44,6 @@ export function WhatsIncluded() {
           </RowText>
         </Row>
       </div>
-    </div>
+    </section>
   );
 }

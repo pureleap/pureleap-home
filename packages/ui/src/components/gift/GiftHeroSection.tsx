@@ -18,8 +18,8 @@ interface GiftHeroSectionProps {
 export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
   return (
     <section className="flex flex-col items-center justify-center h-full bg-white">
-      <h2 className="text-3xl text-center mb-6 pt-32 font-handwritten">Our gift for you</h2>
-      <div className="flex flex-col text-center max-w-128">
+      {/* <h2 className="text-3xl text-center mb-6 pt-32 font-handwritten">Our gift for you</h2> */}
+      <div className="flex flex-col text-center max-w-128 pt-32">
         <div className="p-4">
           <div className="mb-2">
             <img
