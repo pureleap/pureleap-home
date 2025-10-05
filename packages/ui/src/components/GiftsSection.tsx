@@ -18,7 +18,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
           <a
             href={gift.learnMoreLink}
             key={index}
-            className="flex flex-col text-center max-w-64 group group-hover:bg-gray-100 hover:bg-gray-200 cursor-pointer rounded-xl"
+            className="flex flex-col text-center max-w-64 group hover:bg-purple-900 cursor-pointer rounded-xl"
           >
             <div className="flex-1 p-4">
               <div className="mb-2">
@@ -37,14 +37,14 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
               </p>
               <p className="text-base font-sans text-gray-800">{gift.description}</p>
             </div>
-            <div className="flex justify-center items-center rounded-lg border-gray-200 h-8 max-h-8 group-hover:bg-gray-300 mr-8 ml-8 mb-4">
+            <div className="flex justify-center items-center rounded-lg border-gray-200 h-8 max-h-8 group-hover:bg-purple-500 mr-8 ml-8 mb-4">
               <div className="flex items-center justify-center border-gray-200 h-8 w-8">
                 <span className="text-base font-sans">
                   <img src={GiftBox} className="img" alt="Gift box"></img>
                 </span>
               </div>
               <div className="flex items-center justify-center mt-3 mb-3 ml-1 mr-1">
-                <span className="font-handwritten text-2xl btn pt-1 pb-1 pr-2 pl-2">
+                <span className="font-handwritten text-2xl btn pt-1 pb-1 pr-2 pl-2 group-hover:text-white">
                   learn more
                 </span>
               </div>
