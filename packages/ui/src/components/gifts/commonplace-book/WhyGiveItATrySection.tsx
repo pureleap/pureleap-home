@@ -1,10 +1,10 @@
+import { SectionHeading } from '../shared/SectionHeading';
 import giftBox from './gift-box-256x256.png';
 import instructions from './handwritten-instructions.png';
 import laptopMagic from './laptop-magic.png';
 import magicBook from './magic-book.jpeg';
 import notebook from './notebook.png';
 import robotSorting from './robot-sorting.jpeg';
-import { SectionHeading } from './SectionHeading';
 import teaCup from './tea-cup.png';
 
 export function WhyGiveItATrySection() {

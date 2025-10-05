@@ -1,5 +1,5 @@
+import { SectionHeading } from '../shared/SectionHeading';
 import pulled from './person-undecided.jpeg';
-import { SectionHeading } from './SectionHeading';
 
 export function CommonplaceBookProblemSection() {
   return (

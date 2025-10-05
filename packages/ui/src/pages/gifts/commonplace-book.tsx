@@ -5,8 +5,8 @@ import Footer from '../../components/Footer';
 import { CommonplaceBookProblemSection } from '../../components/gifts/commonplace-book/CommonplaceBookProblemSection';
 import { WhatWeHaveMadeSection } from '../../components/gifts/commonplace-book/WhatWeHaveMadeSection';
 import { WhyGiveItATrySection } from '../../components/gifts/commonplace-book/WhyGiveItATrySection';
-import { NotionTemplateGiftCTASection } from '../../components/gifts/shared/NotionTemplateGiftCTASection';
-import { NotionTemplateGiftHeroSection } from '../../components/gifts/shared/NotionTemplateGiftHeroSection';
+import { NotionTemplateGiftCTASection } from '../../components/gifts/shared/notion-template/NotionTemplateGiftCTASection';
+import { NotionTemplateGiftHeroSection } from '../../components/gifts/shared/notion-template/NotionTemplateGiftHeroSection';
 import Header from '../../components/Header';
 import { gifts } from '../../data/gifts';
 

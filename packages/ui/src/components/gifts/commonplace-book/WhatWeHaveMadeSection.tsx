@@ -1,4 +1,4 @@
-import { SectionHeading } from './SectionHeading';
+import { SectionHeading } from '../shared/SectionHeading';
 import study from './Vittore_carpaccio.jpg';
 
 export function WhatWeHaveMadeSection() {
