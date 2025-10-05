@@ -3,12 +3,12 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
-import { GiftCTA } from '../../components/gift/GiftCTA';
-import { GiftHeroSection } from '../../components/gift/GiftHeroSection';
-import { ProblemSection } from '../../components/gift/ProblemSection';
-import { WhatsIncluded } from '../../components/gift/WhatsIncluded';
-import { WhatWeHaveMadeSection } from '../../components/gift/WhatWeHaveMadeSection';
-import { WhyGiveItATrySection } from '../../components/gift/WhyGiveItATrySection';
+import { GiftCTA } from '../../components/gifts/commonplace-book/GiftCTA';
+import { GiftHeroSection } from '../../components/gifts/commonplace-book/GiftHeroSection';
+import { ProblemSection } from '../../components/gifts/commonplace-book/ProblemSection';
+import { WhatsIncluded } from '../../components/gifts/commonplace-book/WhatsIncluded';
+import { WhatWeHaveMadeSection } from '../../components/gifts/commonplace-book/WhatWeHaveMadeSection';
+import { WhyGiveItATrySection } from '../../components/gifts/commonplace-book/WhyGiveItATrySection';
 import Header from '../../components/Header';
 import { gifts } from '../../data/gifts';
 
