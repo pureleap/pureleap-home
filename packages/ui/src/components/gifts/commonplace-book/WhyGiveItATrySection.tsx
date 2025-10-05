@@ -47,7 +47,7 @@ export function WhyGiveItATrySection() {
           />
           <RowContent
             heading="Not just a template"
-            text="We've included short guides how to use the template so it brings clarity not clutter."
+            text="We've included short guides on how to use the template so it brings clarity not clutter."
           />
         </Row>
         <Row>

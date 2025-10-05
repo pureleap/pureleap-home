@@ -31,7 +31,7 @@ const GiftPage: React.FC = () => {
   const gift = gifts.find((g) => g.id === 'commonplace-book');
 
   if (!gift) {
-    return <div>Gift not found</div>;
+    return <div>Commonplace Book gift not found</div>;
   }
 
   return (

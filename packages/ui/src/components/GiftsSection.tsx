@@ -9,7 +9,9 @@ interface GiftsSectionProps {
 
 export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) => {
   return (
-    <section className={`bg-white flex flex-col items-center justify-center py-12 ${className}`}>
+    <section
+      className={`bg-white bg-gradient-to-r from-blue-500 via-purple-500 to-magenta-500 flex flex-col items-center justify-center py-12 ${className}`}
+    >
       <h2 id="gifts" className="text-5xl text-center mb-16 pt-16 font-handwritten">
         Our gifts for you
       </h2>
