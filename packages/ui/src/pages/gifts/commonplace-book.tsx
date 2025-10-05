@@ -66,23 +66,25 @@ const GiftPage: React.FC = () => {
           </div>
         )}
       </div>
-      <ProblemSection></ProblemSection>
-      <WhatWeHaveMadeSection></WhatWeHaveMadeSection>
-      <WhyGiveItATrySection></WhyGiveItATrySection>
-      <section className="pt-32 bg-white">
-        <div className="flex flex-row justify-center">
-          <div className="flex items-center font-sans text-center text-xl max-w-64">
-            <div>
-              <p className="mb-4">
-                Explore the template on Notion and we hope you'll give it a try!
-              </p>
+      <div className="pr-8 pl-8">
+        <ProblemSection></ProblemSection>
+        <WhatWeHaveMadeSection></WhatWeHaveMadeSection>
+        <WhyGiveItATrySection></WhyGiveItATrySection>
+        <section className="pt-32 bg-white">
+          <div className="flex flex-col sm:flex-row justify-center">
+            <div className="flex items-center justify-center font-sans text-center text-xl max-w-64 px-2 sm:px-0 self-center">
+              <div>
+                <p className="mb-4">
+                  Explore the template on Notion and we hope you'll give it a try!
+                </p>
+              </div>
+            </div>
+            <div className="mt-4 sm:mt-0 sm:pl-16 flex justify-center">
+              <GiftCTA link={gift.ctaLink} />
             </div>
           </div>
-          <div className="pl-16">
-            <GiftCTA link={gift.ctaLink} />
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <Footer></Footer>
     </>
   );

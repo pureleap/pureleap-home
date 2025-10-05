@@ -5,8 +5,8 @@ export function WhatWeHaveMadeSection() {
   return (
     <section className="pt-32 bg-white" id="what-we-have-made">
       <h2 className="text-5xl mb-16 text-center font-handwritten">What we've made for you</h2>
-      <div className="flex flex-row justify-evenly">
-        <div className="flex items-center font-sans text-center text-xl max-w-96">
+      <div className="flex flex-col md:flex-row justify-center md:justify-evenly items-center">
+        <div className="flex items-center font-sans text-center text-xl max-w-96 mb-8 md:mb-0">
           <div>
             <p className="mb-4">Since ancient times, people have kept journals.</p>
             <p>
@@ -15,9 +15,9 @@ export function WhatWeHaveMadeSection() {
             </p>
           </div>
         </div>
-        <div>
+        <div className="mt-8 md:mt-0">
           <img
-            className="w-96 rounded-lg shadow-xl shadow-blue-gray-900/50"
+            className="w-full md:w-96 rounded-lg shadow-xl shadow-blue-gray-900/50"
             src={study}
             alt="Oil painting: Vittore carpaccio, visione di sant'agostino 01"
           ></img>
