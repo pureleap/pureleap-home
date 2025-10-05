@@ -8,7 +8,7 @@ import teaCup from './tea-cup.png';
 
 export function WhyGiveItATrySection() {
   function Row({ children }) {
-    return <div className="flex flex-row items-center justify-start mb-16">{children}</div>;
+    return <div className="flex flex-row items-center justify-start pb-16">{children}</div>;
   }
 
   function RowImage({ src, alt, className }) {
@@ -29,14 +29,14 @@ export function WhyGiveItATrySection() {
   }
 
   return (
-    <section className="mt-32 flex justify-center flex-col items-center">
+    <section className="pt-32 flex justify-center flex-col items-center bg-white">
       <h2 className="text-5xl mb-16 text-center font-handwritten">Why give it a try?</h2>
       <div className="flex flex-col items-center justify-center">
         <Row>
           <RowImage src={teaCup} alt="simple" className="w-32 h-32 object-cover rounded-lg " />
           <RowContent
             heading="It’s simple"
-            text="No long list of features to learn. Just what you need, nothing more.."
+            text="No long list of features to learn. Just what you need, nothing more."
           />
         </Row>
         <Row>
@@ -47,7 +47,7 @@ export function WhyGiveItATrySection() {
           />
           <RowContent
             heading="Not just a template"
-            text="We've included short guides how to use the template so it bring clarity not clutter."
+            text="We've included short guides how to use the template so it brings clarity not clutter."
           />
         </Row>
         <Row>

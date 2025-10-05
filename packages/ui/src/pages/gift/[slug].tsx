@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
+import Footer from '../../components/Footer';
+import { GiftCTA } from '../../components/gift/GiftCTA';
 import { GiftHeroSection } from '../../components/gift/GiftHeroSection';
 import { ProblemSection } from '../../components/gift/ProblemSection';
 import { WhatsIncluded } from '../../components/gift/WhatsIncluded';
@@ -71,6 +73,21 @@ const GiftPage: React.FC = () => {
       <ProblemSection></ProblemSection>
       <WhatWeHaveMadeSection></WhatWeHaveMadeSection>
       <WhyGiveItATrySection></WhyGiveItATrySection>
+      <section className="pt-32 bg-white">
+        <div className="flex flex-row justify-center">
+          <div className="flex items-center font-sans text-center text-xl max-w-64">
+            <div>
+              <p className="mb-4">
+                Explore the template on Notion and we hope you'll give it a try!
+              </p>
+            </div>
+          </div>
+          <div className="pl-16">
+            <GiftCTA link={gift.link} />
+          </div>
+        </div>
+      </section>
+      <Footer></Footer>
     </>
   );
 };
