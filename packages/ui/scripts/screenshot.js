@@ -22,8 +22,20 @@ const fs = require('fs');
       .replace(/[^a-z0-9]/gi, '_')
       .toLowerCase();
     for (const r of resolutions) {
+      const jsErrors = [];
+      page.on('pageerror', (error) => {
+        jsErrors.push(error.message);
+      });
+
       await page.setViewportSize({ width: r.width, height: r.height });
       await page.goto(url, { waitUntil: 'networkidle' });
+
+      if (jsErrors.length > 0) {
+        throw new Error(
+          `JS errors detected on ${url} at ${r.name} resolution: ${jsErrors.join(', ')}`,
+        );
+      }
+
       const path = `${folder}/${safe}_${r.name}.png`;
       await page.screenshot({ path, fullPage: true });
       console.log(`✅ Saved ${path}`);
