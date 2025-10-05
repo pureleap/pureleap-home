@@ -1,9 +1,8 @@
 name: Render Screenshots
 
-on:
-  push:
-    branches: [main]
 
+
+on: [push]
 jobs:
   screenshots:
     runs-on: ubuntu-latest
