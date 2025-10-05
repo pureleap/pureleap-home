@@ -20,7 +20,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
           <a
             href={gift.learnMoreLink}
             key={index}
-            className="flex flex-col text-center max-w-64 group group-hover:bg-gray-100 hover:bg-gray-200 cursor-pointer rounded-xl"
+            className="flex flex-col text-center max-w-64 group group-hover:bg-gray-100 hover:bg-gray-200 cursor-pointer rounded-xl bg-white"
           >
             <div className="flex-1 p-4">
               <div className="mb-2">
