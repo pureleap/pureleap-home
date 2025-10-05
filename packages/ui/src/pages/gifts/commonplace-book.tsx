@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
-import { GiftCTA } from '../../components/gifts/commonplace-book/GiftCTA';
+import { GiftCTAButton } from '../../components/gifts/commonplace-book/GiftCTAButton';
 import { GiftHeroSection } from '../../components/gifts/commonplace-book/GiftHeroSection';
 import { ProblemSection } from '../../components/gifts/commonplace-book/ProblemSection';
 import { WhatWeHaveMadeSection } from '../../components/gifts/commonplace-book/WhatWeHaveMadeSection';
@@ -80,7 +80,7 @@ const GiftPage: React.FC = () => {
               </div>
             </div>
             <div className="mt-4 sm:mt-0 sm:pl-16 flex justify-center">
-              <GiftCTA link={gift.ctaLink} />
+              <GiftCTAButton link={gift.ctaLink} />
             </div>
           </div>
         </section>

@@ -12,7 +12,7 @@ interface GiftCTAProps {
 /**
  * CTA button component for gift templates.
  */
-export const GiftCTA: React.FC<GiftCTAProps> = ({ link }) => {
+export const GiftCTAButton: React.FC<GiftCTAProps> = ({ link }) => {
   return (
     <a
       href={link}

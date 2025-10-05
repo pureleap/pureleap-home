@@ -1,7 +1,7 @@
 import React from 'react';
 import { Gift } from '../../../types/gift';
 import notionLogoGray from '../../notion-logo-gray.svg';
-import { GiftCTA } from './GiftCTA';
+import { GiftCTAButton } from './GiftCTAButton';
 
 /**
  * Props for the GiftHeroSection component.
@@ -55,7 +55,7 @@ export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
           ))}
         </p> */}
         <div className="flex justify-center mt-8">
-          <GiftCTA link={gift.ctaLink} />
+          <GiftCTAButton link={gift.ctaLink} />
         </div>
       </div>
     </section>
