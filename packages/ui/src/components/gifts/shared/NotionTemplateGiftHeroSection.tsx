@@ -1,7 +1,7 @@
 import React from 'react';
 import { Gift } from '../../../types/gift';
 import notionLogoGray from '../../notion-logo-gray.svg';
-import { GiftCTAButton } from './GiftCTAButton';
+import { NotionTemplateGiftCTAButton } from './NotionTemplateGiftCTAButton';
 
 /**
  * Props for the GiftHeroSection component.
@@ -15,7 +15,7 @@ interface GiftHeroSectionProps {
  * Hero section component for displaying gift details.
  * Takes up the full screen height with centered content.
  */
-export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
+export const NotionTemplateGiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
   return (
     <section className="flex flex-col items-center justify-center h-full bg-white">
       {/* <h2 className="text-3xl text-center mb-6 pt-32 font-handwritten">Our gift for you</h2> */}
@@ -55,7 +55,7 @@ export const GiftHeroSection: React.FC<GiftHeroSectionProps> = ({ gift }) => {
           ))}
         </p> */}
         <div className="flex justify-center mt-8">
-          <GiftCTAButton link={gift.ctaLink} />
+          <NotionTemplateGiftCTAButton link={gift.ctaLink} />
         </div>
       </div>
     </section>

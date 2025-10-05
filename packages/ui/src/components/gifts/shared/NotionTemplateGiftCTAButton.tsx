@@ -4,7 +4,7 @@ import GiftBox from './gift-light.svg';
 /**
  * Props for the GiftCTA component.
  */
-interface GiftCTAProps {
+interface GiftCTAButtonProps {
   /** The link URL for the CTA button */
   link: string;
 }
@@ -12,7 +12,7 @@ interface GiftCTAProps {
 /**
  * CTA button component for gift templates.
  */
-export const GiftCTAButton: React.FC<GiftCTAProps> = ({ link }) => {
+export const NotionTemplateGiftCTAButton: React.FC<GiftCTAButtonProps> = ({ link }) => {
   return (
     <a
       href={link}

@@ -2,12 +2,12 @@ import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
-import { GiftCTAButton } from '../../components/gifts/commonplace-book/GiftCTAButton';
 import { GiftCTASection } from '../../components/gifts/commonplace-book/GiftCTASection';
-import { GiftHeroSection } from '../../components/gifts/commonplace-book/GiftHeroSection';
 import { ProblemSection } from '../../components/gifts/commonplace-book/ProblemSection';
 import { WhatWeHaveMadeSection } from '../../components/gifts/commonplace-book/WhatWeHaveMadeSection';
 import { WhyGiveItATrySection } from '../../components/gifts/commonplace-book/WhyGiveItATrySection';
+import { NotionTemplateGiftCTAButton } from '../../components/gifts/shared/NotionTemplateGiftCTAButton';
+import { NotionTemplateGiftHeroSection } from '../../components/gifts/shared/NotionTemplateGiftHeroSection';
 import Header from '../../components/Header';
 import { gifts } from '../../data/gifts';
 
@@ -43,7 +43,7 @@ const GiftPage: React.FC = () => {
       </Head>
       <Header></Header>
       <div className="font-sans bg-white min-h-screen pb-32">
-        <GiftHeroSection gift={gift} />
+        <NotionTemplateGiftHeroSection gift={gift} />
         {/* Learn more button */}
         {isVisible && (
           <div className="fixed bottom-8 left-0 right-0 flex justify-center animate-bounce z-50">
