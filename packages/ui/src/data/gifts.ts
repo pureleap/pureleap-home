@@ -15,22 +15,24 @@ export const COMMONPLACE_BOOK_DATA = {
   learnMoreLink: 'gifts/commonplace-book',
 };
 
+export const RIVER_NOT_A_BUCKET_DATA = {
+  title: 'River Not a Bucket',
+  subtitle: 'Template',
+  ctaLink: 'https://www.notion.com/templates/river-not-a-bucket',
+  description: 'Collect what inspires without creating clutter.',
+  price: '$0',
+  image: riverNotABucketImage,
+  authors: [{ name: 'Shalveena', link: 'https://shalveena.com' }],
+  id: 'river-not-a-bucket',
+  learnMoreLink: 'gifts/river-not-a-bucket',
+};
+
 /**
  * Array of all available gifts.
  */
 export const GIFTS: Gift[] = [
   COMMONPLACE_BOOK_DATA,
-  {
-    title: 'River Not a Bucket',
-    subtitle: 'Template',
-    ctaLink: 'https://www.notion.com/templates/river-not-a-bucket',
-    description: 'Collect what inspires without creating clutter.',
-    price: '$0',
-    image: riverNotABucketImage,
-    authors: [{ name: 'Shalveena', link: 'https://shalveena.com' }],
-    id: 'river-not-a-bucket',
-    learnMoreLink: 'https://www.notion.com/templates/river-not-a-bucket',
-  },
+  RIVER_NOT_A_BUCKET_DATA,
   {
     title: 'AI Auto Relation',
     subtitle: 'Integration',

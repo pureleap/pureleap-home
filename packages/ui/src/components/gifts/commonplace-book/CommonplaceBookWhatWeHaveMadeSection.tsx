@@ -1,7 +1,7 @@
 import { SectionHeading } from '../shared/SectionHeading';
 import study from './Vittore_carpaccio.jpg';
 
-export function WhatWeHaveMadeSection() {
+export function CommonplaceBookWhatWeHaveMadeSection() {
   return (
     <section className="pt-32 bg-white" id="what-we-have-made">
       <SectionHeading>What we've made for you</SectionHeading>
