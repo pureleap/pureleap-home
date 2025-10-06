@@ -3,6 +3,7 @@ import React from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
 import { RiverNotABucketProblemSection } from '../../components/gifts/river-not-a-bucket/RiverNotABucketProblemSection';
+import { RiverNotABucketWhatWeHaveMadeSection } from '../../components/gifts/river-not-a-bucket/RiverNotABucketWhatWeHaveMadeSection';
 import { NotionTemplateGiftCTASection } from '../../components/gifts/shared/notion-template/NotionTemplateGiftCTASection';
 import { NotionTemplateGiftHeroSection } from '../../components/gifts/shared/notion-template/NotionTemplateGiftHeroSection';
 import Header from '../../components/Header';
@@ -29,6 +30,7 @@ const GiftPage: React.FC = () => {
       <div className="pr-8 pl-8">
         {/* TODO: Add specific sections for River Not a Bucket */}
         <RiverNotABucketProblemSection></RiverNotABucketProblemSection>
+        <RiverNotABucketWhatWeHaveMadeSection></RiverNotABucketWhatWeHaveMadeSection>
         <NotionTemplateGiftCTASection ctaLink={gift.ctaLink} />
       </div>
       <Footer></Footer>
