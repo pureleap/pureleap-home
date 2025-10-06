@@ -26,7 +26,7 @@ const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({ targetId, children })
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-50">
+    <div className="fixed bottom-8 left-0 right-0 flex justify-center animate-bounce z-50">
       <button
         type="button"
         onClick={(e) => {
