@@ -3,21 +3,23 @@ import commonplaceBookImage from '../img/gifts/commonplace-book.png';
 import riverNotABucketImage from '../img/gifts/river-not-a-bucket.png';
 import { Gift } from '../types/gift';
 
+export const COMMONPLACE_BOOK_DATA = {
+  title: 'Commonplace Book',
+  subtitle: 'Template',
+  ctaLink: 'https://www.notion.com/templates/commonplace-book-379',
+  description: 'A refuge for your thoughts inspired by ancient practices.',
+  price: '$0',
+  image: commonplaceBookImage,
+  authors: [{ name: 'Shalveena', link: 'https://shalveena.com' }],
+  id: 'commonplace-book',
+  learnMoreLink: 'gifts/commonplace-book',
+};
+
 /**
  * Array of all available gifts.
  */
-export const gifts: Gift[] = [
-  {
-    title: 'Commonplace Book',
-    subtitle: 'Template',
-    ctaLink: 'https://www.notion.com/templates/commonplace-book-379',
-    description: 'A refuge for your thoughts inspired by ancient practices.',
-    price: '$0',
-    image: commonplaceBookImage,
-    authors: [{ name: 'Shalveena', link: 'https://shalveena.com' }],
-    id: 'commonplace-book',
-    learnMoreLink: 'gifts/commonplace-book',
-  },
+export const GIFTS: Gift[] = [
+  COMMONPLACE_BOOK_DATA,
   {
     title: 'River Not a Bucket',
     subtitle: 'Template',

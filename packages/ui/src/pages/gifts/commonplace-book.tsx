@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
 import { CommonplaceBookProblemSection } from '../../components/gifts/commonplace-book/CommonplaceBookProblemSection';
@@ -8,31 +8,11 @@ import { WhyGiveItATrySection } from '../../components/gifts/commonplace-book/Wh
 import { NotionTemplateGiftCTASection } from '../../components/gifts/shared/notion-template/NotionTemplateGiftCTASection';
 import { NotionTemplateGiftHeroSection } from '../../components/gifts/shared/notion-template/NotionTemplateGiftHeroSection';
 import Header from '../../components/Header';
-import { gifts } from '../../data/gifts';
+import ScrollIndicator from '../../components/ScrollIndicator';
+import { COMMONPLACE_BOOK_DATA } from '../../data/gifts';
 
 const GiftPage: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const checkScrollPosition = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const isAtTop = scrollTop < 100;
-      setIsVisible(isAtTop);
-    };
-
-    // Check initial position
-    checkScrollPosition();
-
-    // Add scroll listener
-    window.addEventListener('scroll', checkScrollPosition);
-    return () => window.removeEventListener('scroll', checkScrollPosition);
-  }, []);
-
-  const gift = gifts.find((g) => g.id === 'commonplace-book');
-
-  if (!gift) {
-    return <div>Commonplace Book gift not found</div>;
-  }
+  const gift = COMMONPLACE_BOOK_DATA;
 
   return (
     <>
@@ -43,28 +23,10 @@ const GiftPage: React.FC = () => {
       <Header></Header>
       <div className="font-sans bg-white min-h-screen pb-32">
         <NotionTemplateGiftHeroSection gift={gift} />
-        {/* Learn more button */}
-        {isVisible && (
-          <div className="fixed bottom-8 left-0 right-0 flex justify-center animate-bounce z-50">
-            <div className="flex justify-center">
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const element = document.getElementById('details');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }
-                }}
-              >
-                <span className="font-sans text-lg text-gray-400 hover:text-gray-600 flex items-center">
-                  <DoubleChevronDown />
-                  learn more
-                </span>
-              </button>
-            </div>
-          </div>
-        )}
+        <ScrollIndicator targetId="details">
+          <DoubleChevronDown />
+          learn more
+        </ScrollIndicator>
       </div>
       <div className="pr-8 pl-8">
         <CommonplaceBookProblemSection></CommonplaceBookProblemSection>
