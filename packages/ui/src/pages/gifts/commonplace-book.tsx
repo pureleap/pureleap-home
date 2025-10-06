@@ -4,7 +4,7 @@ import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
 import { CommonplaceBookProblemSection } from '../../components/gifts/commonplace-book/CommonplaceBookProblemSection';
 import { CommonplaceBookWhatWeHaveMadeSection } from '../../components/gifts/commonplace-book/CommonplaceBookWhatWeHaveMadeSection';
-import { WhyGiveItATrySection } from '../../components/gifts/commonplace-book/WhyGiveItATrySection';
+import { CommonplaceBookWhyGiveItATrySection } from '../../components/gifts/commonplace-book/CommonplaceBookWhyGiveItATrySection';
 import { NotionTemplateGiftCTASection } from '../../components/gifts/shared/notion-template/NotionTemplateGiftCTASection';
 import { NotionTemplateGiftHeroSection } from '../../components/gifts/shared/notion-template/NotionTemplateGiftHeroSection';
 import Header from '../../components/Header';
@@ -31,7 +31,7 @@ const GiftPage: React.FC = () => {
       <div className="pr-8 pl-8">
         <CommonplaceBookProblemSection></CommonplaceBookProblemSection>
         <CommonplaceBookWhatWeHaveMadeSection></CommonplaceBookWhatWeHaveMadeSection>
-        <WhyGiveItATrySection></WhyGiveItATrySection>
+        <CommonplaceBookWhyGiveItATrySection></CommonplaceBookWhyGiveItATrySection>
         <NotionTemplateGiftCTASection ctaLink={gift.ctaLink} />
       </div>
       <Footer></Footer>

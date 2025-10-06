@@ -9,7 +9,7 @@ import notebook from './notebook.png';
 import robotSorting from './robot-sorting.jpeg';
 import teaCup from './tea-cup.png';
 
-export function WhyGiveItATrySection() {
+export function CommonplaceBookWhyGiveItATrySection() {
   return (
     <section className="pt-32 flex justify-center flex-col items-center bg-white">
       <SectionHeading>Why give it a try?</SectionHeading>
