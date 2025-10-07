@@ -9,8 +9,8 @@ export function RiverNotABucketWhatWeHaveMadeSection() {
         <div className="flex items-center font-sans text-center text-xl max-w-96 pr-8">
           <div>
             <p className="mb-4">
-              A Notion Template based on an idea<span className="align-super">*</span> by Oliver
-              Burkeman:
+              A Notion Template based on an idea by Oliver Burkeman
+              <span className="align-super">*</span>:
             </p>
             <p className="mb-4">·</p>
             <p className="mb-4">

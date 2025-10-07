@@ -16,7 +16,7 @@ export function CommonplaceBookWhyGiveItATrySection() {
       <FeatureList>
         <FeatureRow>
           <FeatureImage src={teaCup} alt="simple" />
-          <FeatureContent heading="It’s simple">
+          <FeatureContent heading="It's simple">
             No long list of features to learn. Just what you need, nothing more.
           </FeatureContent>
         </FeatureRow>
@@ -40,7 +40,7 @@ export function CommonplaceBookWhyGiveItATrySection() {
         </FeatureRow>
         <FeatureRow>
           <FeatureImage src={giftBox} alt="it's free" />
-          <FeatureContent heading="It’s free">
+          <FeatureContent heading="It's free">
             A small gift from us to you. No catch. Just something we made to help.
           </FeatureContent>
         </FeatureRow>
