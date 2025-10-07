@@ -12,13 +12,13 @@ export function RiverNotABucketWhyGiveItATrySection() {
     <section className="pt-32 flex justify-center flex-col items-center bg-white">
       <SectionHeading>Why give it a try?</SectionHeading>
       <FeatureList>
-        <FeatureBlock>
+        <FeatureBlock offset={-48}>
           <FeatureBlockImage src={teaCup} alt="tea cup" />
           <FeatureBlockContent heading="Guilt-Free Collecting">
             Save things that interest you without the pressure to read or act on them.{' '}
           </FeatureBlockContent>
         </FeatureBlock>
-        <FeatureBlock>
+        <FeatureBlock offset={-16}>
           <FeatureBlockImage src={objects} alt="collection of objects" />
           <FeatureBlockContent heading="Capture Without Clutter">
             Store your random thoughts, quotes, and links in one simple place.
