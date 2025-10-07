@@ -3,13 +3,9 @@ import { FeatureBlockContent } from '../shared/FeatureBlockContent';
 import { FeatureBlockImage } from '../shared/FeatureBlockImage';
 import { FeatureList } from '../shared/FeatureList';
 import { SectionHeading } from '../shared/SectionHeading';
-import objects from './collection-of-objects.jpeg';
 import fountainPen from './fountain-pen-handdrawn-v4.png';
-import handwriting from './handwritten-notes-closeup.png';
-import magicBook from './magic-book.jpeg';
 import oldNotebook from './old-notebook.png';
 import globe from './outline-of-globe-handdrawn.png';
-import river from './river-handdrawn.png';
 import robotSortingBooks from './robot-sorting-books.jpeg';
 import sapling from './sapling-bgremoved.png';
 import smallDrawer from './small-drawer.png';
@@ -21,19 +17,19 @@ export function RiverNotABucketWhyGiveItATrySection() {
       <SectionHeading>Why give it a try?</SectionHeading>
       <FeatureList>
         <FeatureBlock>
-          <FeatureBlockImage src={teaCup} alt="tea cup" />
+          <FeatureBlockImage src={teaCup} alt="A tea cup" />
           <FeatureBlockContent heading="Guilt-Free Collecting">
             Save things that interest you without the pressure to read or act on them.{' '}
           </FeatureBlockContent>
         </FeatureBlock>
         <FeatureBlock>
-          <FeatureBlockImage src={smallDrawer} alt="collection of objects" />
+          <FeatureBlockImage src={smallDrawer} alt="A small drawer" />
           <FeatureBlockContent heading="Capture Without Clutter">
             Store your random thoughts, quotes, and links in one simple place.
           </FeatureBlockContent>
         </FeatureBlock>
         <FeatureBlock>
-          <FeatureBlockImage src={fountainPen} alt="book and quill" />
+          <FeatureBlockImage src={fountainPen} alt="A fountain pen" />
           <FeatureBlockContent heading="Handwritten Notes Welcome">
             Photograph or scan your notes and keep them alongside your digital entries.
           </FeatureBlockContent>
