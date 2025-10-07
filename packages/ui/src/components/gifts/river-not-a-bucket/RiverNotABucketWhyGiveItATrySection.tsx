@@ -58,7 +58,12 @@ export function RiverNotABucketWhyGiveItATrySection() {
           <FeatureBlockImage src={oldNotebook} alt="Old Notebook" />
           <FeatureBlockContent heading="Works with our Commonplace Book Template">
             Use River Not a Bucket to capture freely, then move what matters into your{' '}
-            <a href="commonplace-book" className="underline text-purple">
+            <a
+              href="commonplace-book"
+              className="underline text-purple"
+              target="_blank"
+              rel="noopener"
+            >
               Commonplace Book
             </a>{' '}
             for deeper reflection.

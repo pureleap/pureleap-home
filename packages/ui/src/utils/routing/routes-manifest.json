@@ -36,6 +36,10 @@
       "regex": "^\\/gifts\\/commonplace-book$"
     },
     {
+      "page": "/gifts/river-not-a-bucket",
+      "regex": "^\\/gifts\\/river-not-a-bucket$"
+    },
+    {
       "page": "/index",
       "regex": "^\\/index$"
     },
@@ -68,6 +72,12 @@
       "regex": "^/gifts/commonplace\\-book(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/gifts/commonplace\\-book(?:/)?$"
+    },
+    {
+      "page": "/gifts/river-not-a-bucket",
+      "regex": "^/gifts/river\\-not\\-a\\-bucket(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/gifts/river\\-not\\-a\\-bucket(?:/)?$"
     },
     {
       "page": "/privacy-policy",
