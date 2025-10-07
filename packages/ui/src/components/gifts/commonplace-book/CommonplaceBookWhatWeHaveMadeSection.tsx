@@ -1,12 +1,12 @@
-import book from './commonplace-book.png';
+import { SectionHeading } from '../shared/SectionHeading';
 import study from './Vittore_carpaccio.jpg';
-import { WhatsIncluded } from './WhatsIncluded';
-export function WhatWeHaveMadeSection() {
+
+export function CommonplaceBookWhatWeHaveMadeSection() {
   return (
     <section className="pt-32 bg-white" id="what-we-have-made">
-      <h2 className="text-5xl mb-16 text-center font-handwritten">What we've made for you</h2>
-      <div className="flex flex-col md:flex-row justify-center md:justify-evenly items-center">
-        <div className="flex items-center font-sans text-center text-xl max-w-96 mb-8 md:mb-0">
+      <SectionHeading>What we've made for you</SectionHeading>
+      <div className="flex flex-col md:flex-row justify-center md:justify-center items-center">
+        <div className="flex items-center font-sans text-center text-xl max-w-[370px] mb-0 md:mb-0 md:mr-8">
           <div>
             <p className="mb-4">Since ancient times, people have kept journals.</p>
             <p>
@@ -15,7 +15,7 @@ export function WhatWeHaveMadeSection() {
             </p>
           </div>
         </div>
-        <div className="mt-8 md:mt-0">
+        <div className="mt-8 md:mt-0 md:ml-8">
           <img
             className="w-full md:w-96 rounded-lg shadow-xl shadow-blue-gray-900/50"
             src={study}
@@ -23,7 +23,7 @@ export function WhatWeHaveMadeSection() {
           ></img>
         </div>
       </div>
-      <div className="mt-16 flex justify-center flex-col items-center">
+      <div className="mt-8 md:mt-16 flex justify-center flex-col items-center">
         <div className="text-xl max-w-lg">
           <p className="max-w-lg text-center">
             We've made a <b>Notion template</b> so you can create your own digital Commonplace book.

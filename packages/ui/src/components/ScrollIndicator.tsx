@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-const ScrollIndicator: React.FC = () => {
+interface ScrollIndicatorProps {
+  targetId: string;
+  children: React.ReactNode;
+}
+
+const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({ targetId, children }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -21,29 +26,21 @@ const ScrollIndicator: React.FC = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-50">
-      <a
-        href="#solutions"
+    <div className="fixed bottom-8 left-0 right-0 flex justify-center animate-bounce z-50">
+      <button
+        type="button"
         onClick={(e) => {
           e.preventDefault();
-          const element = document.getElementById('gifts');
+          const element = document.getElementById(targetId);
           if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
         }}
       >
-        <svg
-          className="w-8 h-8 text-gray-400"
-          fill="none"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-        </svg>
-      </a>
+        <span className="font-sans text-lg text-gray-400 hover:text-gray-600 flex items-center">
+          {children}
+        </span>
+      </button>
     </div>
   );
 };

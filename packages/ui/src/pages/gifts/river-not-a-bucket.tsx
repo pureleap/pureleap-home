@@ -2,17 +2,17 @@ import Head from 'next/head';
 import React from 'react';
 import DoubleChevronDown from '../../components/DoubleChevronDown';
 import Footer from '../../components/Footer';
-import { CommonplaceBookProblemSection } from '../../components/gifts/commonplace-book/CommonplaceBookProblemSection';
-import { CommonplaceBookWhatWeHaveMadeSection } from '../../components/gifts/commonplace-book/CommonplaceBookWhatWeHaveMadeSection';
-import { CommonplaceBookWhyGiveItATrySection } from '../../components/gifts/commonplace-book/CommonplaceBookWhyGiveItATrySection';
+import { RiverNotABucketProblemSection } from '../../components/gifts/river-not-a-bucket/RiverNotABucketProblemSection';
+import { RiverNotABucketWhatWeHaveMadeSection } from '../../components/gifts/river-not-a-bucket/RiverNotABucketWhatWeHaveMadeSection';
+import { RiverNotABucketWhyGiveItATrySection } from '../../components/gifts/river-not-a-bucket/RiverNotABucketWhyGiveItATrySection';
 import { NotionTemplateGiftCTASection } from '../../components/gifts/shared/notion-template/NotionTemplateGiftCTASection';
 import { NotionTemplateGiftHeroSection } from '../../components/gifts/shared/notion-template/NotionTemplateGiftHeroSection';
 import Header from '../../components/Header';
 import ScrollIndicator from '../../components/ScrollIndicator';
-import { COMMONPLACE_BOOK_DATA } from '../../data/gifts';
+import { RIVER_NOT_A_BUCKET_DATA } from '../../data/gifts';
 
 const GiftPage: React.FC = () => {
-  const gift = COMMONPLACE_BOOK_DATA;
+  const gift = RIVER_NOT_A_BUCKET_DATA;
 
   return (
     <>
@@ -29,9 +29,10 @@ const GiftPage: React.FC = () => {
         </ScrollIndicator>
       </div>
       <div className="pr-8 pl-8">
-        <CommonplaceBookProblemSection></CommonplaceBookProblemSection>
-        <CommonplaceBookWhatWeHaveMadeSection></CommonplaceBookWhatWeHaveMadeSection>
-        <CommonplaceBookWhyGiveItATrySection></CommonplaceBookWhyGiveItATrySection>
+        {/* TODO: Add specific sections for River Not a Bucket */}
+        <RiverNotABucketProblemSection></RiverNotABucketProblemSection>
+        <RiverNotABucketWhatWeHaveMadeSection></RiverNotABucketWhatWeHaveMadeSection>
+        <RiverNotABucketWhyGiveItATrySection></RiverNotABucketWhyGiveItATrySection>
         <NotionTemplateGiftCTASection ctaLink={gift.ctaLink} />
       </div>
       <Footer></Footer>

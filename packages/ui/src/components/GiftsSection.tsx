@@ -1,5 +1,5 @@
 import React from 'react';
-import { gifts } from '../data/gifts';
+import { GIFTS } from '../data/gifts';
 import GiftBox from './gift-box-256x256.png';
 import notionLogoGray from './notion-logo-gray.svg';
 
@@ -14,7 +14,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
         Our gifts for you
       </h2>
       <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
-        {gifts.map((gift, index) => (
+        {GIFTS.map((gift, index) => (
           <a
             href={gift.learnMoreLink}
             key={index}
