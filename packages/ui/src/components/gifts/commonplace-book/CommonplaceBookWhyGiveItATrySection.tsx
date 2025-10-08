@@ -3,11 +3,12 @@ import { FeatureImage } from '../shared/FeatureImage';
 import { FeatureList } from '../shared/FeatureList';
 import { FeatureRow } from '../shared/FeatureRow';
 import { SectionHeading } from '../shared/SectionHeading';
+import diya from './diya.png';
 import giftBox from './gift-box-256x256.png';
-import magicBook from './magic-book.jpeg';
 import notebook from './notebook.png';
+import redDiamond from './red-diamond.png';
 import robotSorting from './robot-sorting.jpeg';
-import teaCup from './tea-cup.png';
+import tabletAndIpad from './tablet-and-ipad-256px.png';
 
 export function CommonplaceBookWhyGiveItATrySection() {
   return (
@@ -15,21 +16,28 @@ export function CommonplaceBookWhyGiveItATrySection() {
       <SectionHeading>Why give it a try?</SectionHeading>
       <FeatureList>
         <FeatureRow>
-          <FeatureImage src={teaCup} alt="simple" />
-          <FeatureContent heading="It's simple">
-            No long list of features to learn. Just what you need, nothing more.
+          <FeatureImage src={diya} alt="Diya lamp" />
+          <FeatureContent heading="Slow down and think deeply">
+            Not a place for quick notes, but a refuge where your thoughts unfold slowly.
           </FeatureContent>
         </FeatureRow>
         <FeatureRow>
-          <FeatureImage src={magicBook} alt="not just a template" />
-          <FeatureContent heading="Not just a template">
-            Includes guides on how to use the template effectively: to create clarity not clutter.
+          <FeatureImage src={redDiamond} alt="Red diamond" />
+          <FeatureContent heading="Move from collecting to curating">
+            Gather only what truly resonates and let go of what doesn't.
+          </FeatureContent>
+        </FeatureRow>
+        <FeatureRow>
+          <FeatureImage src={tabletAndIpad} alt="use AI mindfully" />
+          <FeatureContent heading="Blend analog and digital">
+            Embrace the magic of pen and paper, while keeping everything safe and organised
+            digitally.
           </FeatureContent>
         </FeatureRow>
         <FeatureRow>
           <FeatureImage src={robotSorting} alt="use AI mindfully" />
-          <FeatureContent heading="Use AI to enrich, not replace">
-            Let AI help with chores, not replace your thinking.
+          <FeatureContent heading="Use AI for chores, not thinking">
+            Let AI help with sorting entries into topics; and nothing else.
           </FeatureContent>
         </FeatureRow>
         <FeatureRow>
