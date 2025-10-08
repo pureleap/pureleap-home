@@ -18,13 +18,13 @@ export function CommonplaceBookWhyGiveItATrySection() {
         <FeatureRow>
           <FeatureImage src={diya} alt="Diya lamp" />
           <FeatureContent heading="Slow down and think deeply">
-            Not a place for quick notes, but a refuge where your thought unfold slowly.
+            Not a place for quick notes, but a refuge where your thoughts unfold slowly.
           </FeatureContent>
         </FeatureRow>
         <FeatureRow>
           <FeatureImage src={redDiamond} alt="Red diamond" />
           <FeatureContent heading="Move from collecting to curating">
-            Gather only what truly resonate and let go of what doesn't.
+            Gather only what truly resonates and let go of what doesn't.
           </FeatureContent>
         </FeatureRow>
         <FeatureRow>
