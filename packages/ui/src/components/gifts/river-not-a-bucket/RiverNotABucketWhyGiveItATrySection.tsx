@@ -43,15 +43,13 @@ export function RiverNotABucketWhyGiveItATrySection() {
         <FeatureBlock>
           <FeatureBlockImage src={sapling} alt="sapling" />
           <FeatureBlockContent heading="Organise as You Go">
-            Add topics naturally as your collection grows. No strict system — just structure when
-            you want it.
+            Add topics naturally as your collection grows.
           </FeatureBlockContent>
         </FeatureBlock>
         <FeatureBlock>
           <FeatureBlockImage src={robotSortingBooks} alt="Robot sorting books" />
           <FeatureBlockContent heading="Optional AI Sorting">
-            Let gentle automation help you sort things. Works without Notion AI, and always stays
-            under your control.
+            Set up AI automation to sort entries into topics automatically.
           </FeatureBlockContent>
         </FeatureBlock>
         <FeatureBlock>
