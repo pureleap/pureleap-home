@@ -37,7 +37,7 @@ export const NotionTemplateGiftHeroSection: React.FC<GiftHeroSectionProps> = ({ 
               </p>
             </div>
             <div className="flex justify-center mt-2">
-              <h3 className="text-2xl font-sans">{gift.title}</h3>
+              <h1 className="text-2xl font-sans">{gift.title}</h1>
             </div>
           </div>
 
