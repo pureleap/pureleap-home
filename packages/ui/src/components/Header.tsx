@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import PureleapLogo from './../img/pureleap_logo_optimised.png';
+import PureleapLogo from './../img/pureleap_logo_small.png';
 
 interface HeaderProps {
   className?: string;
