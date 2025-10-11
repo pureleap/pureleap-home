@@ -17,10 +17,10 @@ export const NewHeroSection: React.FC<HeaderProps> = ({ className = '' }) => {
         }}
       />
       <div className={`text-center font-sans mb-4 xs:mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16`}>
-        <div className="xl:text-xl lg:text-xl md:text-xl sm:text-lg xs:text-lg">
-          <div>You are buried in a loud world.</div>
-          <div>Too much to learn. Too much to do.</div>
-          <div>How do we move from clutter to clarity?</div>
+        <div className="xl:text-lg lg:text-lg md:text-lg sm:text-base xs:text-base">
+          <p className="pb-4">You are buried in a loud world.</p>
+          <p className="pb-16">Too much to learn. Too much to do.</p>
+          <p>How do we move from clutter to clarity?</p>
         </div>
       </div>
     </header>
