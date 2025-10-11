@@ -4,8 +4,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { ContactSection as Contact } from '../components/landing-page/ContactSection';
 import { GiftsSection } from '../components/landing-page/GiftsSection';
-import { HeroSection as Hero } from '../components/landing-page/HeroSection';
-import { NewHeroSection } from '../components/landing-page/NewHeroSection';
+import { HeroSection } from '../components/landing-page/HeroSection';
 import { SolutionsSection as Solutions } from '../components/landing-page/SolutionsSection';
 import { TeamSection as Team } from '../components/landing-page/TeamSection';
 import ScrollIndicator from '../components/ScrollIndicator';
@@ -64,7 +63,7 @@ export const Index: React.FC = () => {
       <div className="font-sans">
         <Header visible={showHeader} />
         <div className="min-h-screen pb-32 bg-white">
-          <NewHeroSection className="h-full" />
+          <HeroSection className="h-full" />
         </div>
         <div className="">
           <GiftsSection></GiftsSection>
