@@ -1,8 +1,8 @@
+import { SectionHeading } from '../../SectionHeading';
 import { FeatureContent } from '../shared/FeatureContent';
 import { FeatureImage } from '../shared/FeatureImage';
 import { FeatureList } from '../shared/FeatureList';
 import { FeatureRow } from '../shared/FeatureRow';
-import { SectionHeading } from '../shared/SectionHeading';
 import diya from './diya.png';
 import giftBox from './gift-box-256x256.png';
 import notebook from './notebook.png';
