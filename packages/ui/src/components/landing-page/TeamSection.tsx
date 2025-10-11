@@ -1,7 +1,7 @@
 import React from 'react';
-import Max from './max.png';
+import Max from './img/max.png';
+import Shally from './img/shally2.jpg';
 import SocialIcons from './SocialIcons';
-import Shally from './shally2.jpg';
 
 interface TeamSectionProps {
   className?: string;

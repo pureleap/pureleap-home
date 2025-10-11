@@ -6,7 +6,7 @@ interface HeaderProps {
   className?: string;
 }
 
-export const HeroSection: React.FC<HeaderProps> = ({ className = '' }) => {
+export const NewHeroSection: React.FC<HeaderProps> = ({ className = '' }) => {
   return (
     <header className={`flex flex-col items-center justify-center h-full bg-white ${className}`}>
       <img
@@ -18,10 +18,17 @@ export const HeroSection: React.FC<HeaderProps> = ({ className = '' }) => {
         }}
       />
       <div className={`text-center font-sans mb-4 xs:mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16`}>
-        <div className="xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl xs:text-xl">
-          <div className={styles.heroLine}>Remove clutter.</div>
-          <div className={styles.heroLine}>Find clarity.</div>
-          <div className={styles.heroLine}>Move true.</div>
+        <div className="xl:text-lg lg:text-2xl md:text-2xl sm:text-xl xs:text-xl">
+          <p>You are buried in a loud world.</p>
+          <p>It is easy to miss what makes life worthwhile.</p>
+          <div className="mt-2 mb-2">
+            <p>True joy.</p>
+            <p>Genuine connection.</p>
+            <p>Real impact.</p>
+          </div>
+          <p>We want to help you reconnect with what truly makes you shine.</p>
+          <p>Not for profit. Just two hearts that care.</p>
+          <p>With love, we have prepared this gift for you:</p>
         </div>
       </div>
     </header>
