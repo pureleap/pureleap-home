@@ -1,4 +1,5 @@
 import React from 'react';
+import { SectionHeading } from '../SectionHeading';
 import Max from './img/max.png';
 import Shally from './img/shally2.jpg';
 import SocialIcons from './SocialIcons';
@@ -63,7 +64,7 @@ export const TeamSection: React.FC<TeamSectionProps> = ({ className = '' }) => {
       className={`flex flex-col items-center justify-center bg-gray-50 pt-32 ${className}`}
       style={{ backgroundColor: '#fbfbff' }}
     >
-      <h2 className="text-5xl text-center mb-24 font-handwritten">Who we are</h2>
+      <SectionHeading>Who we are</SectionHeading>
       <div className="flex flex-wrap justify-center gap-12 mx-auto px-4">
         {team.map((member, index) => (
           <div key={index} className="max-w-sm text-center flex flex-col min-h-[600px]">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { SectionHeading } from '../SectionHeading';
 
 interface SolutionsSectionProps {
   className?: string;
@@ -33,9 +34,9 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ className = 
       className={`flex flex-col items-center justify-center pb-12 ${className}`}
       style={{ backgroundColor: '#fbfbff' }}
     >
-      <h2 id="solutions" className="text-5xl text-center mb-24 font-handwritten pt-16">
+      <SectionHeading id="solutions" className="pt-16">
         What we make solutions for
-      </h2>
+      </SectionHeading>
       <div className="flex flex-wrap justify-center gap-12 mx-auto px-4">
         {solutions.map((solution, index) => (
           <div key={index} className="max-w-sm text-center mb-12">

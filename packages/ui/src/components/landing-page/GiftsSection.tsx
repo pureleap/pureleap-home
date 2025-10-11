@@ -1,6 +1,7 @@
 import React from 'react';
 import { GIFTS } from '../../data/gifts';
 import notionLogoGray from './../../img/notion-logo-gray.svg';
+import { SectionHeading } from '../SectionHeading';
 import GiftBox from './img/gift-box-256x256.png';
 
 interface GiftsSectionProps {
@@ -10,9 +11,9 @@ interface GiftsSectionProps {
 export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) => {
   return (
     <section className={`bg-white flex flex-col items-center justify-center py-12 ${className}`}>
-      <h2 id="gifts" className="text-5xl text-center mb-16 pt-16 font-handwritten">
+      <SectionHeading id="gifts" className="pt-16">
         Our gifts for you
-      </h2>
+      </SectionHeading>
       <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
         {GIFTS.map((gift, index) => (
           <a
