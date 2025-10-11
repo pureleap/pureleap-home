@@ -1,4 +1,4 @@
-import { SectionHeading } from '../shared/SectionHeading';
+import { SectionHeading } from '../../SectionHeading';
 import man from './man-sitting-by-the-riverside.jpeg';
 
 export function RiverNotABucketWhatWeHaveMadeSection() {

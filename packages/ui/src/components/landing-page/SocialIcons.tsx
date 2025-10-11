@@ -1,9 +1,9 @@
 import React from 'react';
-import Heart from './../icons/heart.png';
-import Instagram from './../icons/instagram.png';
-import LinkedIn from './../icons/linkedin.png';
-import Twitter from './../icons/twitter.png';
-import YouTube from './../icons/youtube.png';
+import Heart from './icons/heart.png';
+import Instagram from './icons/instagram.png';
+import LinkedIn from './icons/linkedin.png';
+import Twitter from './icons/twitter.png';
+import YouTube from './icons/youtube.png';
 
 /**
  * Configuration for a known social media icon

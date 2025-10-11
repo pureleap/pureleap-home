@@ -1,4 +1,4 @@
-import { SectionHeading } from '../shared/SectionHeading';
+import { SectionHeading } from '../../SectionHeading';
 import { SplitSection } from '../shared/SplitSection';
 import { SplitSectionImage } from '../shared/SplitSectionImage';
 import { SplitSectionText } from '../shared/SplitSectionText';

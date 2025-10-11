@@ -1,4 +1,4 @@
-import { SectionHeading } from '../shared/SectionHeading';
+import { SectionHeading } from '../../SectionHeading';
 import study from './Vittore_carpaccio.jpg';
 
 export function CommonplaceBookWhatWeHaveMadeSection() {

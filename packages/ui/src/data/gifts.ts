@@ -31,8 +31,8 @@ export const RIVER_NOT_A_BUCKET_DATA = {
  * Array of all available gifts.
  */
 export const GIFTS: Gift[] = [
-  COMMONPLACE_BOOK_DATA,
   RIVER_NOT_A_BUCKET_DATA,
+  COMMONPLACE_BOOK_DATA,
   {
     title: 'AI Auto Relation',
     subtitle: 'Integration',

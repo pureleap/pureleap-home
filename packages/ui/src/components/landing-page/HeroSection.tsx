@@ -1,5 +1,5 @@
 import React from 'react';
-import PureleapLogo from './../img/pureleap_logo_nobg.png';
+import PureleapLogo from './../../img/pureleap_logo_nobg.png';
 import styles from './HeroSection.module.css';
 
 interface HeaderProps {
@@ -8,10 +8,7 @@ interface HeaderProps {
 
 export const HeroSection: React.FC<HeaderProps> = ({ className = '' }) => {
   return (
-    <header
-      className={`flex flex-col items-center justify-center h-full bg-white ${className}`}
-      style={{ backgroundColor: '#fbfbff' }}
-    >
+    <header className={`flex flex-col items-center justify-center h-full bg-white ${className}`}>
       <img
         src={PureleapLogo}
         alt="Pureleap Logo"

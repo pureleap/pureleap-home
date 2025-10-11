@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import React, { useCallback, useEffect, useState } from 'react';
-import { ContactSection as Contact } from '../components/ContactSection';
 import Footer from '../components/Footer';
-import { GiftsSection } from '../components/GiftsSection';
 import Header from '../components/Header';
-import { HeroSection as Hero } from '../components/HeroSection';
+import { ContactSection as Contact } from '../components/landing-page/ContactSection';
+import { GiftsSection } from '../components/landing-page/GiftsSection';
+import { HeroSection } from '../components/landing-page/HeroSection';
+import { SolutionsSection as Solutions } from '../components/landing-page/SolutionsSection';
+import { TeamSection as Team } from '../components/landing-page/TeamSection';
 import ScrollIndicator from '../components/ScrollIndicator';
-import { SolutionsSection as Solutions } from '../components/SolutionsSection';
-import { TeamSection as Team } from '../components/TeamSection';
 
 export const Index: React.FC = () => {
   const [showHeader, setShowHeader] = useState(false);
@@ -62,8 +62,8 @@ export const Index: React.FC = () => {
       </Head>
       <div className="font-sans">
         <Header visible={showHeader} />
-        <div className="min-h-screen pb-32" style={{ backgroundColor: '#fbfbff' }}>
-          <Hero className="h-full" />
+        <div className="min-h-screen pb-32 bg-white">
+          <HeroSection className="h-full" />
         </div>
         <div className="">
           <GiftsSection></GiftsSection>

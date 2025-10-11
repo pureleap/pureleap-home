@@ -1,8 +1,8 @@
+import { SectionHeading } from '../../SectionHeading';
 import { FeatureBlock } from '../shared/FeatureBlock';
 import { FeatureBlockContent } from '../shared/FeatureBlockContent';
 import { FeatureBlockImage } from '../shared/FeatureBlockImage';
 import { FeatureList } from '../shared/FeatureList';
-import { SectionHeading } from '../shared/SectionHeading';
 import fountainPen from './fountain-pen-handdrawn-v4.png';
 import oldNotebook from './old-notebook.png';
 import globe from './outline-of-globe-handdrawn.png';
