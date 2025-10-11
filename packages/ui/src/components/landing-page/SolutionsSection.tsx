@@ -4,9 +4,9 @@ interface SolutionsSectionProps {
   className?: string;
 }
 
-import MagicTablet from './../img/magic_tablet_reposition_fixed.png';
-import Notebook from './../img/notebook.jpg';
-import TeaCup from './../img/tea_cup.png';
+import MagicTablet from './magic_tablet_reposition_fixed.png';
+import Notebook from './notebook.jpg';
+import TeaCup from './tea_cup.png';
 
 const solutions = [
   {

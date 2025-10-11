@@ -1,7 +1,7 @@
 import React from 'react';
-import { GIFTS } from '../data/gifts';
+import { GIFTS } from '../../data/gifts';
+import notionLogoGray from './../../img/notion-logo-gray.svg';
 import GiftBox from './gift-box-256x256.png';
-import notionLogoGray from './notion-logo-gray.svg';
 
 interface GiftsSectionProps {
   className?: string;

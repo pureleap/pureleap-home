@@ -1,5 +1,5 @@
 import React from 'react';
-import PureleapLogo from './../img/pureleap_logo_nobg.png';
+import PureleapLogo from './../../img/pureleap_logo_nobg.png';
 import styles from './HeroSection.module.css';
 
 interface HeaderProps {
