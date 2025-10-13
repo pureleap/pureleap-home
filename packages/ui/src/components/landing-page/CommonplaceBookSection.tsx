@@ -15,7 +15,8 @@ export function CommonplaceBookSection() {
         <SplitSectionImage src={pulled} alt="Person pulled in many directions" />
         <SplitSectionText>
           <p className="mb-4">
-            We need to identify what of what we collect is truly important for our path.
+            It's good to collect widely - but we also need a way to{' '}
+            <em>keep what matters most to us</em>.
           </p>
         </SplitSectionText>
       </SplitSection>
@@ -25,7 +26,7 @@ export function CommonplaceBookSection() {
           <div>
             <p className="mb-4">For this, we adopt an ancient idea.</p>
             <p>
-              To keep a <b>commonplace book</b> as the central place to grow knowledge and
+              To use a <em>commonplace book</em> as the central place to grow knowledge and
               understanding.
             </p>
           </div>
@@ -42,10 +43,10 @@ export function CommonplaceBookSection() {
       <div className="flex flex-col justify-center items-center mt-8 md:mt-16">
         <div className="flex items-center font-sans text-center text-body max-w-96 mb-8">
           <div>
-            <p>
-              We've made a <b>Notion template</b> so you can create your own digital Commonplace
-              book.
+            <p className="mb-4">
+              We've another made a Notion template for creating your own digital commonplace book.
             </p>
+            <p>Again 100% free - our gift to you 🤗</p>
           </div>
         </div>
       </div>
