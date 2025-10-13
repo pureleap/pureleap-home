@@ -1,6 +1,4 @@
 import React from 'react';
-import artSupplies from './art-supplies-background-pattern.jpeg';
-import craftingToolsBackground from './crafting-tools-background-wide.jpeg';
 import gentle from './gentle-background-pattern.jpg';
 
 interface GiftPanelProps {
