@@ -30,7 +30,10 @@ const GiftPage: React.FC = () => {
       </div>
       <div className="pr-8 pl-8">
         {/* TODO: Add specific sections for River Not a Bucket */}
-        <RiverNotABucketProblemSection></RiverNotABucketProblemSection>
+        <RiverNotABucketProblemSection
+          heading="The Problem"
+          className="pt-32"
+        ></RiverNotABucketProblemSection>
         <RiverNotABucketWhatWeHaveMadeSection></RiverNotABucketWhatWeHaveMadeSection>
         <RiverNotABucketWhyGiveItATrySection></RiverNotABucketWhyGiveItATrySection>
         <NotionTemplateGiftCTASection ctaLink={gift.ctaLink} />

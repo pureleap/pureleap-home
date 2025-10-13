@@ -11,7 +11,7 @@ interface GiftsSectionProps {
 
 export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) => {
   return (
-    <section className={`bg-white flex flex-col items-center justify-center py-12 ${className}`}>
+    <section className={`bg-white flex flex-col items-center justify-center pt-12 ${className}`}>
       <SectionHeading id="gifts" className="pt-16">
         Our approach
       </SectionHeading>
@@ -25,7 +25,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
         </div>
       </div>
       {/* <h3 className="text-xl pt-16 font-bold">Best place to start:</h3> */}
-      <SplitSection>
+      {/* <SplitSection>
         <SplitSectionText className="text-base">
           <p className="text-lg">
             Collect what inspires without creating clutter using our <em>River Not a Bucket</em>{' '}
@@ -46,7 +46,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
         {GIFTS.slice(1).map((gift, index) => (
           <GiftCard key={index + 1} gift={gift} index={index + 1} />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

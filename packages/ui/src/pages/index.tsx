@@ -1,9 +1,12 @@
 import Head from 'next/head';
 import React, { useCallback, useEffect, useState } from 'react';
 import Footer from '../components/Footer';
+import { RiverNotABucketProblemSection } from '../components/gifts/river-not-a-bucket/RiverNotABucketProblemSection';
+import { RiverNotABucketWhatWeHaveMadeSection } from '../components/gifts/river-not-a-bucket/RiverNotABucketWhatWeHaveMadeSection';
 import Header from '../components/Header';
 import { ContactSection as Contact } from '../components/landing-page/ContactSection';
 import { GiftsSection } from '../components/landing-page/GiftsSection';
+import { LandingPageProblem1 } from '../components/landing-page/LandingPageProblem1';
 import { NewHeroSection } from '../components/landing-page/NewHeroSection';
 import { SolutionsSection as Solutions } from '../components/landing-page/SolutionsSection';
 import { TeamSection as Team } from '../components/landing-page/TeamSection';
@@ -68,6 +71,13 @@ export const Index: React.FC = () => {
         <div className="">
           <GiftsSection></GiftsSection>
         </div>
+        <div className="">
+          <LandingPageProblem1></LandingPageProblem1>
+        </div>
+        <div>
+          <RiverNotABucketWhatWeHaveMadeSection></RiverNotABucketWhatWeHaveMadeSection>
+        </div>
+
         <div className="">
           <Solutions className="" />
         </div>
