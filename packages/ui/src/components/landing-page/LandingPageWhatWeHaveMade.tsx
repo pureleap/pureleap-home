@@ -1,23 +1,34 @@
-import { SectionHeading } from '../../SectionHeading';
-import man from './man-sitting-by-the-riverside.jpeg';
+import React from 'react';
+import man from './img/man-sitting-by-the-riverside.jpeg';
 
-export function RiverNotABucketWhatWeHaveMadeSection() {
+/**
+ * Props for LandingPageWhatWeHaveMade component
+ */
+interface LandingPageWhatWeHaveMadeProps {
+  /** Additional CSS classes for the section */
+  className?: string;
+}
+
+/**
+ * Landing page what we have made section component
+ * @param className - Additional CSS classes for the section
+ */
+export function LandingPageWhatWeHaveMade({ className }: LandingPageWhatWeHaveMadeProps) {
   return (
-    <section className="pt-32 bg-white" id="what-we-have-made">
-      <SectionHeading>What we've made for you</SectionHeading>
+    <section className={` bg-white ${className || ''}`} id="what-we-have-made">
       <div className="flex flex-col md:flex-row justify-center md:justify-center items-center">
-        <div className="flex items-center font-sans text-center text-body max-w-96 pr-8">
-          <div>
+        <div className="flex items-center font-sans text-center max-w-96 pr-8">
+          <div className="text-body">
             <p className="mb-4">
-              A Notion Template based on an idea by Oliver Burkeman
+              We start with an idea by Oliver Burkeman
               <span className="align-super">*</span>:
             </p>
             <p className="mb-4">·</p>
             <p className="mb-4">
-              Don't treat what you collect as <b>tasks</b> for later.
+              Don't treat what you collect as <em>tasks</em> for later.
             </p>
             <p className="mb-4">
-              Treat it as flotsam on a <b>river</b>: pick up what calls to you, and let the rest{' '}
+              Treat it as flotsam on a river: pick up what calls to you, and let the rest{' '}
               <em>drift past</em>.
             </p>
             <p className="mb-4">·</p>

@@ -6,7 +6,7 @@ export function CommonplaceBookWhatWeHaveMadeSection() {
     <section className="pt-32 bg-white" id="what-we-have-made">
       <SectionHeading>What we've made for you</SectionHeading>
       <div className="flex flex-col md:flex-row justify-center md:justify-center items-center">
-        <div className="flex items-center font-sans text-center text-xl max-w-[370px] mb-0 md:mb-0 md:mr-8">
+        <div className="flex items-center font-sans text-center text-body max-w-[370px] mb-0 md:mb-0 md:mr-8">
           <div>
             <p className="mb-4">Since ancient times, people have kept journals.</p>
             <p>
@@ -24,7 +24,7 @@ export function CommonplaceBookWhatWeHaveMadeSection() {
         </div>
       </div>
       <div className="mt-8 md:mt-16 flex justify-center flex-col items-center">
-        <div className="text-xl max-w-lg">
+        <div className="text-body max-w-lg">
           <p className="max-w-lg text-center">
             We've made a <b>Notion template</b> so you can create your own digital Commonplace book.
           </p>

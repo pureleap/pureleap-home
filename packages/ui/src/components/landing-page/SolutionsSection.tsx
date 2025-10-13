@@ -46,7 +46,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ className = 
               className="w-full h-64 object-contain mb-4"
             />
             <h3 className="text-2xl font-sans mb-6 mt-12">{solution.title}</h3>
-            <p className="text-gray-800 text-base font-sans">{solution.description}</p>
+            <p className="text-gray-800 text-body font-sans">{solution.description}</p>
           </div>
         ))}
       </div>

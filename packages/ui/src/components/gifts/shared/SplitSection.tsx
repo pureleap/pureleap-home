@@ -18,7 +18,7 @@ interface SplitSectionProps {
 export function SplitSection({ children, className }: SplitSectionProps) {
   return (
     <div
-      className={`flex flex-col md:flex-row justify-center md:justify-evenly items-center ${className || ''}`}
+      className={`flex flex-col md:flex-row justify-center md:justify-center items-center ${className || ''}`}
     >
       {children}
     </div>

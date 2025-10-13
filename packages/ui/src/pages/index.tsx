@@ -1,13 +1,22 @@
 import Head from 'next/head';
 import React, { useCallback, useEffect, useState } from 'react';
 import Footer from '../components/Footer';
+import { RiverNotABucketProblemSection } from '../components/gifts/river-not-a-bucket/RiverNotABucketProblemSection';
+import { RiverNotABucketWhatWeHaveMadeSection } from '../components/gifts/river-not-a-bucket/RiverNotABucketWhatWeHaveMadeSection';
 import Header from '../components/Header';
+import { CommonplaceBookSection } from '../components/landing-page/CommonplaceBookSection';
 import { ContactSection as Contact } from '../components/landing-page/ContactSection';
 import { GiftsSection } from '../components/landing-page/GiftsSection';
-import { HeroSection } from '../components/landing-page/HeroSection';
+import { LandingPageNotionTemplateCTASection } from '../components/landing-page/LandingPageNotionTemplateCTASection';
+
+import { LandingPageProblem1 } from '../components/landing-page/LandingPageProblem1';
+import { LandingPageWhatWeHaveMade } from '../components/landing-page/LandingPageWhatWeHaveMade';
+import { NewHeroSection } from '../components/landing-page/NewHeroSection';
 import { SolutionsSection as Solutions } from '../components/landing-page/SolutionsSection';
 import { TeamSection as Team } from '../components/landing-page/TeamSection';
 import ScrollIndicator from '../components/ScrollIndicator';
+import { SectionHeading } from '../components/SectionHeading';
+import { RIVER_NOT_A_BUCKET_DATA } from '../data/gifts';
 
 export const Index: React.FC = () => {
   const [showHeader, setShowHeader] = useState(false);
@@ -63,15 +72,40 @@ export const Index: React.FC = () => {
       <div className="font-sans">
         <Header visible={showHeader} />
         <div className="min-h-screen pb-32 bg-white">
-          <HeroSection className="h-full" />
+          <NewHeroSection className="h-full" />
         </div>
         <div className="">
           <GiftsSection></GiftsSection>
         </div>
         <div className="">
+          <LandingPageProblem1></LandingPageProblem1>
+        </div>
+        <div>
+          <SectionHeading className="pt-16">1 - River not a Bucket</SectionHeading>
+        </div>
+        <div>
+          <LandingPageWhatWeHaveMade></LandingPageWhatWeHaveMade>
+        </div>
+        <div>
+          <LandingPageNotionTemplateCTASection ctaLink="https://www.notion.com/templates/river-not-a-bucket"></LandingPageNotionTemplateCTASection>
+        </div>
+        <div>
+          <SectionHeading className="pt-32">2 - Commonplace Book</SectionHeading>
+        </div>
+        <div>
+          <CommonplaceBookSection></CommonplaceBookSection>
+        </div>
+
+        <Team />
+
+        <div className="">
           <Solutions className="" />
         </div>
+        <Contact />
+        <Footer />
+
         <ScrollIndicator targetId="gifts">
+          <span className="text-3xl font-handwritten">What we do</span>
           <svg
             className="w-8 h-8 text-gray-400"
             fill="none"
@@ -85,9 +119,6 @@ export const Index: React.FC = () => {
             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
           </svg>
         </ScrollIndicator>
-        <Team />
-        <Contact />
-        <Footer />
       </div>
     </>
   );

@@ -22,7 +22,7 @@ export function FeatureBlockContent({ heading, children, className }: FeatureBlo
   return (
     <div className={`max-w-md ${className || ''}`}>
       <h3 className="text-xl font-semibold mb-2">{heading}</h3>
-      <p className="text-lg">{children}</p>
+      <p className="text-body">{children}</p>
     </div>
   );
 }

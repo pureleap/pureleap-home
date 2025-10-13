@@ -17,7 +17,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ className = '' }
       <SectionHeading>How to get in touch</SectionHeading>
       <div className="flex flex-col items-center">
         {contactInfo.map((line, index) => (
-          <p key={index} className="text-gray-800 text-base font-sans mb-2">
+          <p key={index} className="text-gray-800 text-body font-sans mb-2">
             {line}
           </p>
         ))}

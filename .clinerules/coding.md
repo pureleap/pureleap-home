@@ -11,3 +11,6 @@ e.g. don't use `import { getNotionToken } from 'notion-data/src/user/getNotionTo
   - yarn compile (preferred at project root)
   - yarn build
   - yarn test (preferred at package folder)
+
+
+- For any terminal commands - we are on Windows but use git bash - so use common unix command line tools like cp, rm, but escape file paths correctly

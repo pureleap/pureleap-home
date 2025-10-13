@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Default body text size - matches Hero Section responsive sizing */
+.text-body {
+  @apply xl:text-lg lg:text-lg md:text-lg sm:text-base xs:text-base;
+}

@@ -20,7 +20,7 @@ interface SplitSectionImageProps {
  */
 export function SplitSectionImage({ src, alt, className }: SplitSectionImageProps) {
   return (
-    <div className={`mb-8 md:mb-0 ${className || ''}`}>
+    <div className={`mr-4 mb-8 md:mb-0 ${className || ''}`}>
       <img className="h-64 md:h-96" src={src} alt={alt} />
     </div>
   );
