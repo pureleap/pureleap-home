@@ -16,7 +16,7 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
         Our approach
       </SectionHeading>
       <div className="text-center">
-        <div className="xl:text-lg lg:text-lg md:text-lg sm:text-base xs:text-base">
+        <div className="text-body">
           <p className="pb-4">
             We turn to the quiet craft of <b>note-taking</b>.
           </p>

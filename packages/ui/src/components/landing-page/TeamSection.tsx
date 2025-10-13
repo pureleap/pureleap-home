@@ -78,7 +78,7 @@ export const TeamSection: React.FC<TeamSectionProps> = ({ className = '' }) => {
               </div>
               <h3 className="text-2xl font-sans mb-6 mt-12">{member.name}</h3>
               <p className="text-gray-500 italic mb-4">{member.role}</p>
-              <p className="text-gray-800 text-base font-sans min-h-[80px]">{member.description}</p>
+              <p className="text-gray-800 text-body font-sans min-h-[80px]">{member.description}</p>
             </div>
             <div className="flex justify-center gap-4 pt-8">
               <SocialIcons links={member.socialIcons}></SocialIcons>

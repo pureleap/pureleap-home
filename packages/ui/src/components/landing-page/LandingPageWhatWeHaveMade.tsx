@@ -17,7 +17,7 @@ export function LandingPageWhatWeHaveMade({ className }: LandingPageWhatWeHaveMa
     <section className={`pt-16 bg-white ${className || ''}`} id="what-we-have-made">
       <div className="flex flex-col md:flex-row justify-center md:justify-center items-center">
         <div className="flex items-center font-sans text-center max-w-96 pr-8">
-          <div>
+          <div className="text-body">
             <p className="mb-4">
               We made a Notion Template based on an idea by Oliver Burkeman
               <span className="align-super">*</span>:

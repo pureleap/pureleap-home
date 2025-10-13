@@ -17,7 +17,7 @@ export const NewHeroSection: React.FC<HeaderProps> = ({ className = '' }) => {
         }}
       />
       <div className={`text-center font-sans mb-4 xs:mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16`}>
-        <div className="xl:text-lg lg:text-lg md:text-lg sm:text-base xs:text-base">
+        <div className="text-body">
           <p className="pb-4">You are buried in a loud world.</p>
           <p className="pb-16">Too much to learn. Too much to do.</p>
           {/* <p>How do we move from clutter to clarity?</p> */}

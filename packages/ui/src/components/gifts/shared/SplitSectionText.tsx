@@ -18,7 +18,7 @@ interface SplitSectionTextProps {
 export function SplitSectionText({ children, className }: SplitSectionTextProps) {
   return (
     <div
-      className={`ml-4 flex items-center font-sans text-center text-xl max-w-96 ${className || ''}`}
+      className={`ml-4 flex items-center font-sans text-center text-body max-w-96 ${className || ''}`}
     >
       <div>{children}</div>
     </div>
