@@ -82,7 +82,7 @@ export const Index: React.FC = () => {
           <LandingPageWhatWeHaveMade></LandingPageWhatWeHaveMade>
         </div>
         <div>
-          <LandingPageNotionTemplateCTASection></LandingPageNotionTemplateCTASection>
+          <LandingPageNotionTemplateCTASection ctaLink="https://www.notion.com/templates/river-not-a-bucket"></LandingPageNotionTemplateCTASection>
         </div>
 
         <div className="">

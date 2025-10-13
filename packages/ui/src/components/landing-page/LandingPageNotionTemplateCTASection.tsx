@@ -15,7 +15,8 @@ export const LandingPageNotionTemplateCTASection: React.FC<
       <div className="flex flex-col sm:flex-row justify-center items-center">
         <div className="flex items-center justify-center font-sans text-center text-xl max-w-64 px-2 sm:px-0 self-center">
           <div>
-            <p className="mb-4">Explore the template on Notion and we hope you'll give it a try!</p>
+            <p className="mb-2 text-lg">You can get the template on Notion.</p>
+            <p className="text-lg">100% free!</p>
           </div>
         </div>
         <div className="mt-4 sm:mt-0 sm:pl-16 flex justify-center self-center">
