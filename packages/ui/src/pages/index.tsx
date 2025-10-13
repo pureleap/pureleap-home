@@ -6,12 +6,15 @@ import { RiverNotABucketWhatWeHaveMadeSection } from '../components/gifts/river-
 import Header from '../components/Header';
 import { ContactSection as Contact } from '../components/landing-page/ContactSection';
 import { GiftsSection } from '../components/landing-page/GiftsSection';
+import { LandingPageNotionTemplateCTASection } from '../components/landing-page/LandingPageNotionTemplateCTASection';
+import { LandingPageNotionTemplateHeroSection } from '../components/landing-page/LandingPageNotionTemplateHeroSection';
 import { LandingPageProblem1 } from '../components/landing-page/LandingPageProblem1';
 import { LandingPageWhatWeHaveMade } from '../components/landing-page/LandingPageWhatWeHaveMade';
 import { NewHeroSection } from '../components/landing-page/NewHeroSection';
 import { SolutionsSection as Solutions } from '../components/landing-page/SolutionsSection';
 import { TeamSection as Team } from '../components/landing-page/TeamSection';
 import ScrollIndicator from '../components/ScrollIndicator';
+import { RIVER_NOT_A_BUCKET_DATA } from '../data/gifts';
 
 export const Index: React.FC = () => {
   const [showHeader, setShowHeader] = useState(false);
@@ -77,6 +80,9 @@ export const Index: React.FC = () => {
         </div>
         <div>
           <LandingPageWhatWeHaveMade></LandingPageWhatWeHaveMade>
+        </div>
+        <div>
+          <LandingPageNotionTemplateCTASection></LandingPageNotionTemplateCTASection>
         </div>
 
         <div className="">
