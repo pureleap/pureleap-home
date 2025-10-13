@@ -18,10 +18,8 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
       <div className="text-center">
         <div className="text-body">
           <p className="pb-4">
-            We turn to the quiet craft of <b>note-taking</b>.
+            We turn to the quiet craft of <b>note-taking</b> ...
           </p>
-          <p>And made a few gentle tools for moving from clutter to clarity.</p>
-          <p></p>
         </div>
       </div>
       {/* <h3 className="text-xl pt-16 font-bold">Best place to start:</h3> */}

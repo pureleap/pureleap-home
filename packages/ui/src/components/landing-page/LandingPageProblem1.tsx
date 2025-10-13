@@ -24,8 +24,9 @@ export function LandingPageProblem1({ className }: LandingPageProblem1Props) {
           {/* <p className="mb-4">
             <em>First Problem</em>
           </p> */}
-          <p className="mb-4 text-body">The world is full of things to know.</p>
-          <p className="text-body">But there's never time for them all.</p>
+          <p className="text-body">
+            ... and made a few gentle tools for moving from <b>clutter to clarity</b>.
+          </p>
         </SplitSectionText>
       </SplitSection>
     </section>

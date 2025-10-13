@@ -19,15 +19,15 @@ export function LandingPageWhatWeHaveMade({ className }: LandingPageWhatWeHaveMa
         <div className="flex items-center font-sans text-center max-w-96 pr-8">
           <div className="text-body">
             <p className="mb-4">
-              We made a Notion Template based on an idea by Oliver Burkeman
+              We start with an idea by Oliver Burkeman
               <span className="align-super">*</span>:
             </p>
             <p className="mb-4">·</p>
             <p className="mb-4">
-              Don't treat what you collect as <b>tasks</b> for later.
+              Don't treat what you collect as <em>tasks</em> for later.
             </p>
             <p className="mb-4">
-              Treat it as flotsam on a <b>river</b>: pick up what calls to you, and let the rest{' '}
+              Treat it as flotsam on a river: pick up what calls to you, and let the rest{' '}
               <em>drift past</em>.
             </p>
             <p className="mb-4">·</p>
