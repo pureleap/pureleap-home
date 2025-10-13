@@ -1,7 +1,7 @@
 import { SplitSection } from '../gifts/shared/SplitSection';
 import { SplitSectionImage } from '../gifts/shared/SplitSectionImage';
 import { SplitSectionText } from '../gifts/shared/SplitSectionText';
-import person from './overwhelmed-person.jpeg';
+import person from './img/overwhelmed-person.jpeg';
 
 /**
  * Props for LandingPageProblem1 component

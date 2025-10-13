@@ -1,5 +1,5 @@
 import React from 'react';
-import gentle from './gentle-background-pattern.jpg';
+import gentle from './img/gentle-background-pattern.jpg';
 
 interface GiftPanelProps {
   children: React.ReactNode;

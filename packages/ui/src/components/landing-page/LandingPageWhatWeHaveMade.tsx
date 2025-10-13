@@ -1,4 +1,4 @@
-import man from './man-sitting-by-the-riverside.jpeg';
+import man from './img/man-sitting-by-the-riverside.jpeg';
 
 /**
  * Props for LandingPageWhatWeHaveMade component
