@@ -20,7 +20,10 @@ interface SectionHeadingProps {
  */
 export function SectionHeading({ children, className, id }: SectionHeadingProps) {
   return (
-    <h2 id={id} className={`text-5xl mb-16 text-center font-handwritten ${className || ''}`}>
+    <h2
+      id={id}
+      className={`text-5xl pb-16 text-center bg-white font-handwritten ${className || ''}`}
+    >
       {children}
     </h2>
   );

@@ -9,7 +9,7 @@ import { GiftCard } from './GiftCard';
 
 export function CommonplaceBookSection() {
   return (
-    <section className="pt-32 bg-white" id="commonplace-book">
+    <section className="pt-8 bg-white" id="commonplace-book">
       <SplitSection>
         <SplitSectionImage src={pulled} alt="Person pulled in many directions" />
         <SplitSectionText>
@@ -19,7 +19,7 @@ export function CommonplaceBookSection() {
         </SplitSectionText>
       </SplitSection>
 
-      <div className="flex flex-col md:flex-row justify-center md:justify-center items-center">
+      <div className="flex flex-col md:flex-row justify-center md:justify-center items-center pt-16">
         <div className="flex items-center font-sans text-center text-body max-w-[370px] mb-0 md:mb-0 md:mr-8">
           <div>
             <p className="mb-4">For this, we adopt an ancient idea.</p>
@@ -41,7 +41,7 @@ export function CommonplaceBookSection() {
       <SplitSection className="mt-8 md:mt-16">
         <SplitSectionText>
           <p className="max-w-lg text-center">
-            We've made a <b>Notion template</b> so you can create your own digital Commonplace book.
+            We've made a Notion template so you can create your own digital Commonplace book.
           </p>
         </SplitSectionText>
         <SplitSectionText>

@@ -15,6 +15,7 @@ import { NewHeroSection } from '../components/landing-page/NewHeroSection';
 import { SolutionsSection as Solutions } from '../components/landing-page/SolutionsSection';
 import { TeamSection as Team } from '../components/landing-page/TeamSection';
 import ScrollIndicator from '../components/ScrollIndicator';
+import { SectionHeading } from '../components/SectionHeading';
 import { RIVER_NOT_A_BUCKET_DATA } from '../data/gifts';
 
 export const Index: React.FC = () => {
@@ -80,10 +81,16 @@ export const Index: React.FC = () => {
           <LandingPageProblem1></LandingPageProblem1>
         </div>
         <div>
+          <SectionHeading className="pt-16">1 - River not a Bucket</SectionHeading>
+        </div>
+        <div>
           <LandingPageWhatWeHaveMade></LandingPageWhatWeHaveMade>
         </div>
         <div>
           <LandingPageNotionTemplateCTASection ctaLink="https://www.notion.com/templates/river-not-a-bucket"></LandingPageNotionTemplateCTASection>
+        </div>
+        <div>
+          <SectionHeading className="pt-32">2 - Commonplace Book</SectionHeading>
         </div>
         <div>
           <CommonplaceBookSection></CommonplaceBookSection>
