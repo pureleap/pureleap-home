@@ -6,7 +6,7 @@ export function RiverNotABucketWhatWeHaveMadeSection() {
     <section className="pt-32 bg-white" id="what-we-have-made">
       <SectionHeading>What we've made for you</SectionHeading>
       <div className="flex flex-col md:flex-row justify-center md:justify-center items-center">
-        <div className="flex items-center font-sans text-center text-lg max-w-96 pr-8">
+        <div className="flex items-center font-sans text-center text-body max-w-96 pr-8">
           <div>
             <p className="mb-4">
               A Notion Template based on an idea by Oliver Burkeman

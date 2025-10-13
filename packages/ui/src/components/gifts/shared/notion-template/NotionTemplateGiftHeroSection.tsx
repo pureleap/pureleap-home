@@ -41,7 +41,7 @@ export const NotionTemplateGiftHeroSection: React.FC<GiftHeroSectionProps> = ({ 
             </div>
           </div>
 
-          <p className="text-base font-sans text-gray-800 mt-4">{gift.description}</p>
+          <p className="text-body font-sans text-gray-800 mt-4">{gift.description}</p>
         </div>
         {/* <p className="text-sm font-sans text-gray-600 mt-2">
           made by{' '}
