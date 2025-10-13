@@ -5,13 +5,11 @@ import study from '../gifts/commonplace-book/Vittore_carpaccio.jpg';
 import { SplitSection } from '../gifts/shared/SplitSection';
 import { SplitSectionImage } from '../gifts/shared/SplitSectionImage';
 import { SplitSectionText } from '../gifts/shared/SplitSectionText';
-import { SectionHeading } from '../SectionHeading';
 import { GiftCard } from './GiftCard';
 
 export function CommonplaceBookSection() {
   return (
     <section className="pt-32 bg-white" id="commonplace-book">
-      <SectionHeading>The problem</SectionHeading>
       <SplitSection>
         <SplitSectionImage src={pulled} alt="Person pulled in many directions" />
         <SplitSectionText>
@@ -31,7 +29,7 @@ export function CommonplaceBookSection() {
             </p>
           </div>
         </div>
-        <div className="mt-8 md:mt-0 md:ml-8">
+        <div className="mt-16 md:mt-0 md:ml-8">
           <img
             className="w-full md:w-96 rounded-lg shadow-xl shadow-blue-gray-900/50"
             src={study}
