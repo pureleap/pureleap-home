@@ -6,6 +6,7 @@ import { SplitSection } from '../gifts/shared/SplitSection';
 import { SplitSectionImage } from '../gifts/shared/SplitSectionImage';
 import { SplitSectionText } from '../gifts/shared/SplitSectionText';
 import { GiftCard } from './GiftCard';
+import { GiftPanel } from './GiftPanel';
 
 export function CommonplaceBookSection() {
   return (
@@ -47,11 +48,11 @@ export function CommonplaceBookSection() {
             </p>
           </div>
         </div>
-        <div className="flex justify-center">
+        <GiftPanel>
           <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
             <GiftCard key={0} gift={COMMONPLACE_BOOK_DATA} index={0} />
           </div>
-        </div>
+        </GiftPanel>
       </div>
     </section>
   );
