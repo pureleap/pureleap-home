@@ -1,5 +1,6 @@
 import React from 'react';
-import { NotionTemplateGiftCTAButton } from '../gifts/shared/notion-template/NotionTemplateGiftCTAButton';
+import { GIFTS } from '../../data/gifts';
+import { GiftCard } from './GiftCard';
 
 interface LandingPageNotionTemplateCTASectionProps {
   ctaLink: string;
@@ -22,7 +23,12 @@ export const LandingPageNotionTemplateCTASection: React.FC<
           </div>
         </div>
         <div className="mt-4 sm:mt-0 sm:pl-16 flex justify-center self-center">
-          <NotionTemplateGiftCTAButton link={ctaLink} />
+          <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
+            {GIFTS.slice(0, 1).map((gift, index) => (
+              <GiftCard key={index} gift={gift} index={index} />
+            ))}
+          </div>
+          {/* <NotionTemplateGiftCTAButton link={ctaLink} /> */}
         </div>
       </div>
     </section>

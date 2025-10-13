@@ -4,10 +4,11 @@ import Footer from '../components/Footer';
 import { RiverNotABucketProblemSection } from '../components/gifts/river-not-a-bucket/RiverNotABucketProblemSection';
 import { RiverNotABucketWhatWeHaveMadeSection } from '../components/gifts/river-not-a-bucket/RiverNotABucketWhatWeHaveMadeSection';
 import Header from '../components/Header';
+import { CommonplaceBookSection } from '../components/landing-page/CommonplaceBookSection';
 import { ContactSection as Contact } from '../components/landing-page/ContactSection';
 import { GiftsSection } from '../components/landing-page/GiftsSection';
 import { LandingPageNotionTemplateCTASection } from '../components/landing-page/LandingPageNotionTemplateCTASection';
-import { LandingPageNotionTemplateHeroSection } from '../components/landing-page/LandingPageNotionTemplateHeroSection';
+
 import { LandingPageProblem1 } from '../components/landing-page/LandingPageProblem1';
 import { LandingPageWhatWeHaveMade } from '../components/landing-page/LandingPageWhatWeHaveMade';
 import { NewHeroSection } from '../components/landing-page/NewHeroSection';
@@ -80,6 +81,9 @@ export const Index: React.FC = () => {
         </div>
         <div>
           <LandingPageWhatWeHaveMade></LandingPageWhatWeHaveMade>
+        </div>
+        <div>
+          <CommonplaceBookSection></CommonplaceBookSection>
         </div>
         <div>
           <LandingPageNotionTemplateCTASection ctaLink="https://www.notion.com/templates/river-not-a-bucket"></LandingPageNotionTemplateCTASection>
