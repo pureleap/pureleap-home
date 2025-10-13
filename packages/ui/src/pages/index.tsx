@@ -96,10 +96,16 @@ export const Index: React.FC = () => {
           <CommonplaceBookSection></CommonplaceBookSection>
         </div>
 
+        <Team />
+
         <div className="">
           <Solutions className="" />
         </div>
+        <Contact />
+        <Footer />
+
         <ScrollIndicator targetId="gifts">
+          <span className="text-3xl font-handwritten">What we do</span>
           <svg
             className="w-8 h-8 text-gray-400"
             fill="none"
@@ -113,9 +119,6 @@ export const Index: React.FC = () => {
             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
           </svg>
         </ScrollIndicator>
-        <Team />
-        <Contact />
-        <Footer />
       </div>
     </>
   );
