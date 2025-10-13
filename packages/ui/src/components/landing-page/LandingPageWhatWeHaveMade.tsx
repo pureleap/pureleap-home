@@ -17,21 +17,19 @@ export function LandingPageWhatWeHaveMade({ className }: LandingPageWhatWeHaveMa
   return (
     <section className={` bg-white ${className || ''}`} id="what-we-have-made">
       <div className="flex flex-col md:flex-row justify-center md:justify-center items-center">
-        <div className="flex items-center font-sans text-center max-w-96 pr-8">
+        <div className="flex items-center font-sans text-center max-w-lg pr-8">
           <div className="text-body">
             <p className="mb-4">
-              We start with an idea by Oliver Burkeman
+              We begin with an idea by Oliver Burkeman
               <span className="align-super">*</span>:
             </p>
-            <p className="mb-4">·</p>
-            <p className="mb-4">
-              Don't treat what you collect as <em>tasks</em> for later.
+            <p className="mb-4">〰️</p>
+            <p className="mb-6">
+              Treat what you collect like flotsam on a river, not as bucket to empty.
             </p>
-            <p className="mb-4">
-              Treat it as flotsam on a river: pick up what calls to you, and let the rest{' '}
-              <em>drift past</em>.
-            </p>
-            <p className="mb-4">·</p>
+            <p className="mb-0">Pick up what calls to you.</p>
+            <p className="mb-4">Let the rest drift by.</p>
+            <p className="mb-4">〰️ </p>
             <p></p>
             <p className="mt-16 text-sm text-gray">
               * From the book{' '}
