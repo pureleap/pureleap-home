@@ -13,7 +13,7 @@ export const GiftCard: React.FC<GiftCardProps> = ({ gift, index }) => {
     <a
       href={gift.learnMoreLink}
       key={index}
-      className="flex flex-col text-center max-w-64 group hover:bg-purple-900 cursor-pointer rounded-xl"
+      className="flex flex-col text-center max-w-64 group bg-white hover:bg-purple-900 cursor-pointer rounded-xl"
     >
       <div className="flex-1 p-4">
         <div className="mb-2">

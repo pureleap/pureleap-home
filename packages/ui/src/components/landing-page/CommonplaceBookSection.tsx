@@ -38,18 +38,21 @@ export function CommonplaceBookSection() {
         </div>
       </div>
 
-      <SplitSection className="mt-8 md:mt-16">
-        <SplitSectionText>
-          <p className="max-w-lg text-center">
-            We've made a Notion template so you can create your own digital Commonplace book.
-          </p>
-        </SplitSectionText>
-        <SplitSectionText>
+      <div className="flex flex-col justify-center items-center mt-8 md:mt-16">
+        <div className="flex items-center font-sans text-center text-body max-w-96 mb-8">
+          <div>
+            <p>
+              We've made a <b>Notion template</b> so you can create your own digital Commonplace
+              book.
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-center">
           <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
             <GiftCard key={0} gift={COMMONPLACE_BOOK_DATA} index={0} />
           </div>
-        </SplitSectionText>
-      </SplitSection>
+        </div>
+      </div>
     </section>
   );
 }
