@@ -22,7 +22,7 @@ export function FeatureContent({ heading, children, className }: FeatureContentP
   return (
     <div className={`max-w-md pr-2 sm:pr-0 ${className || ''}`}>
       <h3 className="text-xl font-semibold mb-2 text-center sm:text-left">{heading}</h3>
-      <p className="text-lg text-center sm:text-left">{children}</p>
+      <p className="text-body text-center sm:text-left">{children}</p>
     </div>
   );
 }
