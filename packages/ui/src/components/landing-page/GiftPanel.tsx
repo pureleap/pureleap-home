@@ -6,5 +6,5 @@ interface GiftPanelProps {
 }
 
 export const GiftPanel: React.FC<GiftPanelProps> = ({ children, className = '' }) => {
-  return <div className={`py-16 bg-purple-900 ${className}`}>{children}</div>;
+  return <div className={`py-8 bg-purple-900 ${className}`}>{children}</div>;
 };

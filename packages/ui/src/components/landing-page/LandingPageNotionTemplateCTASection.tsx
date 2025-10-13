@@ -21,15 +21,15 @@ export const LandingPageNotionTemplateCTASection: React.FC<
             <p>100% free!</p>
           </div>
         </div>
-        <GiftPanel>
-          <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
-            {GIFTS.slice(0, 1).map((gift, index) => (
-              <GiftCard key={index} gift={gift} index={index} />
-            ))}
-          </div>
-          {/* <NotionTemplateGiftCTAButton link={ctaLink} /> */}
-        </GiftPanel>
       </div>
+      <GiftPanel>
+        <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
+          {GIFTS.slice(0, 1).map((gift, index) => (
+            <GiftCard key={index} gift={gift} index={index} />
+          ))}
+        </div>
+        {/* <NotionTemplateGiftCTAButton link={ctaLink} /> */}
+      </GiftPanel>
     </section>
   );
 };

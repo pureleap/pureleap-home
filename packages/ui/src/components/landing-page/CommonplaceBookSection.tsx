@@ -48,12 +48,12 @@ export function CommonplaceBookSection() {
             </p>
           </div>
         </div>
-        <GiftPanel>
-          <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
-            <GiftCard key={0} gift={COMMONPLACE_BOOK_DATA} index={0} />
-          </div>
-        </GiftPanel>
       </div>
+      <GiftPanel>
+        <div className="flex flex-wrap justify-center gap-16 mx-auto px-4 max-w-2xl">
+          <GiftCard key={0} gift={COMMONPLACE_BOOK_DATA} index={0} />
+        </div>
+      </GiftPanel>
     </section>
   );
 }
