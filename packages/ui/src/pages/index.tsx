@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import { ContactSection as Contact } from '../components/landing-page/ContactSection';
 import { GiftsSection } from '../components/landing-page/GiftsSection';
 import { LandingPageProblem1 } from '../components/landing-page/LandingPageProblem1';
+import { LandingPageWhatWeHaveMade } from '../components/landing-page/LandingPageWhatWeHaveMade';
 import { NewHeroSection } from '../components/landing-page/NewHeroSection';
 import { SolutionsSection as Solutions } from '../components/landing-page/SolutionsSection';
 import { TeamSection as Team } from '../components/landing-page/TeamSection';
@@ -75,7 +76,7 @@ export const Index: React.FC = () => {
           <LandingPageProblem1></LandingPageProblem1>
         </div>
         <div>
-          <RiverNotABucketWhatWeHaveMadeSection></RiverNotABucketWhatWeHaveMadeSection>
+          <LandingPageWhatWeHaveMade></LandingPageWhatWeHaveMade>
         </div>
 
         <div className="">
