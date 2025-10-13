@@ -13,6 +13,9 @@ module.exports = {
   transform: {
     '^.+\\.(t|j)sx?$': '@swc/jest',
   },
+  moduleNameMapper: {
+    '\\.(jpg|jpeg|png|gif|svg)$': 'jest-transform-stub',
+  },
   coverageThreshold: {
     global: {
       branches: 90,

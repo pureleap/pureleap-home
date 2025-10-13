@@ -1,3 +1,4 @@
+import React from 'react';
 import man from './img/man-sitting-by-the-riverside.jpeg';
 
 /**

@@ -1,3 +1,4 @@
+import React from 'react';
 import { SplitSection } from '../gifts/shared/SplitSection';
 import { SplitSectionImage } from '../gifts/shared/SplitSectionImage';
 import { SplitSectionText } from '../gifts/shared/SplitSectionText';
