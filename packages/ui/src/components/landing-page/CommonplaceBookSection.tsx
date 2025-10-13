@@ -44,7 +44,7 @@ export function CommonplaceBookSection() {
         <div className="flex items-center font-sans text-center text-body max-w-96 mb-8">
           <div>
             <p className="mb-4">
-              We've another made a Notion template for creating your own digital commonplace book.
+              We've made another a Notion template for creating your own digital commonplace book.
             </p>
             <p>Again 100% free - our gift to you 🤗</p>
           </div>
