@@ -16,6 +16,37 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
         <div className="flex flex-col sm:flex-row justify-between items-start">
           <div className="text-gray-800 mb-4 sm:mb-0 font-sans">© 2014-2025 Pureleap Pty. Ltd.</div>
           <div className="text-gray-800 flex flex-col">
+            <h3 className="font-sans font-bold mb-2">What We Make</h3>
+            <h4 className="font-sans text-gray-400 mb-2">Notion Templates</h4>
+            <div className="ml-4 mb-2">
+              <div className="flex flex-col space-y-2">
+                <a
+                  href="/gifts/river-not-a-bucket"
+                  className="text-black-500 hover:text-orange-500 font-sans"
+                >
+                  River Not a Bucket
+                </a>
+                <a
+                  href="/gifts/commonplace-book"
+                  className="text-black-500 hover:text-orange-500 font-sans"
+                >
+                  Commonplace Book
+                </a>
+              </div>
+            </div>
+            <h4 className="font-sans text-gray-400 mb-2">Notion Integrations</h4>
+            <div className="ml-4">
+              <div className="flex flex-col space-y-2">
+                <a
+                  href="https://auto-relation.com"
+                  className="text-black-500 hover:text-orange-500 font-sans"
+                >
+                  AI Auto Relation
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="text-gray-800 flex flex-col ml-8">
             <h3 className="font-sans font-bold mb-2">Legal</h3>
             <div className="flex flex-col space-y-2">
               <a href="/privacy-policy" className="text-black-500 hover:text-orange-500 font-sans">
