@@ -16,7 +16,6 @@ import { SolutionsSection as Solutions } from '../components/landing-page/Soluti
 import { TeamSection as Team } from '../components/landing-page/TeamSection';
 import ScrollIndicator from '../components/ScrollIndicator';
 import { SectionHeading } from '../components/SectionHeading';
-import { RIVER_NOT_A_BUCKET_DATA } from '../data/gifts';
 
 export const Index: React.FC = () => {
   const [showHeader, setShowHeader] = useState(false);
@@ -57,15 +56,15 @@ export const Index: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Pureleap: Be chill and create from love ❤</title>
-        <meta name="title" content="Pureleap: Be chill and create from love ❤" />
+        <title>Pureleap: Tools for Note-taking and Life Making❤</title>
+        <meta name="title" content="Pureleap: tools for note-taking and life making ❤" />
         <meta
           name="description"
-          content="Crafting small, thoughtful products helping busy professionals and entrepreneurs work and live with peace and purpose."
+          content="Free tools for moving from clutter to clarity through the quiet craft of note-taking."
         />
         <meta
           name="keywords"
-          content="productivity, software development, entrepreneurship, peace, self improvement, life"
+          content="productivity, notion, note-taking, entrepreneurship, self improvement, life"
         />
         <meta name="revisit-after" content="7 days"></meta>
       </Head>
