@@ -17,9 +17,9 @@ export const GiftsSection: React.FC<GiftsSectionProps> = ({ className = '' }) =>
       </SectionHeading>
       <div className="text-center">
         <div className="text-body">
-          <p className="pb-4">
+          <h1 className="pb-4">
             We turn to the quiet craft of <b>note-taking</b> ...
-          </p>
+          </h1>
         </div>
       </div>
       {/* <h3 className="text-xl pt-16 font-bold">Best place to start:</h3> */}

@@ -56,17 +56,24 @@ export const Index: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Pureleap: Tools for Note-taking and Life Making❤</title>
-        <meta name="title" content="Pureleap: tools for note-taking and life making ❤" />
+        <title>Tools for Note-taking and Life Making</title>
+        <meta name="title" content="Tools for note-taking and life making" />
+        <meta property="og:title" content="Tools for note-taking and life making" />
         <meta
           name="description"
-          content="Free tools for moving from clutter to clarity through the quiet craft of note-taking."
+          content="From clutter to clarity with the quiet craft of note-taking powered by our free tools."
+        />
+        <meta
+          property="og:description"
+          content="Move from clutter to clarity through the quiet craft of note-taking powered by our free tools."
         />
         <meta
           name="keywords"
           content="productivity, notion, note-taking, entrepreneurship, self improvement, life"
         />
+        <meta property="og:image" content="https://pureleap.com/meta/overwhelmed-person.jpeg" />
         <meta name="revisit-after" content="7 days"></meta>
+        <link rel="canonical" href="https://pureleap.com" />
       </Head>
       <div className="font-sans">
         <Header visible={showHeader} />
