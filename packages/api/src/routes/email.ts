@@ -72,31 +72,31 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
     };
   }
 
-  await ses.send(
-    new SendEmailCommand({
-      Destination: {
-        ToAddresses: [request.email],
-        BccAddresses: [process.env.CONTACT_EMAIL],
-      },
-      Message: {
-        Subject: {
-          Charset: 'UTF-8',
-          Data: 'Your Contact Form Submission to Pureleap.com',
-        },
-        Body: {
-          Text: {
-            Charset: 'UTF-8',
-            Data: `Thank you for contacting Pureleap.\n\nWe have received your message:\n\n${
-              request.message
-            }\n\n${
-              request.phone ? `Your phone number: ${request.phone}\n\n` : ''
-            }We will get back to you in the next few days.\n\nThanks, Shally and Max`,
-          },
-        },
-      },
-      Source: 'no-reply@' + (await getFromDomain()),
-    }),
-  );
+  // await ses.send(
+  //   new SendEmailCommand({
+  //     Destination: {
+  //       ToAddresses: [request.email],
+  //       BccAddresses: [process.env.CONTACT_EMAIL],
+  //     },
+  //     Message: {
+  //       Subject: {
+  //         Charset: 'UTF-8',
+  //         Data: 'Your Contact Form Submission to Pureleap.com',
+  //       },
+  //       Body: {
+  //         Text: {
+  //           Charset: 'UTF-8',
+  //           Data: `Thank you for contacting Pureleap.\n\nWe have received your message:\n\n${
+  //             request.message
+  //           }\n\n${
+  //             request.phone ? `Your phone number: ${request.phone}\n\n` : ''
+  //           }We will get back to you in the next few days.\n\nThanks, Shally and Max`,
+  //         },
+  //       },
+  //     },
+  //     Source: 'no-reply@' + (await getFromDomain()),
+  //   }),
+  // );
 
   return {
     statusCode: 200,
