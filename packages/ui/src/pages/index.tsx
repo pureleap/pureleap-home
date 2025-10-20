@@ -71,7 +71,10 @@ export const Index: React.FC = () => {
           name="keywords"
           content="productivity, notion, note-taking, entrepreneurship, self improvement, life"
         />
-        <meta property="og:image" content="https://pureleap.com/meta/overwhelmed-person.jpeg" />
+        <meta
+          property="og:image"
+          content="https://pureleap.com/meta/2510/overwhelmed-person.jpeg"
+        />
         <meta name="revisit-after" content="7 days"></meta>
         <link rel="canonical" href="https://pureleap.com" />
       </Head>

@@ -17,8 +17,17 @@ const GiftPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>{`${gift.title} - Pureleap`}</title>
+        <title>{`${gift.title} - Free Notion Template`}</title>
+        <meta property="og:title" content={`${gift.title} - Free Notion Template`} />
         <meta name="description" content={gift.description} />
+        <meta property="og:image" content="https://pureleap.com/meta/2510/river-not-a-bucket.png" />
+        <meta name="revisit-after" content="14 days"></meta>
+
+        <link rel="canonical" href="https://pureleap.com/gifts/river-not-a-bucket" />
+        <meta
+          name="keywords"
+          content="river not a bucket, notion, note-taking, journalling, self improvement, life"
+        />
       </Head>
       <Header></Header>
       <div className="font-sans bg-white min-h-screen pb-32">
