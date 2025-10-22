@@ -20,9 +20,12 @@ const GiftPage: React.FC = () => {
         <title>{`${gift.title} - Free Notion Template`}</title>
         <meta property="og:title" content={`${gift.title} - Free Notion Template`} />
         <meta name="description" content={gift.description} />
+
+        <meta property="og:description" content={gift.description} />
         <meta property="og:image" content="https://pureleap.com/meta/2510/commonplace-book.png" />
         <meta name="revisit-after" content="14 days"></meta>
         <link rel="canonical" href="https://pureleap.com/gifts/commonplace-book" />
+        <meta property="og:url" content="https://pureleap.com/gifts/river-not-a-bucket" />
         <meta
           name="keywords"
           content="commonplace book, notion, note-taking, journalling, self improvement, life"

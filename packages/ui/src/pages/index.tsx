@@ -77,6 +77,7 @@ export const Index: React.FC = () => {
         />
         <meta name="revisit-after" content="7 days"></meta>
         <link rel="canonical" href="https://pureleap.com" />
+        <meta property="og:url" content="https://pureleap.com" />
       </Head>
       <div className="font-sans">
         <Header visible={showHeader} />

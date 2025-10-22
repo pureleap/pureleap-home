@@ -119,13 +119,6 @@ const ContactForm: React.FC = () => {
       <div className="font-sans">
         <section className="flex flex-col items-center justify-center pt-32 px-4 md:px-8 lg:px-16 bg-white">
           <h1 className="text-4xl text-center mb-16 font-serif">Contact Form</h1>
-          <p className="mb-4">
-            Sorry, our contact form is currently out of order. Please contact us on{' '}
-            <a href="https://www.linkedin.com/company/pureleap/" className="underline">
-              LinkedIn
-            </a>{' '}
-            instead.
-          </p>
           <div className="max-w-2xl w-full">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -198,12 +191,9 @@ const ContactForm: React.FC = () => {
               <div>
                 <button
                   type="submit"
-                  disabled={isSubmitting || true}
+                  disabled={isSubmitting}
                   className={`mb-4 inline-flex px-4 text-center bg-purple-500 text-white py-2 rounded-lg hover:bg-yellow hover:text-black transform transition-transform duration-200 hover:scale-105 
-                   ${
-                     // biome-ignore lint/correctness/noConstantCondition: <explanation>
-                     isSubmitting || true ? 'opacity-50 cursor-not-allowed' : ''
-                   }`}
+                   ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
