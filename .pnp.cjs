@@ -7708,6 +7708,7 @@ const RAW_RUNTIME_STATE =
           ["@goldstack/template-lambda-api-cli", "npm:0.6.65"],\
           ["@goldstack/utils-aws-http-api-local", "npm:0.3.59"],\
           ["@goldstack/utils-esbuild", "npm:0.5.15"],\
+          ["@goldstack/utils-log", "npm:0.3.21"],\
           ["@jest-mock/express", "npm:1.4.5"],\
           ["@swc/core", "virtual:234f27bdb8c4396585c4db631512089c77c0f53c2908b6132ca553e9974488c5006b56230f6a0765aaf7d62f7344d2cadc9ce23637b5450f15cfdcd9fc7e13a3#npm:1.12.11"],\
           ["@swc/jest", "virtual:234f27bdb8c4396585c4db631512089c77c0f53c2908b6132ca553e9974488c5006b56230f6a0765aaf7d62f7344d2cadc9ce23637b5450f15cfdcd9fc7e13a3#npm:0.2.39"],\

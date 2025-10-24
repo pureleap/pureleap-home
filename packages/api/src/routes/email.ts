@@ -1,6 +1,6 @@
 import { SendEmailCommand } from '@aws-sdk/client-ses';
+import { error, info } from '@goldstack/utils-log';
 import { APIGatewayProxyEventV2, APIGatewayProxyResultV2, Handler } from 'aws-lambda';
-
 import { connect, getFromDomain } from 'email-send';
 import { withCors } from '../middleware/withCors';
 
@@ -61,11 +61,20 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
   const recaptchaResponse = await res.json();
 
   if (!recaptchaResponse.success) {
+    error(`Recaptacha verification failed: ${JSON.stringify(recaptchaResponse)}`, {
+      response: recaptchaResponse,
+      request: request,
+    });
     return {
       statusCode: 404,
       body: `Recaptcha invalid. Error code: ${recaptchaResponse.error_codes}`,
     };
   }
+
+  info(`Email will be sent. Recaptacha verification passed.`, {
+    response: recaptchaResponse,
+    request: request,
+  });
 
   if (!process.env.CONTACT_EMAIL) {
     return {
@@ -104,12 +113,12 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
       Message: {
         Subject: {
           Charset: 'UTF-8',
-          Data: 'Your Contact Form Submission to Pureleap.com',
+          Data: 'Contact Form Submission to Pureleap.com',
         },
         Body: {
           Text: {
             Charset: 'UTF-8',
-            Data: `Thank you for contacting Pureleap.\n\nWe have received your message:\n\n${
+            Data: `Email: ${request.email}\n\nThank you for contacting Pureleap.\n\nWe have received your message:\n\n${
               request.message
             }\n\n${
               request.phone ? `Your phone number: ${request.phone}\n\n` : ''

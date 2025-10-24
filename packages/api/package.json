@@ -27,6 +27,7 @@
   "dependencies": {
     "@aws-sdk/client-ses": "^3.896.0",
     "@goldstack/utils-esbuild": "0.5.15",
+    "@goldstack/utils-log": "0.3.21",
     "date-fns": "^2.28.0",
     "email-send": "workspace:^",
     "source-map-support": "^0.5.21"

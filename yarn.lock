@@ -6835,6 +6835,7 @@ __metadata:
     "@goldstack/template-lambda-api-cli": "npm:0.6.65"
     "@goldstack/utils-aws-http-api-local": "npm:0.3.59"
     "@goldstack/utils-esbuild": "npm:0.5.15"
+    "@goldstack/utils-log": "npm:0.3.21"
     "@jest-mock/express": "npm:^1.4.5"
     "@swc/core": "npm:^1.12.11"
     "@swc/jest": "npm:^0.2.39"
