@@ -5127,6 +5127,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@posthog/core", [\
+      ["npm:1.6.0", {\
+        "packageLocation": "./.yarn/cache/@posthog-core-npm-1.6.0-579fa3d0c5-9b582423ea.zip/node_modules/@posthog/core/",\
+        "packageDependencies": [\
+          ["@posthog/core", "npm:1.6.0"],\
+          ["cross-spawn", "npm:7.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@sinclair/typebox", [\
       ["npm:0.24.20", {\
         "packageLocation": "./.yarn/cache/@sinclair-typebox-npm-0.24.20-26b4f821fa-3a495dc0b6.zip/node_modules/@sinclair/typebox/",\
@@ -9015,6 +9025,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["core-js", [\
+      ["npm:3.47.0", {\
+        "packageLocation": "./.yarn/unplugged/core-js-npm-3.47.0-cf3c257d1a/node_modules/core-js/",\
+        "packageDependencies": [\
+          ["core-js", "npm:3.47.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["core-js-pure", [\
       ["npm:3.44.0", {\
         "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.44.0-fb9357a6b2/node_modules/core-js-pure/",\
@@ -10276,6 +10295,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["fd-slicer", "npm:1.1.0"],\
           ["pend", "npm:1.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["fflate", [\
+      ["npm:0.4.8", {\
+        "packageLocation": "./.yarn/cache/fflate-npm-0.4.8-4dd4e91e29-c0c75029bc.zip/node_modules/fflate/",\
+        "packageDependencies": [\
+          ["fflate", "npm:0.4.8"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14407,6 +14435,29 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["posthog-js", [\
+      ["npm:1.298.1", {\
+        "packageLocation": "./.yarn/cache/posthog-js-npm-1.298.1-39db9fc395-6b218767b7.zip/node_modules/posthog-js/",\
+        "packageDependencies": [\
+          ["@posthog/core", "npm:1.6.0"],\
+          ["core-js", "npm:3.47.0"],\
+          ["fflate", "npm:0.4.8"],\
+          ["posthog-js", "npm:1.298.1"],\
+          ["preact", "npm:10.27.2"],\
+          ["web-vitals", "npm:4.2.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["preact", [\
+      ["npm:10.27.2", {\
+        "packageLocation": "./.yarn/cache/preact-npm-10.27.2-d575c92ce0-e568fb9685.zip/node_modules/preact/",\
+        "packageDependencies": [\
+          ["preact", "npm:10.27.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["pretty-format", [\
       ["npm:25.5.0", {\
         "packageLocation": "./.yarn/cache/pretty-format-npm-25.5.0-9def2180a5-da9e79b2b9.zip/node_modules/pretty-format/",\
@@ -16750,6 +16801,7 @@ const RAW_RUNTIME_STATE =
           ["next", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:15.4.1"],\
           ["playwright", "npm:1.55.1"],\
           ["postcss", "npm:8.5.6"],\
+          ["posthog-js", "npm:1.298.1"],\
           ["react", "npm:19.1.0"],\
           ["react-dom", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:19.1.0"],\
           ["react-is", "npm:19.1.0"],\
@@ -17125,6 +17177,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/web-namespaces-npm-1.1.4-a6dfacb865-5149842ccb.zip/node_modules/web-namespaces/",\
         "packageDependencies": [\
           ["web-namespaces", "npm:1.1.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["web-vitals", [\
+      ["npm:4.2.4", {\
+        "packageLocation": "./.yarn/cache/web-vitals-npm-4.2.4-b9cc74ab7d-68cd1c2625.zip/node_modules/web-vitals/",\
+        "packageDependencies": [\
+          ["web-vitals", "npm:4.2.4"]\
         ],\
         "linkType": "HARD"\
       }]\

@@ -10,7 +10,17 @@
       "configuration": {
         "defaultCacheDuration": 10,
         "hostedZoneDomain": "pureleap.com",
-        "websiteDomain": "pureleap.com"
+        "websiteDomain": "pureleap.com",
+        "environmentVariables": [
+          {
+            "name": "NEXT_PUBLIC_POSTHOG_KEY",
+            "value": "phc_SMrKpafNxkwbJPJfMTYI0MO2c2dJ7k8dv08xufzoVHo"
+          },
+          {
+            "name": "NEXT_PUBLIC_POSTHOG_HOST",
+            "value": "https://relay-ph.pureleap.com"
+          }
+        ]
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
