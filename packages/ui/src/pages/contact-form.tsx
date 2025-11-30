@@ -5,6 +5,7 @@ import Script from 'next/script';
 import React, { useEffect, useState } from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import ShallyAndMax from './../img/contact-form-image.jpg';
 
 const siteKey = '6LcCKs0qAAAAAPgqF5WMUCZKXHhPURI9188wK24W'; // process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
@@ -119,6 +120,12 @@ const ContactForm: React.FC = () => {
       <div className="font-sans">
         <section className="flex flex-col items-center justify-center pt-32 px-4 md:px-8 lg:px-16 bg-white">
           <h1 className="text-4xl text-center mb-16 font-serif">Contact Form</h1>
+          <img className='max-w-md rounded-3xl' src={ShallyAndMax} alt="Shalveena and Max at the beach"></img>
+          <div className="my-8">
+            <p className="mb-2">Hi there 👋</p>
+            <p className="mb-3">Looking forward to hearing from you. We respond to every message (if it's not spam, haha)</p>
+            <p>Shally & Max</p>
+          </div>
           <div className="max-w-2xl w-full">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -178,11 +185,10 @@ const ContactForm: React.FC = () => {
 
               {status.message && (
                 <div
-                  className={`p-4 rounded-md ${
-                    status.type === 'success'
-                      ? 'bg-green-50 text-green-800'
-                      : 'bg-red-50 text-red-800'
-                  }`}
+                  className={`p-4 rounded-md ${status.type === 'success'
+                    ? 'bg-green-50 text-green-800'
+                    : 'bg-red-50 text-red-800'
+                    }`}
                 >
                   {status.message}
                 </div>

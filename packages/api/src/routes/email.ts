@@ -105,31 +105,42 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
   //   }),
   // );
 
-  await ses.send(
-    new SendEmailCommand({
-      Destination: {
-        ToAddresses: [process.env.CONTACT_EMAIL],
-      },
-      Message: {
-        Subject: {
-          Charset: 'UTF-8',
-          Data: 'Contact Form Submission to Pureleap.com',
+  try {
+    await ses.send(
+      new SendEmailCommand({
+        Destination: {
+          ToAddresses: [process.env.CONTACT_EMAIL],
         },
-        Body: {
-          Text: {
+        Message: {
+          Subject: {
             Charset: 'UTF-8',
-            Data: `Email: ${request.email}\n\nThank you for contacting Pureleap.\n\nWe have received your message:\n\n${
-              request.message
-            }\n\n${
-              request.phone ? `Your phone number: ${request.phone}\n\n` : ''
-            }We will get back to you in the next few days.\n\nThanks, Shally and Max`,
+            Data: 'Contact Form Submission to Pureleap.com',
+          },
+          Body: {
+            Text: {
+              Charset: 'UTF-8',
+              Data: `Email: ${request.email}\n\nThank you for contacting Pureleap.\n\nWe have received your message:\n\n${
+                request.message
+              }\n\n${
+                request.phone ? `Your phone number: ${request.phone}\n\n` : ''
+              }We will get back to you in the next few days.\n\nThanks, Shally and Max`,
+            },
           },
         },
-      },
-      Source: `no-reply@${await getFromDomain()}`,
-    }),
-  );
+        Source: `no-reply@${await getFromDomain()}`,
+      }),
+    );
+  } catch (e) {
+    error(`Could not send email: ${e.message}`);
 
+    // still sending success to discourage spammers to use this form
+    return {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: 'Message sent',
+      }),
+    };
+  }
   return {
     statusCode: 200,
     body: JSON.stringify({
