@@ -85,6 +85,12 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
     };
   }
 
+  if (!process.env.CONTACT_EMAIL_SHALLY) {
+    return {
+      statusCode: 500,
+      body: 'Contact email Shally not configured',
+    };
+  }
   // await ses.send(
   //   new SendEmailCommand({
   //     Destination: {
@@ -111,7 +117,7 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
     await ses.send(
       new SendEmailCommand({
         Destination: {
-          ToAddresses: [process.env.CONTACT_EMAIL],
+          ToAddresses: [process.env.CONTACT_EMAIL, process.env.CONTACT_EMAIL_SHALLY],
         },
         Message: {
           Subject: {
