@@ -247,8 +247,8 @@ const FeedbackForm: React.FC<{ productId: string }> = ({ productId }) => {
         />
       )}
       <Head>
-        <title>Feedback Form - {productId}</title>
-        <meta name="description" content={`Feedback form for ${productId}`} />
+        <title>{`Feedback Form - ${product.name}`}</title>
+        <meta name="description" content={`Feedback form for ${product.name}`} />
         <meta name="revisit-after" content="31 days"></meta>
       </Head>
       <Header />

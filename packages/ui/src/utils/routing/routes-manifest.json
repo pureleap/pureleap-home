@@ -32,8 +32,12 @@
       "regex": "^\\/contact-form$"
     },
     {
-      "page": "/feedback-form/[productId]",
-      "regex": "^\\/feedback-form\\/[productId]$"
+      "page": "/feedback-form/commonplace-book-notion-template",
+      "regex": "^\\/feedback-form\\/commonplace-book-notion-template$"
+    },
+    {
+      "page": "/feedback-form/river-not-a-bucket-notion-template",
+      "regex": "^\\/feedback-form\\/river-not-a-bucket-notion-template$"
     },
     {
       "page": "/gifts/commonplace-book",
@@ -98,7 +102,16 @@
       "namedRegex": "^/privacy\\-policy(?:/)?$"
     }
   ],
-  "dataRoutes": [],
+  "dataRoutes": [
+    {
+      "page": "/feedback-form/[productId]",
+      "routeKeys": {
+        "nxtPproductId": "nxtPproductId"
+      },
+      "dataRouteRegex": "^/_next/data/Byx9ZOxa2_xNNrUfrKhGD/feedback\\-form/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/Byx9ZOxa2_xNNrUfrKhGD/feedback\\-form/(?<nxtPproductId>[^/]+?)\\.json$"
+    }
+  ],
   "rsc": {
     "header": "RSC",
     "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
