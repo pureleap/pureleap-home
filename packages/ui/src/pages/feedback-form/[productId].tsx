@@ -1,7 +1,7 @@
 import type { EmailRequest } from 'api';
 import { getEndpoint } from 'api';
+import type { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import Script from 'next/script';
 import React, { useEffect, useState } from 'react';
 import Footer from '../../components/Footer';
@@ -99,35 +99,50 @@ const productMap: Record<string, ProductFeedback> = {
 };
 
 /**
- * Feedback form page component
+ * Generate static paths for all products
  */
-const FeedbackForm: React.FC = () => {
-  const router = useRouter();
-  const { productId } = router.query;
-  const productIdStr = Array.isArray(productId) ? productId[0] : productId;
-  const product = productIdStr ? productMap[productIdStr] : undefined;
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = Object.keys(productMap).map((productId) => ({
+    params: { productId },
+  }));
+
+  return {
+    paths,
+    fallback: false, // Return 404 for unknown products
+  };
+};
+
+/**
+ * Get static props for each product page
+ */
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const productId = params?.productId as string;
+  const product = productMap[productId];
 
   if (!product) {
-    return (
-      <>
-        <Head>
-          <title>Product Not Found</title>
-        </Head>
-        <Header />
-        <div className="font-sans flex flex-col items-center justify-center pt-32 px-4">
-          <h1 className="text-4xl text-center mb-16 font-serif">Product Not Found</h1>
-          <p>The feedback form for this product is not available.</p>
-        </div>
-        <Footer />
-      </>
-    );
+    return {
+      notFound: true,
+    };
   }
+
+  return {
+    props: {
+      productId,
+    },
+  };
+};
+
+/**
+ * Feedback form page component
+ */
+const FeedbackForm: React.FC<{ productId: string }> = ({ productId }) => {
+  const product = productMap[productId];
 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    answers: (product as ProductFeedback).questions.map(() => ''),
+    answers: product.questions.map(() => ''),
     recaptchaToken: '',
   });
   const [status, setStatus] = useState<{
@@ -175,7 +190,7 @@ const FeedbackForm: React.FC = () => {
         action: 'submit',
       });
 
-      const message = `Product: ${productIdStr}\n\n${(product as ProductFeedback).questions
+      const message = `Product: ${productId}\n\n${product.questions
         .map((q, i) => `${q.title}\n${formData.answers[i]}`)
         .join('\n\n')}`;
 
@@ -184,7 +199,7 @@ const FeedbackForm: React.FC = () => {
         name: formData.name,
         email: formData.email,
         phone: formData.phone || undefined,
-        title: `Feedback for ${(product as ProductFeedback).name}`,
+        title: `Feedback for ${product.name}`,
         recaptchaToken: token,
       };
 
@@ -208,7 +223,7 @@ const FeedbackForm: React.FC = () => {
         name: '',
         email: '',
         phone: '',
-        answers: (product as ProductFeedback).questions.map(() => ''),
+        answers: product.questions.map(() => ''),
         recaptchaToken: '',
       });
     } catch (error) {
@@ -232,8 +247,8 @@ const FeedbackForm: React.FC = () => {
         />
       )}
       <Head>
-        <title>Feedback Form - {productIdStr}</title>
-        <meta name="description" content={`Feedback form for ${productIdStr}`} />
+        <title>Feedback Form - {productId}</title>
+        <meta name="description" content={`Feedback form for ${productId}`} />
         <meta name="revisit-after" content="31 days"></meta>
       </Head>
       <Header />
