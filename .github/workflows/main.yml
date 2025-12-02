@@ -23,6 +23,7 @@ jobs:
           yarn deploy prod
     env:
       CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+      CONTACT_EMAIL_SHALLY: ${{ secrets.CONTACT_EMAIL_SHALLY }}
       RECAPTCHA_SECRET_KEY: ${{ secrets.RECAPTCHA_SECRET_KEY }}
       AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
