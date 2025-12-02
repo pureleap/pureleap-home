@@ -72,6 +72,7 @@ const ContactForm: React.FC = () => {
         },
         body: JSON.stringify({
           ...formData,
+          title: 'Contact Form Submission',
           recaptchaToken: token,
         }),
       });

@@ -28,6 +28,8 @@ interface Question {
  * Interface for product feedback configuration
  */
 interface ProductFeedback {
+  /** Product name */
+  name: string;
   /** Message component to display */
   message: React.ReactElement;
   /** Array of questions for the feedback form */
@@ -39,11 +41,41 @@ interface ProductFeedback {
  */
 const productMap: Record<string, ProductFeedback> = {
   'commonplace-book-notion-template': {
+    name: 'Commonplace Book',
     message: (
       <div>
         <p className="mb-2">Hi there 👋</p>
         <p className="mb-3">
-          Thank you for taking the time to provide feedback for our <b>Commonplace Book</b> template.
+          Thank you for taking the time to provide feedback for our <b>Commonplace Book</b>{' '}
+          template.
+        </p>
+        <p className="mb-3">Looking forward to read your thoughts.</p>
+        <p>Shally & Max</p>
+      </div>
+    ),
+    questions: [
+      {
+        title: 'Is there anything you would like added or changed?',
+        description:
+          "Any suggestions you'd like to make, anything that is bothering you about this template, or any features you'd like to see in the future.",
+        required: false,
+      },
+      {
+        title: 'Is there any feature that you absolutely love?',
+        description:
+          "If there is anything that you absolutely love, and would like to share with us, we'd love to hear about it. It would make our day!",
+        required: false,
+      },
+    ],
+  },
+  'river-not-a-bucket-notion-template': {
+    name: 'River Not a Bucket',
+    message: (
+      <div>
+        <p className="mb-2">Hi there 👋</p>
+        <p className="mb-3">
+          Thank you for taking the time to provide feedback for our <b>River Not a Bucket</b>{' '}
+          template.
         </p>
         <p className="mb-3">Looking forward to read your thoughts.</p>
         <p>Shally & Max</p>
@@ -152,6 +184,7 @@ const FeedbackForm: React.FC = () => {
         name: formData.name,
         email: formData.email,
         phone: formData.phone || undefined,
+        title: `Feedback for ${(product as ProductFeedback).name}`,
         recaptchaToken: token,
       };
 
@@ -281,10 +314,11 @@ const FeedbackForm: React.FC = () => {
 
               {status.message && (
                 <div
-                  className={`p-4 rounded-md ${status.type === 'success'
-                    ? 'bg-green-50 text-green-800'
-                    : 'bg-red-50 text-red-800'
-                    }`}
+                  className={`p-4 rounded-md ${
+                    status.type === 'success'
+                      ? 'bg-green-50 text-green-800'
+                      : 'bg-red-50 text-red-800'
+                  }`}
                 >
                   {status.message}
                 </div>

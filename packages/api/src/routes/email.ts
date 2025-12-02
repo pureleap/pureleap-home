@@ -18,6 +18,8 @@ export interface EmailRequest {
   email: string;
   /** Optional phone number */
   phone?: string;
+  /** Optional title for the email */
+  title?: string;
   recaptchaToken: string;
 }
 
@@ -114,7 +116,7 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
         Message: {
           Subject: {
             Charset: 'UTF-8',
-            Data: 'Contact Form Submission to Pureleap.com',
+            Data: request.title || 'Contact Form Submission to Pureleap.com',
           },
           Body: {
             Text: {
