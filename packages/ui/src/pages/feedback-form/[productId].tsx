@@ -8,7 +8,7 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import ShallyAndMax from './../../img/contact-form-image.jpg';
 
-import styles from './feedback-styles.module.css';
+import styles from '../../styles/message-box.module.css';
 
 const siteKey = '6LcCKs0qAAAAAPgqF5WMUCZKXHhPURI9188wK24W'; // process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
