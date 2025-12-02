@@ -32,6 +32,10 @@
       "regex": "^\\/contact-form$"
     },
     {
+      "page": "/feedback-form/[productId]",
+      "regex": "^\\/feedback-form\\/[productId]$"
+    },
+    {
       "page": "/gifts/commonplace-book",
       "regex": "^\\/gifts\\/commonplace-book$"
     },
@@ -46,6 +50,14 @@
     {
       "page": "/privacy-policy",
       "regex": "^\\/privacy-policy$"
+    },
+    {
+      "page": "/feedback-form/[productId]",
+      "regex": "^/feedback\\-form/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPproductId": "nxtPproductId"
+      },
+      "namedRegex": "^/feedback\\-form/(?<nxtPproductId>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [

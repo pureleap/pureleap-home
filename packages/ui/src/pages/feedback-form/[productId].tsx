@@ -8,6 +8,8 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import ShallyAndMax from './../../img/contact-form-image.jpg';
 
+import styles from './feedback-styles.module.css';
+
 const siteKey = '6LcCKs0qAAAAAPgqF5WMUCZKXHhPURI9188wK24W'; // process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
 /**
@@ -41,7 +43,7 @@ const productMap: Record<string, ProductFeedback> = {
       <div>
         <p className="mb-2">Hi there 👋</p>
         <p className="mb-3">
-          Thank you for taking the time to provide feedback for our Commonplace Book template.
+          Thank you for taking the time to provide feedback for our <b>Commonplace Book</b> template.
         </p>
         <p className="mb-3">Looking forward to read your thoughts.</p>
         <p>Shally & Max</p>
@@ -51,14 +53,14 @@ const productMap: Record<string, ProductFeedback> = {
       {
         title: 'Is there anything you would like added or changed?',
         description:
-          "Anything suggestions you'd like to make, anything that is bothering you about this template, or any features you'd like to see in the future.",
-        required: true,
+          "Any suggestions you'd like to make, anything that is bothering you about this template, or any features you'd like to see in the future.",
+        required: false,
       },
       {
         title: 'Is there any feature that you absolutely love?',
         description:
-          "If there is anything that you absolutely love, and would like to share with me, I'd love to hear about it. It would make my day!",
-        required: true,
+          "If there is anything that you absolutely love, and would like to share with us, we'd love to hear about it. It would make our day!",
+        required: false,
       },
     ],
   },
@@ -210,19 +212,16 @@ const FeedbackForm: React.FC = () => {
             src={ShallyAndMax}
             alt="Shalveena and Max at the beach"
           ></img>
-          <div className="my-8">{product.message}</div>
+          <div className={`my-8 ${styles.box} p-4`}>{product.message}</div>
           <div className="max-w-2xl w-full">
             <form onSubmit={handleSubmit} className="space-y-6">
               {product.questions.map((question, index) => (
                 <div key={index}>
-                  <label
-                    htmlFor={`question-${index}`}
-                    className="block text-sm font-medium text-gray-700"
-                  >
+                  <label htmlFor={`question-${index}`} className="block font-medium text-gray-700">
                     {question.title} {question.required !== false ? '*' : ''}
                   </label>
                   {question.description && (
-                    <p className="text-sm text-gray-600 mt-1">{question.description}</p>
+                    <p className="text-gray-600 mt-1">{question.description}</p>
                   )}
                   <textarea
                     id={`question-${index}`}
@@ -282,11 +281,10 @@ const FeedbackForm: React.FC = () => {
 
               {status.message && (
                 <div
-                  className={`p-4 rounded-md ${
-                    status.type === 'success'
-                      ? 'bg-green-50 text-green-800'
-                      : 'bg-red-50 text-red-800'
-                  }`}
+                  className={`p-4 rounded-md ${status.type === 'success'
+                    ? 'bg-green-50 text-green-800'
+                    : 'bg-red-50 text-red-800'
+                    }`}
                 >
                   {status.message}
                 </div>

@@ -1,0 +1,12 @@
+.box {
+	position: relative;
+	background-color: #fff;
+	box-shadow: -0.5rem 0.5rem 1rem rgba(0,0,0,0.1);
+	margin: 5rem;
+	background-image: linear-gradient(to bottom, #fff calc(1em - 1px), #e7e7e7 calc(1em - 1px), #e6e6e6 1em, #fff 1em);
+	background-position: 0% 1em;
+	background-size: 100% 1em;
+	background-repeat: repeat-y;
+	
+}
+
