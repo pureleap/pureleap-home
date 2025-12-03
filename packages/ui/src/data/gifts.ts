@@ -21,7 +21,7 @@ export const COMMONPLACE_ECOSYSTEM_DATA = {
   subtitle: 'Template',
   ctaLink: 'https://www.notion.com/templates/commonplace-ecosystem',
   description:
-    'An ecosystem that allows you to collect your thoughts, develop your ideas, and turn them into tasks that move you towards achieving your goals.',
+    'Collect your thoughts, develop your ideas, and turn them into tasks that move you towards achieving your goals.',
   price: '$0',
   image: commonplaceEcosystemImage,
   authors: [{ name: 'Shalveena', link: 'https://shalveena.com' }],

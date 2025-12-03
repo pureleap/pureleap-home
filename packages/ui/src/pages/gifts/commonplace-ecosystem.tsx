@@ -21,7 +21,10 @@ const GiftPage: React.FC = () => {
         <meta name="description" content={gift.description} />
 
         <meta property="og:description" content={gift.description} />
-        <meta property="og:image" content="https://pureleap.com/meta/2510/commonplace-ecosystem.png" />
+        <meta
+          property="og:image"
+          content="https://pureleap.com/meta/2510/commonplace-ecosystem.png"
+        />
         <meta name="revisit-after" content="14 days"></meta>
         <link rel="canonical" href="https://pureleap.com/gifts/commonplace-ecosystem" />
         <meta property="og:url" content="https://pureleap.com/gifts/commonplace-ecosystem" />
