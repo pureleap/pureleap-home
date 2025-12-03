@@ -32,6 +32,12 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
                 >
                   Commonplace Book
                 </a>
+                <a
+                  href="/gifts/commonplace-ecosystem"
+                  className="text-black-500 hover:text-orange-500 font-sans"
+                >
+                  Commonplace Ecosystem
+                </a>
               </div>
             </div>
             <h4 className="font-sans text-gray-400 mb-2">Notion Integrations</h4>
@@ -61,13 +67,16 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             </div>
           </div>
           <div className="text-gray-800 flex flex-col ml-8">
-            <h3 className="font-sans font-bold mb-2">Contact</h3>
+            <h3 className="font-sans font-bold mb-2">Help & Support</h3>
             <div className="flex flex-col space-y-2">
-              <a href="/#contact" className="text-black-500 hover:text-orange-500 font-sans">
-                Contact Us
-              </a>
               <a href="/contact-form" className="text-black-500 hover:text-orange-500 font-sans">
                 Contact Form
+              </a>
+              <a
+                href="https://docs.pureleap.com"
+                className="text-black-500 hover:text-orange-500 font-sans"
+              >
+                Documentation Hub
               </a>
             </div>
           </div>
