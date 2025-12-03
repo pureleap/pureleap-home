@@ -1,5 +1,6 @@
 import aiAutoRelationImage from '../img/gifts/ai-auto-relation.png';
 import commonplaceBookImage from '../img/gifts/commonplace-book.png';
+import commonplaceEcosystemImage from '../img/gifts/commonplace-ecosystem.png';
 import riverNotABucketImage from '../img/gifts/river-not-a-bucket.png';
 import { Gift } from '../types/gift';
 
@@ -13,6 +14,19 @@ export const COMMONPLACE_BOOK_DATA = {
   authors: [{ name: 'Shalveena', link: 'https://shalveena.com' }],
   id: 'commonplace-book',
   learnMoreLink: 'gifts/commonplace-book',
+};
+
+export const COMMONPLACE_ECOSYSTEM_DATA = {
+  title: 'Commonplace Ecosystem',
+  subtitle: 'Template',
+  ctaLink: 'https://www.notion.com/templates/commonplace-ecosystem',
+  description:
+    'An ecosystem that allows you to collect your thoughts, develop your ideas, and turn them into tasks that move you towards achieving your goals.',
+  price: '$0',
+  image: commonplaceEcosystemImage,
+  authors: [{ name: 'Shalveena', link: 'https://shalveena.com' }],
+  id: 'commonplace-ecosystem',
+  learnMoreLink: 'gifts/commonplace-ecosystem',
 };
 
 export const RIVER_NOT_A_BUCKET_DATA = {
@@ -33,6 +47,7 @@ export const RIVER_NOT_A_BUCKET_DATA = {
 export const GIFTS: Gift[] = [
   RIVER_NOT_A_BUCKET_DATA,
   COMMONPLACE_BOOK_DATA,
+  COMMONPLACE_ECOSYSTEM_DATA,
   {
     title: 'AI Auto Relation',
     subtitle: 'Integration',
