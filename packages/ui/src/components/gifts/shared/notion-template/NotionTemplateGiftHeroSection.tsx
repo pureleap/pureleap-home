@@ -25,7 +25,7 @@ export const NotionTemplateGiftHeroSection: React.FC<GiftHeroSectionProps> = ({ 
             <img
               src={gift.image}
               alt={gift.title}
-              className="w-full max-w-48 aspect-square object-cover mx-auto"
+              className="w-full max-w-48 object-cover mx-auto"
             />
           </div>
 
