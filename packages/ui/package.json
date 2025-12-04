@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "api": "workspace:^",
-    "next": "^15.4.1",
+    "next": "^15",
     "playwright": "^1.55.1",
     "posthog-js": "^1.298.1",
     "react": "^19.1.0",
