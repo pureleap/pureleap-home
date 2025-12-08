@@ -142,6 +142,9 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
     error(`Could not send email: ${e.message}`);
 
     // still sending success to discourage spammers to use this form
+    // there is no way to know if the message can be sent or not
+    // also NO message is sent to the email you put in the form
+    // SO PLEASE LEAVE OUR FORM ALONE :)
     return {
       statusCode: 200,
       body: JSON.stringify({
