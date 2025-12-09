@@ -146,7 +146,7 @@ const FeedbackForm: React.FC<{ productId: string }> = ({ productId }) => {
     recaptchaToken: '',
   });
   const [status, setStatus] = useState<{
-    type: 'success' | 'error' | null;
+    type: 'success' | 'error' | 'low-trust' | null;
     message: string;
   }>({ type: null, message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -212,7 +212,23 @@ const FeedbackForm: React.FC<{ productId: string }> = ({ productId }) => {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to send feedback');
+        if (response.status === 400) {
+          const errorData = await response.json();
+          if (errorData.errorCode === 'LOW_TRUST_SCORE') {
+            setStatus({
+              type: 'low-trust',
+              message: '',
+            });
+            setIsSubmitting(false);
+            return;
+          }
+        }
+        setStatus({
+          type: 'error',
+          message: 'Failed to send feedback',
+        });
+        setIsSubmitting(false);
+        return;
       }
 
       setStatus({
@@ -327,7 +343,22 @@ const FeedbackForm: React.FC<{ productId: string }> = ({ productId }) => {
                 />
               </div>
 
-              {status.message && (
+              {status.type === 'low-trust' && (
+                <div className="p-4 rounded-md bg-red-50 text-red-800">
+                  We are very sorry, but Google thinks you are a bot. If not, please reach out to us
+                  on{' '}
+                  <a
+                    href="https://www.linkedin.com/in/maxrohde/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline"
+                  >
+                    LinkedIn
+                  </a>
+                  .
+                </div>
+              )}
+              {status.message && status.type !== 'low-trust' && (
                 <div
                   className={`p-4 rounded-md ${
                     status.type === 'success'

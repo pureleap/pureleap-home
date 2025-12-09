@@ -60,6 +60,7 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
     };
   }
 
+  // https://developers.google.com/recaptcha/docs/v3#site_verify_response
   const recaptchaResponse = await res.json();
 
   if (!recaptchaResponse.success) {
@@ -70,6 +71,13 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
     return {
       statusCode: 404,
       body: `Recaptcha invalid. Error code: ${recaptchaResponse.error_codes}`,
+    };
+  }
+
+  if (recaptchaResponse.score < 0.3) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ errorCode: 'LOW_TRUST_SCORE' }),
     };
   }
 
