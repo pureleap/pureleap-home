@@ -75,6 +75,10 @@ export const handler: ProxyHandler = withCors(async (event, context) => {
   }
 
   if (recaptchaResponse.score < 0.3) {
+    error(`Email will not be sent. Recaptacha verification failed.`, {
+      response: recaptchaResponse,
+      request: request,
+    });
     return {
       statusCode: 400,
       body: JSON.stringify({ errorCode: 'LOW_TRUST_SCORE' }),
