@@ -12,11 +12,11 @@ export function CommonplaceEcosystemWhatWeHaveMadeSection() {
           A simple, yet powerful Notion template to master your life with four databases:
         </p>
       </div>
-      <div className="mt-8 md:mt-8 flex justify-center flex-col items-center">
+      <div className="mt-8 md:mt-8 flex justify-center flex-col items-center mb-8 md:mb-8">
         <div>
           <img
             src={databasesImage}
-            className="mt-8 max-w-3xl rounded-lg shadow-xl shadow-blue-gray-900/50"
+            className="w-full md:max-w-3xl rounded-lg md:shadow-xl md:shadow-blue-gray-900/50"
             alt="Commonplace Ecosystem databases"
           ></img>
         </div>
@@ -24,16 +24,16 @@ export function CommonplaceEcosystemWhatWeHaveMadeSection() {
       <div className="mt-8 flex justify-center flex-col items-center text-body">
         <ul className="list-disc list-inside mb-4">
           <li>
-            <b>Notes:</b> for all your thoughts
+            <em>Notes:</em> for all your thoughts
           </li>
           <li>
-            <b>Topics:</b> to organise your notes
+            <em>Topics:</em> to organise your notes
           </li>
           <li>
-            <b>Tasks:</b> for everything you want to do
+            <em>Tasks:</em> for everything you want to do
           </li>
           <li>
-            <b>Initiatives:</b> to organise your tasks
+            <em>Initiatives:</em> to organise your tasks
           </li>
         </ul>
       </div>

@@ -39,7 +39,7 @@ const GiftPage: React.FC = () => {
           learn more
         </ScrollIndicator>
       </div>
-      <div className="pr-8 pl-8">
+      <div className="pr-8 pl-8 bg-white">
         <CommonplaceBookProblemSection></CommonplaceBookProblemSection>
         <CommonplaceBookWhatWeHaveMadeSection></CommonplaceBookWhatWeHaveMadeSection>
         <CommonplaceBookWhyGiveItATrySection></CommonplaceBookWhyGiveItATrySection>

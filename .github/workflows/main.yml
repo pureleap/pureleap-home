@@ -35,6 +35,9 @@ jobs:
     env:
       URLS: |
         https://pureleap.com
+        https://pureleap.com/gifts/commonplace-ecosystem
+        https://pureleap.com/gifts/river-not-a-bucket
+        https://pureleap.com/gifts/commonplace-book
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/goldstack-setup

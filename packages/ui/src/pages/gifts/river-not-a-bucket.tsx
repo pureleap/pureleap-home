@@ -40,8 +40,7 @@ const GiftPage: React.FC = () => {
           learn more
         </ScrollIndicator>
       </div>
-      <div className="pr-8 pl-8">
-        {/* TODO: Add specific sections for River Not a Bucket */}
+      <div className="pr-8 pl-8 bg-white">
         <RiverNotABucketProblemSection
           heading="The Problem"
           className="pt-32"

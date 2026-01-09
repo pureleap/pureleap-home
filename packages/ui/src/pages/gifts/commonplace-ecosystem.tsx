@@ -41,7 +41,7 @@ const GiftPage: React.FC = () => {
           learn more
         </ScrollIndicator>
       </div>
-      <div className="pr-8 pl-8">
+      <div className="pr-8 pl-8 bg-white">
         <CommonplaceEcosystemProblemSection></CommonplaceEcosystemProblemSection>
         <CommonplaceEcosystemWhatWeHaveMadeSection></CommonplaceEcosystemWhatWeHaveMadeSection>
         <NotionTemplateGiftCTASection ctaLink={gift.ctaLink} />

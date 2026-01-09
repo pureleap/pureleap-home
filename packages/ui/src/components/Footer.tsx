@@ -11,11 +11,13 @@ interface FooterProps {
  */
 const Footer: React.FC<FooterProps> = ({ className = '' }) => {
   return (
-    <footer className={`bg-gray-50 pt-64 ${className}`} style={{ backgroundColor: '#fbfbff' }}>
+    <footer
+      className={`bg-gray-50 pt-8 sm:pt-16 ${className}`}
+      style={{ backgroundColor: '#fbfbff' }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col sm:flex-row justify-between items-start">
-          <div className="text-gray-800 mb-4 sm:mb-0 font-sans">© 2014-2025 Pureleap Pty. Ltd.</div>
-          <div className="text-gray-800 flex flex-col">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="text-gray-800 flex flex-col order-1 sm:order-2">
             <h3 className="font-sans font-bold mb-2">What We Make</h3>
             <h4 className="font-sans text-gray-400 mb-2">Notion Templates</h4>
             <div className="ml-4 mb-2">
@@ -52,7 +54,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
               </div>
             </div>
           </div>
-          <div className="text-gray-800 flex flex-col ml-8">
+          <div className="text-gray-800 flex flex-col sm:ml-0 lg:ml-8 order-2 sm:order-3">
             <h3 className="font-sans font-bold mb-2">Legal</h3>
             <div className="flex flex-col space-y-2">
               <a href="/privacy-policy" className="text-black-500 hover:text-orange-500 font-sans">
@@ -66,7 +68,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
               </a>
             </div>
           </div>
-          <div className="text-gray-800 flex flex-col ml-8">
+          <div className="text-gray-800 flex flex-col sm:ml-0 lg:ml-8 order-3 sm:order-4">
             <h3 className="font-sans font-bold mb-2">Help & Support</h3>
             <div className="flex flex-col space-y-2">
               <a href="/contact-form" className="text-black-500 hover:text-orange-500 font-sans">
@@ -79,6 +81,9 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
                 Documentation Hub
               </a>
             </div>
+          </div>
+          <div className="text-gray-800 font-sans order-4 sm:order-1">
+            © 2014-2025 Pureleap Pty. Ltd.
           </div>
         </div>
       </div>
