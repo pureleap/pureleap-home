@@ -9740,7 +9740,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:packages/api", {\
         "packageLocation": "./packages/api/",\
         "packageDependencies": [\
-          ["@aws-sdk/client-ses", "npm:3.896.0"],\
+          ["@aws-sdk/client-ses", "npm:3.966.0"],\
           ["@goldstack/template-lambda-api-cli", "npm:0.6.81"],\
           ["@goldstack/utils-aws-http-api-local", "npm:0.3.72"],\
           ["@goldstack/utils-esbuild", "npm:0.5.15"],\

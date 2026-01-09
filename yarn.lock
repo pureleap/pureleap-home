@@ -8946,7 +8946,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api@workspace:packages/api"
   dependencies:
-    "@aws-sdk/client-ses": "npm:^3.896.0"
+    "@aws-sdk/client-ses": "npm:^3.965.0"
     "@goldstack/template-lambda-api-cli": "npm:^0.6.81"
     "@goldstack/utils-aws-http-api-local": "npm:^0.3.72"
     "@goldstack/utils-esbuild": "npm:0.5.15"
