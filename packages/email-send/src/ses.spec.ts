@@ -21,7 +21,7 @@ describe('SES template', () => {
     const ses = createMockSESClient();
     const fromDomain = 'test.local';
     expect(fromDomain).toBe('test.local');
-    
+
     await ses.send(
       new SendEmailCommand({
         Destination: { ToAddresses: ['test@test.com'] },
