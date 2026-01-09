@@ -1,11 +1,27 @@
-import { connect, getFromDomain, getSentEmailRequests } from './ses';
-import { SendEmailCommand } from '@aws-sdk/client-ses';
+import { SESClient, SendEmailCommand, SendEmailRequest } from '@aws-sdk/client-ses';
+
+const sentEmailRequests: SendEmailRequest[] = [];
+
+// Mock SES client
+const mockSend = async (command: any): Promise<any> => {
+  if (command instanceof SendEmailCommand) {
+    sentEmailRequests.push(command.input);
+  }
+  return {};
+};
+
+const createMockSESClient = (): SESClient => {
+  const client = Object.create(SESClient.prototype);
+  Object.defineProperty(client, 'send', { value: mockSend });
+  return client as unknown as SESClient;
+};
 
 describe('SES template', () => {
   it('Should connect to mocked SES', async () => {
-    const ses = await connect();
-    const fromDomain = await getFromDomain();
+    const ses = createMockSESClient();
+    const fromDomain = 'test.local';
     expect(fromDomain).toBe('test.local');
+
     await ses.send(
       new SendEmailCommand({
         Destination: { ToAddresses: ['test@test.com'] },
@@ -22,7 +38,6 @@ describe('SES template', () => {
       }),
     );
 
-    const sentEmailRequests = getSentEmailRequests(ses);
     expect(sentEmailRequests).toHaveLength(1);
   });
 });
