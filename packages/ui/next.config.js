@@ -16,6 +16,13 @@ const nextConfig = {
         loader: 'svg-url-loader',
       },
     });
+    config.module.rules.push({
+      test: /\.(png|jpe?g|gif|webp|ico)$/i,
+      type: 'asset/resource',
+      generator: {
+        filename: 'static/[hash][ext]',
+      },
+    });
     return config;
   },
   eslint: {
