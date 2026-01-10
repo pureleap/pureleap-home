@@ -12296,11 +12296,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:6.2.0", {\
-        "packageLocation": "./.yarn/__virtual__/file-loader-virtual-09fbce16b9/0/cache/file-loader-npm-6.2.0-4b02fd87d5-3a854be3a7.zip/node_modules/file-loader/",\
+      ["virtual:c50984c2ed4982689ecba0a72e1d4db3d0e1d2551f798119328f950b93a0dc047cb040c7d53604da9d9f7c0f786a77cdb1c0df0081405f5ba7d95859181a597c#npm:6.2.0", {\
+        "packageLocation": "./.yarn/__virtual__/file-loader-virtual-895efbbd9b/0/cache/file-loader-npm-6.2.0-4b02fd87d5-3a854be3a7.zip/node_modules/file-loader/",\
         "packageDependencies": [\
           ["@types/webpack", null],\
-          ["file-loader", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:6.2.0"],\
+          ["file-loader", "virtual:c50984c2ed4982689ecba0a72e1d4db3d0e1d2551f798119328f950b93a0dc047cb040c7d53604da9d9f7c0f786a77cdb1c0df0081405f5ba7d95859181a597c#npm:6.2.0"],\
           ["loader-utils", "npm:3.3.1"],\
           ["schema-utils", "npm:3.1.1"],\
           ["webpack", null]\
@@ -18119,7 +18119,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/svg-url-loader-virtual-c50984c2ed/0/cache/svg-url-loader-npm-8.0.0-4c28fd7afe-c4fa2da329.zip/node_modules/svg-url-loader/",\
         "packageDependencies": [\
           ["@types/webpack", null],\
-          ["file-loader", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:6.2.0"],\
+          ["file-loader", "virtual:c50984c2ed4982689ecba0a72e1d4db3d0e1d2551f798119328f950b93a0dc047cb040c7d53604da9d9f7c0f786a77cdb1c0df0081405f5ba7d95859181a597c#npm:6.2.0"],\
           ["svg-url-loader", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:8.0.0"],\
           ["webpack", null]\
         ],\
@@ -18681,7 +18681,6 @@ const RAW_RUNTIME_STATE =
           ["api", "workspace:packages/api"],\
           ["autoprefixer", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:10.4.20"],\
           ["concurrently", "npm:9.2.1"],\
-          ["file-loader", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:6.2.0"],\
           ["jest", "virtual:234f27bdb8c4396585c4db631512089c77c0f53c2908b6132ca553e9974488c5006b56230f6a0765aaf7d62f7344d2cadc9ce23637b5450f15cfdcd9fc7e13a3#npm:29.7.0"],\
           ["jest-environment-jsdom", "virtual:9dce388d82c018b4a7af5edc7243e51f7023d1ab93a923b3959d0066ac6881c93b965a0932486426cbefa96c9c8e47849d5ff541d2404b8aca246480fa32f0d2#npm:30.1.2"],\
           ["jest-transform-stub", "npm:2.0.0"],\

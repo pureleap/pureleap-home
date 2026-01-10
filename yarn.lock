@@ -11148,7 +11148,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"file-loader@npm:^6.2.0, file-loader@npm:~6.2.0":
+"file-loader@npm:~6.2.0":
   version: 6.2.0
   resolution: "file-loader@npm:6.2.0"
   dependencies:
@@ -16935,7 +16935,6 @@ __metadata:
     api: "workspace:^"
     autoprefixer: "npm:^10.4.20"
     concurrently: "npm:^9.2.1"
-    file-loader: "npm:^6.2.0"
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^30.1.2"
     jest-transform-stub: "npm:^2.0.0"
