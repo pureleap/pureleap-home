@@ -728,7 +728,7 @@ const RAW_RUNTIME_STATE =
           ["@smithy/smithy-client", "npm:3.2.0"],\
           ["@smithy/types", "npm:3.3.0"],\
           ["@smithy/util-middleware", "npm:3.0.3"],\
-          ["fast-xml-parser", "npm:4.4.1"],\
+          ["fast-xml-parser", "npm:5.3.6"],\
           ["tslib", "npm:2.7.0"]\
         ],\
         "linkType": "HARD"\
@@ -746,7 +746,7 @@ const RAW_RUNTIME_STATE =
           ["@smithy/smithy-client", "npm:3.5.1"],\
           ["@smithy/types", "npm:3.7.2"],\
           ["@smithy/util-middleware", "npm:3.0.11"],\
-          ["fast-xml-parser", "npm:4.4.1"],\
+          ["fast-xml-parser", "npm:5.3.6"],\
           ["tslib", "npm:2.7.0"]\
         ],\
         "linkType": "HARD"\
@@ -10002,14 +10002,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["fast-xml-parser", [\
-      ["npm:4.4.1", {\
-        "packageLocation": "./.yarn/cache/fast-xml-parser-npm-4.4.1-b48f31eba7-0c05ab8703.zip/node_modules/fast-xml-parser/",\
-        "packageDependencies": [\
-          ["fast-xml-parser", "npm:4.4.1"],\
-          ["strnum", "npm:1.0.5"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:5.3.6", {\
         "packageLocation": "./.yarn/cache/fast-xml-parser-npm-5.3.6-2edf3ddf0f-03527ab0bd.zip/node_modules/fast-xml-parser/",\
         "packageDependencies": [\
@@ -15104,13 +15096,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["strnum", [\
-      ["npm:1.0.5", {\
-        "packageLocation": "./.yarn/cache/strnum-npm-1.0.5-9ba11d2a0a-d3117975db.zip/node_modules/strnum/",\
-        "packageDependencies": [\
-          ["strnum", "npm:1.0.5"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:2.1.2", {\
         "packageLocation": "./.yarn/cache/strnum-npm-2.1.2-ab87a75952-7d894dff38.zip/node_modules/strnum/",\
         "packageDependencies": [\
