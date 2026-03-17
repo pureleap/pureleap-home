@@ -5,16 +5,10 @@ resource "aws_s3_bucket" "website_root" {
   # Remove this line if you want to prevent accidential deletion of bucket
   force_destroy = true
 
-  website {
-    index_document = "index.html"
-    error_document = "404.html"
-  }
-
   tags = {
     ManagedBy = "terraform"
     Changed   = formatdate("YYYY-MM-DD hh:mm ZZZ", timestamp())
   }
-
 
   lifecycle {
     ignore_changes = [tags]
@@ -24,10 +18,10 @@ resource "aws_s3_bucket" "website_root" {
 resource "aws_s3_bucket_public_access_block" "website_root" {
   bucket = aws_s3_bucket.website_root.id
 
-  block_public_acls       = false
-  block_public_policy     = false
-  ignore_public_acls      = false
-  restrict_public_buckets = false
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
 }
 
 resource "aws_s3_bucket_ownership_controls" "website_root" {
@@ -37,42 +31,39 @@ resource "aws_s3_bucket_ownership_controls" "website_root" {
   }
 }
 
-resource "aws_s3_bucket_acl" "website_root" {
-  depends_on = [
-	  aws_s3_bucket_public_access_block.website_root,
-	  aws_s3_bucket_ownership_controls.website_root,
-  ]
-
-  bucket = aws_s3_bucket.website_root.id
-  acl    = "public-read"
-
-}
-
 resource "aws_s3_bucket_policy" "website_root" {
   bucket = aws_s3_bucket.website_root.id
 
-  depends_on = [
-	  aws_s3_bucket_public_access_block.website_root,
-	  aws_s3_bucket_ownership_controls.website_root,
-  ]
-
   policy = data.aws_iam_policy_document.website_root.json
+}
+
+resource "aws_cloudfront_origin_access_control" "website_root" {
+  name                              = "oac-${var.website_domain}-root"
+  origin_access_control_origin_type = "s3"
+  signing_behavior                  = "always"
+  signing_protocol                  = "sigv4"
 }
 
 data "aws_iam_policy_document" "website_root" {
   statement {
     principals {
-      type        = "AWS"
-      identifiers = ["*"]
+      type        = "Service"
+      identifiers = ["cloudfront.amazonaws.com"]
     }
 
     actions = [
       "s3:GetObject",
     ]
 
-    resources = [ 
-      "arn:aws:s3:::${var.website_domain}-root/*"
+    resources = [
+      "${aws_s3_bucket.website_root.arn}/*"
     ]
+
+    condition {
+      test     = "StringEquals"
+      variable = "AWS:SourceArn"
+      values   = [aws_cloudfront_distribution.website_cdn_root.arn]
+    }
   }
 }
 
@@ -81,7 +72,7 @@ data "aws_iam_policy_document" "website_root" {
 # Creates the CloudFront distribution to serve the static website
 resource "aws_cloudfront_distribution" "website_cdn_root" {
   enabled     = true
-  price_class = "PriceClass_All" 
+  price_class = "PriceClass_All"
   aliases     = [var.website_domain]
   provider    = aws.us-east-1
 
@@ -89,16 +80,9 @@ resource "aws_cloudfront_distribution" "website_cdn_root" {
   ]
 
   origin {
-    domain_name = aws_s3_bucket.website_root.website_endpoint
-
-    origin_id   = "origin-bucket-${aws_s3_bucket.website_root.id}"
-    
-    custom_origin_config {
-      http_port = 80
-      https_port = 443
-      origin_protocol_policy = "http-only"
-      origin_ssl_protocols = ["TLSv1.2"]
-    }
+    domain_name              = aws_s3_bucket.website_root.bucket_regional_domain_name
+    origin_id                = "origin-bucket-${aws_s3_bucket.website_root.id}"
+    origin_access_control_id = aws_cloudfront_origin_access_control.website_root.id
   }
 
   default_root_object = "index.html"
@@ -165,9 +149,9 @@ resource "aws_cloudfront_distribution" "website_cdn_root" {
     default_ttl      = tostring(var.default_cache_duration)
     max_ttl          = "1200"
 
-    viewer_protocol_policy = "redirect-to-https" 
+    viewer_protocol_policy     = "redirect-to-https"
     response_headers_policy_id = aws_cloudfront_response_headers_policy.security_headers_policy.id
-    compress               = true
+    compress                   = true
 
     forwarded_values {
       query_string = false
