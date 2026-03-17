@@ -15,7 +15,7 @@ jobs:
       - uses: ./.github/actions/goldstack-setup
       - uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: '1.10.2'
+          terraform_version: '1.14.5'
       - run: |
           yarn build
           yarn test

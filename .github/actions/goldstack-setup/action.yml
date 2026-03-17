@@ -14,7 +14,7 @@ runs:
         arch: amd64
     - uses: hashicorp/setup-terraform@v3
       with:
-        terraform_version: '1.10'
+        terraform_version: '1.14.5'
     - name: Install Yarn
       run: npm install -g yarn@1.22.11
       shell: bash
