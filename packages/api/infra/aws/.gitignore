@@ -1,0 +1,8 @@
+aws_credentials
+backend.tf
+*.tfvars
+.terraform/
+tfplan
+.terraform.tfstate.lock.info
+*.zip
+terraform.tfvars

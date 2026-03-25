@@ -1,0 +1,4 @@
+aws_credentials
+backend.tf
+*.tfvars
+.terraform/
