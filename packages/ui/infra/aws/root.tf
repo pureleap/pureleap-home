@@ -1,3 +1,5 @@
+data "aws_caller_identity" "current" {}
+
 # Creates bucket to store the static website
 resource "aws_s3_bucket" "website_root" {
   bucket = "${var.website_domain}-root"

@@ -41,6 +41,11 @@ resource "aws_s3_bucket_ownership_controls" "website_redirect" {
 resource "aws_s3_bucket_policy" "website_redirect" {
   count = var.website_domain_redirect != null ? 1 : 0
 
+  depends_on = [
+    aws_s3_bucket_public_access_block.website_redirect,
+    aws_s3_bucket_ownership_controls.website_redirect,
+  ]
+
   bucket = aws_s3_bucket.website_redirect[0].id
   policy = data.aws_iam_policy_document.website_redirect[0].json
 }
@@ -97,7 +102,7 @@ data "aws_iam_policy_document" "website_redirect" {
     condition {
       test     = "StringEquals"
       variable = "AWS:SourceArn"
-      values   = [aws_cloudfront_distribution.website_cdn_redirect[0].arn]
+      values   = ["arn:aws:cloudfront::${data.aws_caller_identity.current.account_id}:distribution/${aws_cloudfront_distribution.website_cdn_redirect[0].id}"]
     }
   }
 }
@@ -133,27 +138,20 @@ resource "aws_cloudfront_distribution" "website_cdn_redirect" {
   }
 
   default_cache_behavior {
-    allowed_methods  = ["GET", "HEAD", "OPTIONS"]
+    allowed_methods  = ["GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT", "DELETE"]
     cached_methods   = ["GET", "HEAD"]
     target_origin_id = "origin-bucket-${aws_s3_bucket.website_redirect[0].id}"
-    min_ttl          = "0"
-    default_ttl      = "0"
-    max_ttl          = "0"
 
-    viewer_protocol_policy = "redirect-to-https"
-    compress               = true
-
-    forwarded_values {
-      query_string = false
-      cookies {
-        forward = "none"
-      }
-    }
+    viewer_protocol_policy   = "redirect-to-https"
+    compress                 = true
+    cache_policy_id          = "4135ea2d-6df8-44a3-9df3-4b5a84be39ad"
+    origin_request_policy_id = "88a5eaf4-2fd4-4709-b370-b4c650ea3fcf"
 
     function_association {
       event_type   = "viewer-request"
       function_arn = aws_cloudfront_function.redirect[0].arn
     }
+
   }
 
   restrictions {
