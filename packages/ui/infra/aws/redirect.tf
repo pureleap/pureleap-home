@@ -3,7 +3,7 @@
 resource "aws_s3_bucket" "website_redirect" {
   count = var.website_domain_redirect != null ? 1 : 0
 
-  bucket = "${var.website_domain}-redirect"
+  bucket = "${replace(var.website_domain, ".", "-")}-redirect"
 
   # Remove this line if you want to prevent accidential deletion of bucket
   force_destroy = true
@@ -62,7 +62,7 @@ resource "aws_cloudfront_origin_access_control" "website_redirect" {
 resource "aws_cloudfront_function" "redirect" {
   count = var.website_domain_redirect != null ? 1 : 0
 
-  name    = "redirect-to-${var.website_domain}"
+  name    = "redirect-to-${replace(var.website_domain, ".", "-")}"
   runtime = "cloudfront-js-1.0"
   comment = "Redirect all requests to main domain"
   publish = true
